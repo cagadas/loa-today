@@ -1,6 +1,15 @@
 <template>
   <q-page class="flex-center">
-    <div style="padding: 0 10px;">
+    <div class="padDiv">
+      <img style="width: 100px; float: left; margin-right: 20px;" :src="this.image">
+      <h5>{{ this.title }}</h5>
+      <p>{{ this.description }}</p>
+    </div>
+    <div style="clear: both;"></div>
+    <div style="margin-top: 18px;">
+      <hr>
+    </div>
+    <div class="padDiv">
       <div v-for="item in feed" :key="item.id">
         <h6>{{ item.title }}</h6>
         <p>{{ item.description }}</p>
@@ -15,7 +24,10 @@
 export default {
   data() {
     return {
-      feed: this.$feed
+      feed: this.$feed,
+      title: this.$title,
+      description: this.$description,
+      image: this.$image
     }
   },
   components: {
@@ -29,7 +41,7 @@ export default {
     background-color: rgb(0,32,0);
     padding: 20px;
   }
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     margin: 0;
     color: yellow;
   }
@@ -41,5 +53,8 @@ export default {
   hr {
     border-color: purple;
     border-width : 0.5px;
+  }
+  .padDiv {
+    padding: 0;
   }
 </style>

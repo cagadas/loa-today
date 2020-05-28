@@ -31,5 +31,9 @@ export default async (/* { app, router, Vue ... } */) => {
       "mp3": mp3
     })
   }
+  Vue.prototype.$image = xml.elements[0].elements[0].elements[4].elements[0].elements[0].text
+  Vue.prototype.$title = xml.elements[0].elements[0].elements[4].elements[1].elements[0].text
+  Vue.prototype.$url = xml.elements[0].elements[0].elements[4].elements[2].elements[0].text
+  Vue.prototype.$description = xml.elements[0].elements[0].elements[2].elements[0].text
   return Vue.prototype.$feed = feed
 }
