@@ -1,7 +1,7 @@
 <template>
   <vue-plyr>
     <audio>
-      <source src="https://www.loatoday.net/podlove/file/3494/s/download/c/select-show/2020/loa1225-working-with-the-law-11-truth-principles-for-successful-living-by-raymond-holliwell-part-5.mp3" type="audio/mp3"/>
+      <source :src="mp3" type="audio/mp4"/>
     </audio>
   </vue-plyr>
 </template>
@@ -18,6 +18,13 @@ Vue.use(VuePlyr, {
   emit: ['ended']
 })
 export default {
-  name: 'Player'
+  name: 'Player',
+  props: ['mp3']
 }
 </script>
+<style lang="stylus">
+  .plyr--audio .plyr__controls {
+    background-color: rgb(0,64,0)!important;
+    margin-bottom: 16px;
+  }
+</style>

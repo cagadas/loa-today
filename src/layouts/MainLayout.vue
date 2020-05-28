@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          LOA Today
+          LOA Today App
         </q-toolbar-title>
 
         <div>Version 1.00</div>
@@ -65,6 +65,12 @@ export default {
           caption: 'www.loatoday.net',
           icon: 'radio',
           link: 'https://www.loatoday.net'
+        },
+        {
+          title: 'The Grass Is Greener website',
+          caption: 'thegrassisgreener.loatoday.net/',
+          icon: 'radio',
+          link: 'https://thegrassisgreener.loatoday.net/'
         }
       ]
     }

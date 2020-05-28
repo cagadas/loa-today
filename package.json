@@ -12,10 +12,12 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "axios": "^0.19.2",
     "plyr": "^3.6.2",
     "quasar": "^1.0.0",
     "vue-plyr": "^6.0.4",
-    "vue-rss-feed": "^0.2.4"
+    "walk": "^2.3.14",
+    "xml-js": "^1.6.11"
   },
   "devDependencies": {
     "@quasar/app": "^1.0.0"
@@ -26,6 +28,6 @@
     "yarn": ">= 1.21.1"
   },
   "browserslist": [
-    "last 1 version, not dead, ie >= 11"
+    "last 1 version, not dead, ie >= 45"
   ]
 }

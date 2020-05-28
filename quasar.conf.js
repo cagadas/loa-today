@@ -3,6 +3,7 @@
  * the ES6 features that are supported by your Node version. https://node.green/
  */
 
+
 // Configuration for your app
 // https://quasar.dev/quasar-cli/quasar-conf-js
 
@@ -11,8 +12,8 @@ module.exports = function (/* ctx */) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/cli-documentation/boot-files
-    boot: [
-      
+      boot: [
+        'xmlJs.js'
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
