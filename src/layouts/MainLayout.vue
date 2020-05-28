@@ -21,7 +21,6 @@
 
     <q-drawer
       v-model="leftDrawerOpen"
-      show-if-above
       bordered
       content-class="bg-grey-1"
     >
@@ -63,16 +62,21 @@ export default {
         {
           title: 'LOA Today website',
           caption: 'www.loatoday.net',
-          icon: 'radio',
+          icon: 'web',
           link: 'https://www.loatoday.net'
         },
         {
           title: 'The Grass Is Greener website',
           caption: 'thegrassisgreener.loatoday.net/',
-          icon: 'radio',
+          icon: 'web',
           link: 'https://thegrassisgreener.loatoday.net/'
         }
       ]
+    }
+  },
+  computed: {
+    if(leftDrawerOpen){
+      console.log(leftDrawerOpen)
     }
   }
 }
