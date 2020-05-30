@@ -1,6 +1,6 @@
 {
   "name": "loa-today",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A playlist app for our listeners",
   "productName": "LOA Today",
   "cordovaId": "org.cordova.quasar.app",
@@ -28,6 +28,6 @@
     "yarn": ">= 1.21.1"
   },
   "browserslist": [
-    "last 1 version, not dead, ie >= 45"
+    "last 1 version, not dead, ie >= 11"
   ]
 }

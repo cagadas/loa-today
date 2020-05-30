@@ -2,7 +2,7 @@
   <q-page class="flex-center">
     <div class="padDiv">
       <img style="width: 100px; float: left; margin-right: 20px;" :src="this.image">
-      <h5>{{ this.title }}</h5>
+      <h5>LOA Today</h5>
       <p>{{ this.description }}</p>
     </div>
     <div style="clear: both;"></div>

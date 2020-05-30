@@ -2,9 +2,7 @@ import Vue from 'vue'
 import axios from 'axios'
 import convert from 'xml-js'
 export default async (/* { app, router, Vue ... } */) => {
-  // await axios.get('https://rss.app/feeds/o3A1kTpgpKPRi9Py.xml')
-  // await axios.get('https://www.loatoday.net/feed/mp3')
-  await axios.get('https://thegrassisgreener.loatoday.net/feed/mp3')
+  await axios.get('https://www.loatoday.net/feed/mp3')
     .then(function (response) {
       Vue.prototype.$xml = convert.xml2json(response.data, { compact: false, spaces: 1 })
     })
@@ -20,10 +18,11 @@ export default async (/* { app, router, Vue ... } */) => {
   let description = ''
   let mp3 = ''
   let feed = []
-  for (let i = 19; i < length; i++){
+
+  for (let i = 21; i < Math.min(length,25+21); i++) {
     title = xml.elements[0].elements[0].elements[i].elements[0].elements[0].text
     description = xml.elements[0].elements[0].elements[i].elements[4].elements[0].cdata
-    mp3 = xml.elements[0].elements[0].elements[i].elements[7].attributes.url
+    mp3 = xml.elements[0].elements[0].elements[i].elements[6].attributes.url
     feed.push({
       "id": (i - 19),
       "title": title,
@@ -35,5 +34,6 @@ export default async (/* { app, router, Vue ... } */) => {
   Vue.prototype.$title = xml.elements[0].elements[0].elements[4].elements[1].elements[0].text
   Vue.prototype.$url = xml.elements[0].elements[0].elements[4].elements[2].elements[0].text
   Vue.prototype.$description = xml.elements[0].elements[0].elements[2].elements[0].text
-  return Vue.prototype.$feed = feed
+  Vue.prototype.$feed = feed
+  return Vue.prototype.$xml
 }

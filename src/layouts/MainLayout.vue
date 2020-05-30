@@ -73,11 +73,6 @@ export default {
         }
       ]
     }
-  },
-  computed: {
-    if(leftDrawerOpen){
-      console.log(leftDrawerOpen)
-    }
   }
 }
 </script>
