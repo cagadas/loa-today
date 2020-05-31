@@ -19,7 +19,7 @@ export default async (/* { app, router, Vue ... } */) => {
   let mp3 = ''
   let feed = []
 
-  for (let i = 21; i < Math.min(length,25+21); i++) {
+  for (let i = 21; i < Math.min(length,50+21); i++) {
     title = xml.elements[0].elements[0].elements[i].elements[0].elements[0].text
     description = xml.elements[0].elements[0].elements[i].elements[4].elements[0].cdata
     mp3 = xml.elements[0].elements[0].elements[i].elements[6].attributes.url

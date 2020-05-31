@@ -13,7 +13,12 @@
       <div v-for="item in feed" :key="item.id">
         <h6>{{ item.title }}</h6>
         <p>{{ item.description }}</p>
-        <player :mp3="item.mp3"></player>
+        <player
+          :mp3="item.mp3"
+          :id="item.id"
+          @playingId="playingId"
+        >
+        </player>
         <hr>
       </div>
     </div>
@@ -27,11 +32,18 @@ export default {
       feed: this.$feed,
       title: this.$title,
       description: this.$description,
-      image: this.$image
+      image: this.$image,
+      playingId: 0,
+      oldPlayingId: 0
     }
   },
   components: {
     'player' : require('components/Player.vue').default
+  },
+  watch: {
+    playingId: function(){
+      
+    }
   }
 }
 </script>
@@ -51,7 +63,7 @@ export default {
     color: lime;
   }
   hr {
-    border-color: purple;
+    border-color: white;
     border-width : 0.5px;
   }
   .padDiv {

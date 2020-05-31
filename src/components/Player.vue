@@ -1,60 +1,113 @@
 <template>
-  <vue-plyr ref="plyr">
-    <audio>
-      <source :src="mp3" type="audio/mp3"/>
-    </audio>
-  </vue-plyr>
+  <div>
+    <Media
+      preload="none"
+      :kind="'audio'"
+      :controls="true"
+      :src="mp3"
+      @audioprocess="audioprocess"
+      @canplay="canplay"
+      @canplaythrough="canplaythrough"
+      @durationchange="durationchange"
+      @emptied="emptied"
+      @ended="ended"
+      @loadeddata="loadeddata"
+      @loadedmetadata="loadedmetadata"
+      @pause="pause"
+      @play="play"
+      @playing="playing"
+      @ratechange="ratechange"
+      @seeked="seeked"
+      @seeking="seeking"
+      @stalled="stalled"
+      @suspend="suspend"
+      @timeupdate="timeupdate"
+      @volumechange="volumechange"
+      @waiting="waiting"
+    >
+    </Media>
+    <button @click="stopPlayer">Stop</button>
+  </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import VuePlyr from 'vue-plyr'
+import Media from '@dongido/vue-viaudio'
 
-// The second argument is optional and sets the default config values for every player.
-Vue.use(VuePlyr, {
-  plyr: {
-    fullscreen: { enabled: false }
-  },
-  emit: ['ended','play']
-})
 export default {
-  name: 'Player',
-  props: ['mp3'],
-  computed: {
-    player() {
-      return this.$refs.plyr.player
-    }
-  },
-  mounted(){
-    //console.log(this.player)
-    this.player.on('pause', () => console.log('pause fired'))
-    this.player.on('play', () => console.log('play fired'))
-    this.player.on('playing', () => console.log('playing fired'))
-    this.player.on('ended', () => console.log('ended fired'))
-    this.player.on('seeking', () => console.log('seeking fired'))
-    this.player.on('progress', () => console.log('progress fired'))
-    this.player.on('timeupdate', () => console.log('timeupdate: ',this.player.currenttime))
-    this.player.on('volumechange', () => console.log('volumechange fired'))
-    this.player.on('seeked', () => console.log('seeked fired'))
-    this.player.on('ratechange', () => console.log('ratechange fired'))
-    this.player.on('enterfullscreen', () => console.log('enterfullscreen fired'))
-    this.player.on('exitfullscreen', () => console.log('exitfullscreen fired'))
-    this.player.on('captionsdisabled', () => console.log('captionsdisabled fired'))
-    this.player.on('languagechange', () => console.log('languagechange fired'))
-    this.player.on('controlshidden', () => console.log('controlshidden fired'))
-    this.player.on('controlsshown', () => console.log('controlsshown fired'))
-    this.player.on('ready', () => console.log('ready fired'))
+  name: 'app',
+  props: ['mp3','id'],
+  components: {
+    Media
   },
   methods: {
-    logIt(){
-      console.log("done")
+    audioprocess(){
+      console.log("audioprocess: ",this.id)
+    },
+    canplay(){
+      console.log("canplay: ",this.id)
+    },
+    canplaythrough(){
+      console.log("canplaythrough: ",this.id)
+    },
+    durationchange(){
+      console.log("durationchange: ",this.id)
+    },
+    emptied(){
+      console.log("emptied: ",this.id)
+    },
+    ended(){
+      console.log("ended: ",this.id)
+    },
+    loadeddata(){
+      console.log("loadeddata: ",this.id)
+    },
+    loadedmetadata(){
+      console.log("loadedmetadata: ",this.id)
+    },
+    pause(){
+      console.log("pause: ",this.id)
+    },
+    play(){
+      console.log("play: ",this.id)
+    },
+    playing(){
+      console.log("playing: ",this.id)
+    },
+    ratechange(){
+      console.log("ratechange: ",this.id)
+    },
+    seeked(){
+      console.log("seeked: ",this.id)
+    },
+    seeking(){
+      console.log("seeking: ",this.id)
+    },
+    stalled(){
+      console.log("stalled: ",this.id)
+    },
+    suspend(){
+      console.log("suspend: ",this.id)
+    },
+    timeupdate(){
+      console.log("timeupdate: ",this.id)
+    },
+    volumechange(){
+      console.log("volumechange: ",this.id)
+    },
+    waiting(){
+      console.log("waiting: ",this.id)
+    },
+    stopPlayer(){
+      this.pause = true
+      console.log('stopPlayer clicked')
     }
   }
 }
 </script>
 <style lang="stylus">
-  .plyr--audio .plyr__controls {
-    background-color: rgb(0,64,0)!important;
+  audio {
+    display: block;
+    background-color: rgb(0,64,0);
     margin-bottom: 16px;
   }
 </style>
