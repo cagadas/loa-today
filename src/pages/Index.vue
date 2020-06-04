@@ -1,9 +1,9 @@
 <template>
   <q-page class="flex-center">
     <div class="padDiv">
-      <img style="width: 100px; float: left; margin-right: 20px;" :src="this.image">
+      <img style="width: 100px; float: left; margin-right: 20px;" :src="this.showImage">
       <h5>LOA Today</h5>
-      <p>{{ this.description }}</p>
+      <p>{{ this.showDescription }}</p>
     </div>
     <div style="clear: both;"></div>
     <div style="margin-top: 18px;">
@@ -16,9 +16,8 @@
         <player
           :mp3="item.mp3"
           :id="item.id"
-          @playingId="playingId"
-        >
-        </player>
+          :oldPlay="oldPlay"
+          @play="play(item.id)" />
         <hr>
       </div>
     </div>
@@ -30,19 +29,17 @@ export default {
   data() {
     return {
       feed: this.$feed,
-      title: this.$title,
-      description: this.$description,
-      image: this.$image,
-      playingId: 0,
-      oldPlayingId: 0
+      showDescription: this.$showDescription,
+      showImage: this.$showImage,
+      oldPlay: 0
     }
   },
   components: {
     'player' : require('components/Player.vue').default
   },
-  watch: {
-    playingId: function(){
-      
+  methods: {
+    play(id){
+      this.oldPlay = id
     }
   }
 }
@@ -63,7 +60,7 @@ export default {
     color: lime;
   }
   hr {
-    border-color: white;
+    border-color: darkred;
     border-width : 0.5px;
   }
   .padDiv {
