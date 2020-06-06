@@ -15,9 +15,10 @@
         <p>{{ item.description }}</p>
         <player
           :mp3="item.mp3"
-          :id="item.id"
-          :oldPlay="oldPlay"
-          @play="play(item.id)" />
+          ref="pauseMe"        
+          @playing="playingFired(item.id)"
+          @paused="pausedFired(item.id)"
+        ></player>
         <hr>
       </div>
     </div>
@@ -31,15 +32,26 @@ export default {
       feed: this.$feed,
       showDescription: this.$showDescription,
       showImage: this.$showImage,
-      oldPlay: 0
+      oldId: 0,
+      newId: 0
     }
   },
   components: {
     'player' : require('components/Player.vue').default
   },
+  computed:{
+  },
   methods: {
-    play(id){
-      this.oldPlay = id
+    playingFired(id){
+      if(id != this.oldId){
+        this.newId = id
+        this.$refs.pauseMe[this.oldId].pause()
+      }
+    },
+    pausedFired(id){
+      if(id === this.oldId){
+        this.oldId = this.newId
+      }
     }
   }
 }
