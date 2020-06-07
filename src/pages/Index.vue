@@ -18,6 +18,7 @@
           ref="pauseMe"        
           @playing="playingFired(item.id)"
           @paused="pausedFired(item.id)"
+          @timeupdate="timeupdate"
         ></player>
         <hr>
       </div>
@@ -33,7 +34,8 @@ export default {
       showDescription: this.$showDescription,
       showImage: this.$showImage,
       oldId: 0,
-      newId: 0
+      newId: 0,
+      elapsedTime: 0
     }
   },
   components: {
@@ -50,8 +52,18 @@ export default {
     },
     pausedFired(id){
       if(id === this.oldId){
+        // this id is not the same as audio id
+        // get the right audio id
+        // this.elapsedTime goes here too
+        // push user id, audio id and elapsed time into object
+        // save data to localstorage
+        // check if online
+        // if online, send data to server
         this.oldId = this.newId
       }
+    },
+    timeupdate(value){
+      this.elapsedTime = value
     }
   }
 }

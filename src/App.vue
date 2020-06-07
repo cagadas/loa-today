@@ -13,6 +13,16 @@ Vue.use(VuePlyr, {
   plyr: {
     fullscreen: { enabled: false }
   },
+  options: {
+    controls: [
+      'play',
+      'progress',
+      'current-time',
+      'mute',
+      'volume',
+      'settings'
+    ]
+  },
   emit: ['ended']
 })
 export default {

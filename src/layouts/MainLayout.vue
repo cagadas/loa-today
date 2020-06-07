@@ -22,12 +22,12 @@
     <q-drawer
       v-model="leftDrawerOpen"
       bordered
-      content-class="bg-grey-1"
+      content-class="bg-black text-green-4"
     >
       <q-list>
         <q-item-label
           header
-          class="text-grey-8"
+          class="text-yellow-4"
         >
           Essential Links
         </q-item-label>
@@ -41,6 +41,7 @@
 
     <q-page-container>
       <router-view />
+      <net-status />
     </q-page-container>
   </q-layout>
 </template>
@@ -60,6 +61,30 @@ export default {
       leftDrawerOpen: false,
       essentialLinks: [
         {
+          title: 'Playlist',
+          caption: 'Our most recent episodes',
+          icon: 'radio',
+          link: '/#/'
+        },
+        {
+          title: 'Co-Hosts On LOA Today',
+          caption: 'Meet the team!',
+          icon: 'person',
+          link: '/#/hosts'
+        },
+        {
+          title: 'Contact LOA Today',
+          caption: 'send an email',
+          icon: 'email',
+          link: 'mailto:Walt%20Thiessen<walt@loatoday.net>?subject=Contact From LOA Today App'
+        },
+        {
+          title: 'Book: Your Daily Dose Of Happy',
+          caption: 'Real success stories of the Law of Attraction',
+          icon: 'book',
+          link: 'https://amzn.to/2LjXm5d'
+        },
+        {
           title: 'LOA Today website',
           caption: 'www.loatoday.net',
           icon: 'web',
@@ -73,6 +98,10 @@ export default {
         }
       ]
     }
+  },
+  components: {
+    'net-status' : require('components/NetStatus.vue').default,
+    'EssentialLink' : require('components/EssentialLink.vue').default
   }
 }
 </script>

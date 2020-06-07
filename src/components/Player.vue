@@ -30,7 +30,8 @@ export default {
   },
   mounted:function(){
     this.player.on('playing', () => this.$emit('playing')),
-    this.player.on('pause', () => this.$emit('paused'))
+    this.player.on('pause', () => this.$emit('paused')),
+    this.player.on('timeupdate', () => this.$emit('timeupdate', this.player.currentTime))
   }
 }
 </script>
