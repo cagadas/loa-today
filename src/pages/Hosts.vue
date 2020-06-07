@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex-center">
-    <h4 style="text-align: center; margin-bottom: 20px;">LOA Today Cohosts</h4>
+    <h4 style="text-align: center; margin-bottom: 20px;">LOA Today Co&#8209;Hosts</h4>
     <q-img src="statics/images/Walt.jpg" alt="Walt Thiessen" class="myImage"></q-img>
     <p>Walt Thiessen - <span class="bluetext">Walt founded LOA Today with his wife, Louise, on
       September 26, 2012 ... their wedding anniversary. His intention for the show is to
@@ -58,32 +58,13 @@ export default {
   name: 'Hosts'
 }
 </script>
-
-
-<style lang="stylus">
-  body {
-    background-color: rgb(0,96,0);
-    padding: 20px;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    color: yellow;
-  }
+<style lang="stylus" scoped>
   p {
-    margin: 0;
     margin-top: 6px;
     margin-bottom: 30px;
-    color: lime;
   }
   a {
     color: white;
-  }
-  hr {
-    border-color: darkred;
-    border-width : 0.5px;
-  }
-  .padDiv {
-    padding: 0;
   }
   .bluetext{
     color: aqua;

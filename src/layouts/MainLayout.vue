@@ -35,6 +35,7 @@
           v-for="link in essentialLinks"
           :key="link.title"
           v-bind="link"
+          content-class="text-white"
         />
       </q-list>
     </q-drawer>
@@ -64,17 +65,17 @@ export default {
           title: 'Playlist',
           caption: 'Our most recent episodes',
           icon: 'radio',
-          link: '/#/'
+          link: './#/'
         },
         {
           title: 'Co-Hosts On LOA Today',
-          caption: 'Meet the team!',
+          caption: 'Meet the team',
           icon: 'person',
-          link: '/#/hosts'
+          link: './#/hosts'
         },
         {
           title: 'Contact LOA Today',
-          caption: 'send an email',
+          caption: 'Send an email',
           icon: 'email',
           link: 'mailto:Walt%20Thiessen<walt@loatoday.net>?subject=Contact From LOA Today App'
         },
@@ -92,7 +93,7 @@ export default {
         },
         {
           title: 'The Grass Is Greener website',
-          caption: 'thegrassisgreener.loatoday.net/',
+          caption: 'thegrassisgreener.loatoday.netd',
           icon: 'web',
           link: 'https://thegrassisgreener.loatoday.net/'
         }
@@ -105,3 +106,26 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+  body {
+    background-color: rgb(0,32,0);
+    padding: 20px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: yellow;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: lime;
+  }
+  hr {
+    border-color: darkred;
+    border-width : 0.5px;
+  }
+  .padDiv {
+    padding: 0;
+  }
+</style>

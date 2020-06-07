@@ -18,16 +18,19 @@ export default async (/* { app, router, Vue ... } */) => {
   let description = 'string'
   let mp3 = 'string'
   let feed = []
-
+  let date = ''
   for (let i = 21; i < Math.min(length,25+21); i++) {
     title = xml.elements[0].elements[0].elements[i].elements[0].elements[0].text
     description = xml.elements[0].elements[0].elements[i].elements[4].elements[0].cdata
     mp3 = xml.elements[0].elements[0].elements[i].elements[6].attributes.url
+    date = Date.parse(xml.elements[0].elements[0].elements[i].elements[2].elements[0].text)
+    date = new Date(date).toDateString()
     feed.push({
-      id: (i - 21),
+      element: (i - 21),
       title: title,
       description: description,
-      mp3: mp3
+      mp3: mp3,
+      date: date
     })
   }
   Vue.prototype.$showImage = xml.elements[0].elements[0].elements[4].elements[0].elements[0].text

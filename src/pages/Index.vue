@@ -10,14 +10,14 @@
       <hr>
     </div>
     <div class="padDiv">
-      <div v-for="item in feed" :key="item.id">
+      <div v-for="item in feed" :key="item.element">
         <h6>{{ item.title }}</h6>
-        <p>{{ item.description }}</p>
+        <p><span style="color: white;">{{ item.date }} &ndash; </span> {{ item.description }}</p>
         <player
           :mp3="item.mp3"
           ref="pauseMe"        
-          @playing="playingFired(item.id)"
-          @paused="pausedFired(item.id)"
+          @playing="playingFired(item.element)"
+          @paused="pausedFired(item.element)"
           @timeupdate="timeupdate"
         ></player>
         <hr>
@@ -33,9 +33,22 @@ export default {
       feed: this.$feed,
       showDescription: this.$showDescription,
       showImage: this.$showImage,
-      oldId: 0,
-      newId: 0,
-      elapsedTime: 0
+      oldElement: 0,
+      newElement: 0,
+      elapsedTime: 0,
+      user: {
+        id: 0,
+        name: 'Visitor'
+      },
+      episode: [
+        {
+          userId: 0,
+          userName: 'Visitor',
+          episodeId: 0,
+          timeupdate: 0,
+          date: Date.now()
+        }
+      ]
     }
   },
   components: {
@@ -44,14 +57,14 @@ export default {
   computed:{
   },
   methods: {
-    playingFired(id){
-      if(id != this.oldId){
-        this.newId = id
-        this.$refs.pauseMe[this.oldId].pause()
+    playingFired(element){
+      if(element != this.oldElement){
+        this.newElement = element
+        this.$refs.pauseMe[this.oldElement].pause()
       }
     },
-    pausedFired(id){
-      if(id === this.oldId){
+    pausedFired(element){
+      if(element === this.oldElement){
         // this id is not the same as audio id
         // get the right audio id
         // this.elapsedTime goes here too
@@ -59,7 +72,7 @@ export default {
         // save data to localstorage
         // check if online
         // if online, send data to server
-        this.oldId = this.newId
+        this.oldElement = this.newElement
       }
     },
     timeupdate(value){
@@ -69,25 +82,3 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-  body {
-    background-color: rgb(0,32,0);
-    padding: 20px;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    color: yellow;
-  }
-  p {
-    margin: 0;
-    margin-bottom: 10px;
-    color: lime;
-  }
-  hr {
-    border-color: darkred;
-    border-width : 0.5px;
-  }
-  .padDiv {
-    padding: 0;
-  }
-</style>
