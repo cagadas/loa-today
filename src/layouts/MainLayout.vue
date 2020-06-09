@@ -25,12 +25,6 @@
       content-class="bg-black text-green-4"
     >
       <q-list>
-        <q-item-label
-          header
-          class="text-yellow-4"
-        >
-          Essential Links
-        </q-item-label>
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
@@ -38,6 +32,7 @@
           content-class="text-white"
         />
       </q-list>
+      <q-btn color="primary" icon="keyboard_backspace" label="Swipe" class="absolute-bottom-right" style="height: 40px;margin-top: 30px;" />
     </q-drawer>
 
     <q-page-container>
@@ -80,8 +75,8 @@ export default {
           link: 'mailto:Walt%20Thiessen<walt@loatoday.net>?subject=Contact From LOA Today App'
         },
         {
-          title: 'Book: Your Daily Dose Of Happy',
-          caption: 'Real success stories of the Law of Attraction',
+          title: 'Your Daily Dose Of Happy',
+          caption: 'Book: Real success stories of the Law of Attraction',
           icon: 'book',
           link: 'https://amzn.to/2LjXm5d'
         },
@@ -93,7 +88,7 @@ export default {
         },
         {
           title: 'The Grass Is Greener website',
-          caption: 'thegrassisgreener.loatoday.netd',
+          caption: 'thegrassisgreener.loatoday.net',
           icon: 'web',
           link: 'https://thegrassisgreener.loatoday.net/'
         }
@@ -120,6 +115,7 @@ export default {
     margin: 0;
     margin-bottom: 10px;
     color: lime;
+    font-size: 18px;
   }
   hr {
     border-color: darkred;

@@ -2,7 +2,7 @@
   <q-page class="flex-center">
     <div class="padDiv">
       <img style="width: 100px; float: left; margin-right: 20px;" :src="this.showImage">
-      <h5>LOA Today</h5>
+      <h4>LOA Today</h4>
       <p>{{ this.showDescription }}</p>
     </div>
     <div style="clear: both;"></div>
@@ -11,11 +11,11 @@
     </div>
     <div class="padDiv">
       <div v-for="item in feed" :key="item.element">
-        <h6>{{ item.title }}</h6>
+        <h5 ref="playMe" @click="startPlay(item.element)" class="pointer" >{{ item.title }}</h5>
         <p><span style="color: white;">{{ item.date }} &ndash; </span> {{ item.description }}</p>
         <player
           :mp3="item.mp3"
-          ref="pauseMe"        
+          ref="pauseMe"
           @playing="playingFired(item.element)"
           @paused="pausedFired(item.element)"
           @timeupdate="timeupdate"
@@ -23,6 +23,9 @@
         <hr>
       </div>
     </div>
+    <net-status>
+
+    </net-status>
   </q-page>
 </template>
 
@@ -33,26 +36,29 @@ export default {
       feed: this.$feed,
       showDescription: this.$showDescription,
       showImage: this.$showImage,
+      episodeId: this.$episodeId,
       oldElement: 0,
       newElement: 0,
       elapsedTime: 0,
-      user: {
-        id: 0,
-        name: 'Visitor'
+      player: {
+        player_id: 0,
+        player_name: 'Listener'
       },
       episode: [
         {
-          userId: 0,
-          userName: 'Visitor',
-          episodeId: 0,
-          timeupdate: 0,
-          date: Date.now()
+          player_id: 0,
+          episode_id: 0,
+          episode_title: '',
+          episode_time_update: 0,
+          episode_date_started: Date.now(),
+          episode_date_completed: Date.now()
         }
       ]
     }
   },
   components: {
-    'player' : require('components/Player.vue').default
+    'player' : require('components/Player.vue').default,
+    'net-status' : require('components/NetStatus.vue').default
   },
   computed:{
   },
@@ -65,15 +71,11 @@ export default {
     },
     pausedFired(element){
       if(element === this.oldElement){
-        // this id is not the same as audio id
-        // get the right audio id
-        // this.elapsedTime goes here too
-        // push user id, audio id and elapsed time into object
-        // save data to localstorage
-        // check if online
-        // if online, send data to server
         this.oldElement = this.newElement
       }
+    },
+    startPlay(id){
+      this.$refs.pauseMe[id].play()
     },
     timeupdate(value){
       this.elapsedTime = value
@@ -82,3 +84,8 @@ export default {
 }
 </script>
 
+<style lang="stylus" scoped>
+h5.pointer {
+  cursor: pointer;
+}
+</style>

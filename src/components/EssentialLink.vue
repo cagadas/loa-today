@@ -11,9 +11,9 @@
       <q-icon :name="icon" />
     </q-item-section>
 
-    <q-item-section>
+    <q-item-section style="font-size: 18px;">
       <q-item-label>{{ title }}</q-item-label>
-      <q-item-label caption style="color: #cccc00;">
+      <q-item-label caption style="color: #cccc00;font-size: 15px;">
         {{ caption }}
       </q-item-label>
     </q-item-section>

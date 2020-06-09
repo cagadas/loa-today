@@ -19,8 +19,16 @@ export default async (/* { app, router, Vue ... } */) => {
   let mp3 = 'string'
   let feed = []
   let date = ''
+  let episodeId = 0
+  let count = 5
   for (let i = 21; i < Math.min(length,25+21); i++) {
     title = xml.elements[0].elements[0].elements[i].elements[0].elements[0].text
+    episodeId = xml.elements[0].elements[0].elements[i].elements[1].elements[0].text
+    if (episodeId.substring(32, 33) === '-') {
+      count--
+    }
+    episodeId = episodeId.substring(28, count + 28)
+    count++
     description = xml.elements[0].elements[0].elements[i].elements[4].elements[0].cdata
     mp3 = xml.elements[0].elements[0].elements[i].elements[6].attributes.url
     date = Date.parse(xml.elements[0].elements[0].elements[i].elements[2].elements[0].text)

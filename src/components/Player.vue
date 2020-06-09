@@ -24,6 +24,9 @@ export default {
     }
   },
   methods:{
+    play(){
+      this.player.play()
+    },
     pause(){
       this.player.pause()
     }
