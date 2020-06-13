@@ -9,8 +9,15 @@ import VueOffline from 'vue-offline'
 Vue.use(VueOffline)
 import axios from 'axios'
 export default {
+  name: 'NetStatus',
+  props: [
+    'listener',
+    'episode'
+  ],
   data(){
     return{
+      currentListener: this.listener,
+      currentEpisode: this.episode
     }
   },
   methods:{
@@ -22,87 +29,81 @@ export default {
       }
     },
     
-    login() {
-      this.connCheck()
-      let thisData = {}
-      thisData.id = this.$q.localStorage.getItem("id")
-      thisData.username = this.$q.localStorage.getItem("username")
-      thisData.password = this.$q.localStorage.getItem("password")
-      if(this.isOnline === true){
-        if(this.$q.localStorage.getItem("loggedIn") === 'online'){
-          // already logged in online, remaining logged in online
-        }
-        if(this.$q.localStorage.getItem("loggedIn") === 'offline'){
-          // already logged in offline, switch to online
-          this.$q.localStorage.set("loggedIn", "online")
-          console.log("You are still loggedIn offline, but your connection is now online.")
-          this.transmitLogin()
-        }
-        if(this.$q.localStorage.getItem("loggedIn") === 'not'
-        ||this.$q.localStorage.getItem("loggedIn") !== ''){
-          // not logged in, logon online
-          this.$q.localStorage.set("loggedIn", "online")
-          console.log("You are not yet loggedIn, but you are online.")
-          this.transmitLogin()
-        }
-      }
-      if(this.isOnline === false) {
-        if(this.$q.localStorage.getItem("loggedIn") === 'online'){
-          // already logged in online, switch to offline
-          console.log("You are loggedIn as online, but your connection is offline.")
-          this.$q.localStorage.set("loggedIn", "offline")
-        }
-        if(this.$q.localStorage.getItem("loggedIn") === 'offline'){
-          // already logged in, still offline
-        }
-        if(this.$q.localStorage.getItem("loggedIn") === 'not'
-        ||this.$q.localStorage.getItem("loggedIn") !== ''){
-          if(this.$q.localStorage.getItem("username") === this.loginSent.username
-          && this.$q.localStorage.getItem("password") === this.loginSent.password){
-            this.$q.localStorage.set("loggedIn", "offline")
-            thisData.loggedIn = "offline"
-            thisData = JSON.stringify(thisData)
-            this.loginUser(thisData)
-            this.redirectPage(true)
-            console.log("You are currently loggedIn, and your connection is offline.")
-          } else {
-            console.log("Wrong username or password.")
-          }
-        }
+    setListener(){
+      console.log("currentEpisode: ", this.currentEpisode)
+      if(this.currentListener.listener_id === 0){
+        axios
+        .post('api/listener/create.php', {
+          listener_id: this.currentListener.listener_id,
+          listener_name: this.currentListener.listener_name
+         })
+        .then(response=> {
+          this.currentListener = response.data
+          console.log("valid new listener response received: ", this.currentListener)
+          this.updateListener()
+        })
+        .catch(function(error) {
+            console.log("Axios Error: ",error)
+        })
       }
     },
 
-    logout() {
-      this.connCheck()
-      this.logoutUser()
-      this.redirectPage(false)
-      this.$q.localStorage.set("loggedIn", "not")
-      console.log("You are now loggedOut.")
-    },
-
-    transmitLogin(){
+    updateListener(){
+      // update existing user id
+      let d = new Date(Date.now())
+      d = d.toISOString().slice(0, 19).replace('T', ' ')
       axios
-      .post('/authenticate.php', this.loginSent )
+      .post('api/listener/update.php', {
+        listener_id: this.currentListener.listener_id,
+        listener_name: this.currentListener.listener_name,
+        date_last_logon: d
+      })
       .then(response=> {
-        // Logging in
-        if(response.data.substring(0,7)==="Success"){
-          var loginData = response.data.substring(8,response.data.length)
-          //console.log("loginSent in transmitLogin in NetStatus.vue: ", this.loginSent)
-          loginData = JSON.parse(loginData)
-          loginData.loggedIn = 'online'
-          loginData.password = this.loginSent.password
-          loginData = JSON.stringify(loginData)
-          this.loginUser(loginData)
-          console.log("You are now loggedIn.")
-          loginData = JSON.parse(loginData)
-          this.$q.localStorage.set("loggedIn", "online")
-          this.$q.localStorage.set("username", loginData.username)
-          this.$q.localStorage.set("password", loginData.password)
-          this.$q.localStorage.set("id", loginData.id)
-          this.redirectPage(true)
-        } else {
-          alert(response.data)
-        }
+        this.currentListener = response.data
+        console.log("update listener info: ", this.currentListener)
+        this.setEpisode()
+      })
+      .catch(function(error) {
+          console.log("Axios Error: ",error)
+      })
+    },
+
+    setEpisode(){
+      if(this.currentEpisode[0].episode_id === 0){
+        axios
+        .post('api/episode/create.php', {
+          episode_id: this.currentEpisode[0].episode_id,
+          listener_id: this.currentEpisode[0].listener_id,
+          episode_title: this.currentEpisode[0].episode_title,
+          episode_time_update: this.currentEpisode[0].episode_time_update
+         })
+        .then(response=> {
+          this.currentEpisode[0] = response.data
+          this.currentEpisode[0].listener_id = this.currentListener.listener_id
+          console.log("valid new episode response received: ", this.currentEpisode[0])
+          this.updateEpisode()
+        })
+        .catch(function(error) {
+            console.log("Axios Error: ",error)
+        })
+      }
+    },
+
+    updateEpisode(){
+      // update existing user id
+      let d = new Date(Date.now())
+      d = d.toISOString().slice(0, 24).replace('T', ' ')
+      axios
+      .post('api/episode/update.php', {
+        episode_id: this.currentEpisode[0].episode_id,
+        listener_id: this.currentEpisode[0].listener_id,
+        episode_title: this.currentEpisode[0].episode_title,
+        episode_time_update: this.currentEpisode[0].episode_time_update,
+        episode_date_stopped: d
+      })
+      .then(response=> {
+        this.currentEpisode[0] = response.data
+        console.log("update episode info: ", response.data)
       })
       .catch(function(error) {
           console.log("Axios Error: ",error)

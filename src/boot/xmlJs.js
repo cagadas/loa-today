@@ -7,7 +7,7 @@ export default async (/* { app, router, Vue ... } */) => {
       Vue.prototype.$xml = convert.xml2json(response.data, { compact: false, spaces: 1 })
     })
     .catch(function (error) {
-      console.log(error)
+      console.log("axios error in xmlJs.js: ",error)
     })
     .then(function () {
       // always executed
