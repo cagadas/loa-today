@@ -2,7 +2,7 @@
   <q-page class="flex-center">
     <div class="padDiv">
       <img style="width: 100px; float: left; margin-right: 20px;" :src="this.showImage">
-      <h4>LOA Today</h4>
+      <h5>LOA Today</h5>
       <p>{{ this.showDescription }}</p>
     </div>
     <div style="clear: both;"></div>
@@ -11,81 +11,126 @@
     </div>
     <div class="padDiv">
       <div v-for="item in feed" :key="item.element">
-        <h5 ref="playMe" @click="startPlay(item.element)" class="pointer" >{{ item.title }}</h5>
+        <h6
+          @click="startPlay(item.element)"
+          class="pointer"
+          >{{
+          item.title
+          }}</h6>
         <p><span style="color: white;">{{ item.date }} &ndash; </span> {{ item.description }}</p>
         <player
           :mp3="item.mp3"
           ref="pauseMe"
-          @playing="playingFired(item.element)"
-          @paused="pausedFired(item.element)"
-          @timeupdate="timeupdate"
+          @timeupdate="currentTime($event,item.element)"
+          @playing="playing(item, item.element)"
+          @paused="paused(item, item.element)"
         ></player>
+        <net-status ref="netStatus" :listener="listener" :episode="episode" />
         <hr>
       </div>
     </div>
-    <net-status>
-
-    </net-status>
   </q-page>
 </template>
 
 <script>
+import Vue from 'vue'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   data() {
     return {
       feed: this.$feed,
       showDescription: this.$showDescription,
       showImage: this.$showImage,
-      episodeId: this.$episodeId,
-      oldElement: 0,
+      oldElement: -1,
       newElement: 0,
       elapsedTime: 0,
-      player: {
-        player_id: 0,
-        player_name: 'Listener'
+      state: '',
+      timeupdate: 0,
+      listener: {
+        listener_id: 0,
+        listener_name: 'Listener',
+        date_last_logon: ''
       },
       episode: [
-        {
-          player_id: 0,
-          episode_id: 0,
-          episode_title: '',
-          episode_time_update: 0,
-          episode_date_started: Date.now(),
-          episode_date_completed: Date.now()
-        }
-      ]
+        {}
+      ],
+      value: 0
     }
   },
   components: {
     'player' : require('components/Player.vue').default,
     'net-status' : require('components/NetStatus.vue').default
   },
-  computed:{
+  computed: {
+    ...mapGetters('modulePlayer', ['getEpisode','getListener'])
   },
-  methods: {
-    playingFired(element){
-      if(element != this.oldElement){
-        this.newElement = element
-        this.$refs.pauseMe[this.oldElement].pause()
+  methods:{
+    ...mapActions('modulePlayer', ['setEpisode','setListener']),
+    currentTime(value, index){
+      // tracks time played in seconds while playing
+      this.timeupdate = value
+    },
+    playing(item, index){
+      this.episode[index] = item
+      let d = new Date(Date.now())
+      d = this.timeZoneShift(d)
+      d = d.replace('T', ' ')
+      this.episode[index].episode_date_started = d
+      this.episode[index].description = item.description
+      this.episode[index].element = item.element
+      this.episode[index].episode_title = item.title
+      this.episode[index].mp3 = item.mp3
+      this.episode[index].date = item.date
+      this.setEpisode(this.episode)
+      if(!this.$q.localStorage.has("listener_id")){
+        this.$refs.netStatus[index].createListener(this.episode, index)
+      } else {
+        this.$refs.netStatus[index].updateListener(this.episode, index)
+      }
+      if(item.element != this.oldElement){
+        // pause old player
+        this.newElement = item.element
+        if(this.oldElement != -1){
+          this.$refs.pauseMe[this.oldElement].pause()
+        }
+        this.oldElement = this.newElement
       }
     },
-    pausedFired(element){
-      if(element === this.oldElement){
+    paused(item, index){
+      this.episode[item.element].episode_time_update = this.timeupdate  // this line causes vuex error
+      this.setEpisode(this.episode)
+      this.$refs.netStatus[item.element].updateEpisode(this.episode, item.element)
+      if(item.element != this.oldElement){
         this.oldElement = this.newElement
       }
     },
     startPlay(id){
       this.$refs.pauseMe[id].play()
     },
-    timeupdate(value){
-      this.elapsedTime = value
+    timeZoneShift(date){
+      const offsetMs = date.getTimezoneOffset() * 60 * 1000;
+      const msLocal =  date.getTime() - offsetMs;
+      const dateLocal = new Date(msLocal);
+      const iso = dateLocal.toISOString();
+      const isoLocal = iso.slice(0, 19);
+      return isoLocal;
     }
+  },
+  mounted(){
+    //this.setEpisode()
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-h5.pointer {
+.pointer {
   cursor: pointer;
+}
+.pointer:hover {
+  color: aqua;
+}
+.pointer:active {
+  color: aqua;
+  text-decoration: underline;
 }
 </style>

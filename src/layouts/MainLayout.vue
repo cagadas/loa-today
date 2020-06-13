@@ -32,12 +32,11 @@
           content-class="text-white"
         />
       </q-list>
-      <q-btn color="primary" icon="keyboard_backspace" label="Swipe" class="absolute-bottom-right" style="height: 40px;margin-top: 30px;" />
+      <q-btn color="primary" icon="keyboard_backspace" label="Swipe To Close" class="absolute-bottom-right" style="height: 40px;margin-top: 30px;" />
     </q-drawer>
 
     <q-page-container>
       <router-view />
-      <net-status />
     </q-page-container>
   </q-layout>
 </template>
@@ -81,22 +80,57 @@ export default {
           link: 'https://amzn.to/2LjXm5d'
         },
         {
-          title: 'LOA Today website',
-          caption: 'www.loatoday.net',
-          icon: 'web',
-          link: 'https://www.loatoday.net'
+          title: 'LOA Today Podcast Videos',
+          caption: 'youtube.com',
+          icon: 'play_circle_outline',
+          link: 'https://www.youtube.com/channel/UCIIeEmpNHA1mt0kF1brblQg'
+        },
+        {
+          title: 'Livestream on YouTube',
+          caption: 'youtube.com',
+          icon: 'play_circle_outline',
+          link: './#/youtube'
+        },
+        {
+          title: 'LOA Today on Zoom',
+          caption: 'where we record the podcast episodes',
+          icon: 'featured_video',
+          link: 'https://zoom.us/j/8602645432'
         },
         {
           title: 'The Grass Is Greener website',
           caption: 'thegrassisgreener.loatoday.net',
           icon: 'web',
           link: 'https://thegrassisgreener.loatoday.net/'
+        },
+        {
+          title: 'LOA Today website',
+          caption: 'www.loatoday.net',
+          icon: 'web',
+          link: 'https://www.loatoday.net'
+        },
+        {
+          title: 'Privacy Policy',
+          caption: 'for the LOA Today App',
+          icon: 'security',
+          link: './#/privacy'
+        },
+        {
+          title: 'Terms of Service',
+          caption: 'with the LOA Today App',
+          icon: 'thumb_up_alt',
+          link: './#/terms'
+        },
+        {
+          title: '',
+          caption: '',
+          icon: '',
+          link: ''
         }
       ]
     }
   },
   components: {
-    'net-status' : require('components/NetStatus.vue').default,
     'EssentialLink' : require('components/EssentialLink.vue').default
   }
 }
@@ -115,7 +149,15 @@ export default {
     margin: 0;
     margin-bottom: 10px;
     color: lime;
-    font-size: 18px;
+    font-size: 16px;
+  }
+  ul {
+    color: lime;
+    font-size: 16px;
+  }
+  a {
+    color: orange;
+    text-text-decoration: underline;
   }
   hr {
     border-color: darkred;

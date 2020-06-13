@@ -5,15 +5,27 @@
 
 <script>
 import Vue from 'vue'
+import { mapActions, mapGetters } from 'vuex'
 import VueOffline from 'vue-offline'
 Vue.use(VueOffline)
 import axios from 'axios'
 export default {
+  name: 'NetStatus',
+  props: [
+    'episode',
+    'listener'
+  ],
   data(){
     return{
+      currentListener: this.listener,
+      currentEpisode: this.episode
     }
   },
+  computed: {
+    ...mapGetters('modulePlayer', ['getEpisode','getListener'])
+  },
   methods:{
+    ...mapActions('modulePlayer', ['setEpisode','setListener']),
     connCheck(){
       if(this.isOnline){
         console.log("You are now online.")
@@ -21,92 +33,118 @@ export default {
         console.log("You are now offline.")
       }
     },
-    
-    login() {
-      this.connCheck()
-      let thisData = {}
-      thisData.id = this.$q.localStorage.getItem("id")
-      thisData.username = this.$q.localStorage.getItem("username")
-      thisData.password = this.$q.localStorage.getItem("password")
-      if(this.isOnline === true){
-        if(this.$q.localStorage.getItem("loggedIn") === 'online'){
-          // already logged in online, remaining logged in online
-        }
-        if(this.$q.localStorage.getItem("loggedIn") === 'offline'){
-          // already logged in offline, switch to online
-          this.$q.localStorage.set("loggedIn", "online")
-          console.log("You are still loggedIn offline, but your connection is now online.")
-          this.transmitLogin()
-        }
-        if(this.$q.localStorage.getItem("loggedIn") === 'not'
-        ||this.$q.localStorage.getItem("loggedIn") !== ''){
-          // not logged in, logon online
-          this.$q.localStorage.set("loggedIn", "online")
-          console.log("You are not yet loggedIn, but you are online.")
-          this.transmitLogin()
-        }
-      }
-      if(this.isOnline === false) {
-        if(this.$q.localStorage.getItem("loggedIn") === 'online'){
-          // already logged in online, switch to offline
-          console.log("You are loggedIn as online, but your connection is offline.")
-          this.$q.localStorage.set("loggedIn", "offline")
-        }
-        if(this.$q.localStorage.getItem("loggedIn") === 'offline'){
-          // already logged in, still offline
-        }
-        if(this.$q.localStorage.getItem("loggedIn") === 'not'
-        ||this.$q.localStorage.getItem("loggedIn") !== ''){
-          if(this.$q.localStorage.getItem("username") === this.loginSent.username
-          && this.$q.localStorage.getItem("password") === this.loginSent.password){
-            this.$q.localStorage.set("loggedIn", "offline")
-            thisData.loggedIn = "offline"
-            thisData = JSON.stringify(thisData)
-            this.loginUser(thisData)
-            this.redirectPage(true)
-            console.log("You are currently loggedIn, and your connection is offline.")
-          } else {
-            console.log("Wrong username or password.")
-          }
-        }
-      }
-    },
 
-    logout() {
-      this.connCheck()
-      this.logoutUser()
-      this.redirectPage(false)
-      this.$q.localStorage.set("loggedIn", "not")
-      console.log("You are now loggedOut.")
-    },
-
-    transmitLogin(){
+    createEpisode(item, index){
+      this.currentEpisode[index].listener_id = this.$q.localStorage.getItem("listener_id")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+      this.currentEpisode[index].password = this.$q.localStorage.getItem("password")
       axios
-      .post('/authenticate.php', this.loginSent )
+      .post('api/episode/create.php', {
+        listener_id: this.currentEpisode[index].listener_id,
+        password: this.currentEpisode[index].password,
+        episode_title: this.currentEpisode[index].episode_title,
+        episode_time_update: this.currentEpisode[index].episode_time_update
+        })
       .then(response=> {
-        // Logging in
-        if(response.data.substring(0,7)==="Success"){
-          var loginData = response.data.substring(8,response.data.length)
-          //console.log("loginSent in transmitLogin in NetStatus.vue: ", this.loginSent)
-          loginData = JSON.parse(loginData)
-          loginData.loggedIn = 'online'
-          loginData.password = this.loginSent.password
-          loginData = JSON.stringify(loginData)
-          this.loginUser(loginData)
-          console.log("You are now loggedIn.")
-          loginData = JSON.parse(loginData)
-          this.$q.localStorage.set("loggedIn", "online")
-          this.$q.localStorage.set("username", loginData.username)
-          this.$q.localStorage.set("password", loginData.password)
-          this.$q.localStorage.set("id", loginData.id)
-          this.redirectPage(true)
-        } else {
-          alert(response.data)
-        }
+        this.currentEpisode[index].episode_id = response.data.episode_id
+        this.currentEpisode[index].listener_id = response.data.listener_id
+        this.currentEpisode[index].episode_date_started = response.data.episode_date_started
+        this.currentEpisode[index].episode_title = response.data.episode_title
+        this.currentEpisode[index].ip_address = response.data.ip_address
+        this.setEpisode(this.currentEpisode)
+        console.log("this.currentEpisode in createEpisode: ", this.currentEpisode)
       })
       .catch(function(error) {
-          console.log("Axios Error: ",error)
+          console.log("createEpisode Axios Error: ",error)
       })
+    },
+
+    createListener(item, index){
+      axios
+      .post('api/listener/create.php', {
+        listener_id: this.currentEpisode[index].listener_id,
+        password: this.currentEpisode[index].password,
+        listener_name: this.currentListener.listener_name
+        })
+      .then(response=> {
+        this.currentListener.listener_id = response.data.listener_id
+        this.currentListener.listener_name = response.data.listener_name
+        this.currentListener.date_last_logon = response.data.date_last_logon
+        this.currentListener.password = response.data.password
+        console.log("this.currentListener in createListener: ", this.currentListener)
+        this.setListener(this.currentListener)
+        this.$q.localStorage.set("listener_id", this.currentListener.listener_id)
+        this.$q.localStorage.set("password", this.currentListener.password)
+      })
+      .catch(function(error) {
+          console.log("createListener Axios Error: ",error)
+      })
+      this.createEpisode(item, index)
+    },
+
+    updateEpisode(item, index){
+      this.currentEpisode[index].listener_id = this.$q.localStorage.getItem("listener_id")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+      this.currentEpisode[index].password = this.$q.localStorage.getItem("password")
+      // update existing user id
+      let d = new Date(Date.now())
+      //d = d.toISOString().slice(0, 19).replace('T', ' ') -- hang on to this!
+      d = this.timeZoneShift(d)
+      d = d.replace('T', ' ')
+      if(this.getEpisode.episode_time_update < this.currentEpisode[index].episode_time_update){
+        this.setEpisode(this.currentEpisode[index].episode_time_update)
+      }
+      axios
+      .post('api/episode/update.php', {
+        listener_id: this.currentEpisode[index].listener_id,
+        password: this.currentEpisode[index].password,
+        episode_id: this.currentEpisode[index].episode_id,
+        episode_title: this.currentEpisode[index].episode_title,
+        episode_time_update: this.currentEpisode[index].episode_time_update,
+        episode_date_stopped: d
+      })
+      .then(response=> {
+        console.log("response.data in updateEpisode: ", response.data )
+        this.currentEpisode[index].episode_date_stopped = response.data.episode_date_stopped
+        console.log("this.currentEpisode in updateEpisode: ", this.currentEpisode)
+        this.setEpisode(this.currentEpisode)
+      })
+      .catch(function(error) {
+        console.log("updateEpisode Axios Error: ",error)
+      })
+    },
+
+    updateListener(item, index){
+      this.currentListener.listener_id = this.$q.localStorage.getItem("listener_id")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+      this.currentListener.password = this.$q.localStorage.getItem("password")
+      // update existing user id
+      let d = new Date(Date.now())
+      //d = d.toISOString().slice(0, 19).replace('T', ' ') -- hang on to this!
+      d = this.timeZoneShift(d)
+      d = d.replace('T', ' ')
+      axios
+      .post('api/listener/update.php', {
+        listener_id: this.currentListener.listener_id,
+        password: this.currentListener.password,
+        date_last_logon: d
+      })
+      .then(response=> {
+        this.currentListener.listener_id = response.data.listener_id
+        this.currentListener.listener_name = response.data.listener_name
+        this.currentListener.date_last_logon = response.data.date_last_logon
+        console.log("this.currentListener in updateListener: ", this.currentListener)
+        this.setListener(this.currentListener)
+      })
+      .catch(function(error) {
+          console.log("updateListener Axios Error: ",error)
+      })
+      this.createEpisode(item, index)
+    },
+    timeZoneShift(date){
+      const offsetMs = date.getTimezoneOffset() * 60 * 1000;
+      const msLocal =  date.getTime() - offsetMs;
+      const dateLocal = new Date(msLocal);
+      const iso = dateLocal.toISOString();
+      const isoLocal = iso.slice(0, 19);
+      return isoLocal;
     }
   }
 }
