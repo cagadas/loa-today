@@ -21,7 +21,7 @@
         <player
           :mp3="item.mp3"
           ref="pauseMe"
-          @timeupdate="currentTime($event,item.element)"
+          @timeupdate="currentTime($event, item.element)"
           @playing="playing(item, item.element)"
           @paused="paused(item, item.element)"
         ></player>

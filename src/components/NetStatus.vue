@@ -19,6 +19,8 @@ export default {
 
   data(){
     return{
+      currentListener: this.listener,
+      currentEpisode: this.episode
     }
   },
 
@@ -116,6 +118,8 @@ export default {
     },
 
     updateListener(item, index){
+      console.log("item on updateListener: ", item)
+      console.log("index on updateListener: ", index)
       this.currentListener.listener_id = this.$q.localStorage.getItem("listener_id")
       this.currentListener.password = this.$q.localStorage.getItem("password")
       // update existing user id
@@ -123,6 +127,7 @@ export default {
       //d = d.toISOString().slice(0, 19).replace('T', ' ') -- hang on to this!
       d = this.timeZoneShift(d)
       d = d.replace('T', ' ')
+      console.log("d: ", d)
       axios
       .post('api/listener/update.php', {
         listener_id: this.currentListener.listener_id,
