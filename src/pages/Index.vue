@@ -29,7 +29,6 @@
         <hr>
       </div>
     </div>
-    <net-status ref="netStatus" :listener="listener" :episode="episode" />
   </q-page>
 </template>
 

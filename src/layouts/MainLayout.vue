@@ -89,11 +89,7 @@ export default {
           title: 'Livestream on YouTube',
           caption: 'youtube.com',
           icon: 'play_circle_outline',
-<<<<<<< HEAD
           link: './#/youtube'
-=======
-          link: 'https://www.youtube.com/channel/UCIIeEmpNHA1mt0kF1brblQg/live'
->>>>>>> 302453020f5869bb8c677cc95f90540329e6185a
         },
         {
           title: 'LOA Today on Zoom',
