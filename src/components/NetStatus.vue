@@ -40,8 +40,8 @@ export default {
     },
     
     createEpisode(item, index){
-      this.currentEpisode[index].listener_id = this.$q.localStorage.getItem("listener_id")
-      this.currentEpisode[index].password = this.$q.localStorage.getItem("password")
+     this.currentEpisode[index].listener_id = this.getListener.listener_id
+      this.currentEpisode[index].password = this.getListener.password
       axios
       .post('api/episode/create.php', {
         listener_id: this.currentEpisode[index].listener_id,
@@ -87,8 +87,8 @@ export default {
     },
 
     updateEpisode(item, index){
-      this.currentEpisode[index].listener_id = this.$q.localStorage.getItem("listener_id")
-      this.currentEpisode[index].password = this.$q.localStorage.getItem("password")
+      this.currentEpisode[index].listener_id = this.getListener.listener_id
+      this.currentEpisode[index].password = this.getListener.password
       // update existing user id
       let d = new Date(Date.now())
       //d = d.toISOString().slice(0, 19).replace('T', ' ') -- hang on to this!
@@ -118,10 +118,8 @@ export default {
     },
 
     updateListener(item, index){
-      console.log("item on updateListener: ", item)
-      console.log("index on updateListener: ", index)
-      this.currentListener.listener_id = this.$q.localStorage.getItem("listener_id")
-      this.currentListener.password = this.$q.localStorage.getItem("password")
+      this.currentListener.listener_id = this.getListener.listener_id
+      this.currentListener.password = this.getListener.password
       // update existing user id
       let d = new Date(Date.now())
       //d = d.toISOString().slice(0, 19).replace('T', ' ') -- hang on to this!

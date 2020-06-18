@@ -64,6 +64,12 @@ export default {
   computed: {
     ...mapGetters('modulePlayer', ['getEpisode','getListener'])
   },
+  mounted(){
+    if(this.$q.localStorage.has("listener_id")){
+      this.setListener.listener_id = this.$q.localStorage.getItem("listener_id")
+      this.setListener.password = this.$q.localStorage.getItem("password")
+    }
+  },
   methods:{
     ...mapActions('modulePlayer', ['setEpisode','setListener']),
     currentTime(value, index){
