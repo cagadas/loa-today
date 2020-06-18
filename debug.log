@@ -299,6 +299,7 @@
 [0611/072125.288:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffeb6b53978 of 48 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0611/072125.288:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffeb6b594c0 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0611/072125.293:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+<<<<<<< HEAD
 [0616/122928.215:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff6724d0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0616/122928.277:WARNING:pe_image_reader.cc(340)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 [0616/122928.277:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffeb69f0000 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
@@ -833,3 +834,5 @@
 [0616/122929.781:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffeb6b53978 of 48 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0616/122929.781:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffeb6b594c0 of 64 bytes failed: Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
 [0616/122929.784:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
+=======
+>>>>>>> 302453020f5869bb8c677cc95f90540329e6185a

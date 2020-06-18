@@ -31,8 +31,13 @@
         <p>You may consult this list to find the Privacy Policy for each of the advertising 
           partners of LOA Today Podcasts. Our Privacy Policy was created with the help of the 
           Free Privacy Policy Generator and the Privacy Policy Generator Online.</p>
+<<<<<<< HEAD
         <p>Third-party ad servers or ad networks use technologies like cookies, JavaScript, 
           or Web Beacons that are used in their respective advertisements and links that can appear 
+=======
+        <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, 
+          or Web Beacons that are used in their respective advertisements and links that appear 
+>>>>>>> 302453020f5869bb8c677cc95f90540329e6185a
           on LOA Today Podcasts, which are sent directly to users' browser. They automatically 
           receive your IP address when this occurs. These technologies are used to measure the 
           effectiveness of their advertising campaigns and/or to personalize the advertising 
