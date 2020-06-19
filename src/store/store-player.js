@@ -1,10 +1,5 @@
 const state = {
-  listener: {
-    listener_id: 0,
-    listener_name: "Listener",
-    password: "",
-    date_last_logon: ""
-  },
+  listener: {},
   episode: [
     {
       episode_id: 0,

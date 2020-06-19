@@ -35,6 +35,7 @@
 <script>
 import Vue from 'vue'
 import { mapActions, mapGetters } from 'vuex'
+import axios from 'axios'
 export default {
   data() {
     return {
@@ -64,14 +65,36 @@ export default {
   computed: {
     ...mapGetters('modulePlayer', ['getEpisode','getListener'])
   },
-  mounted(){
+  created(){
     if(this.$q.localStorage.has("listener_id")){
-      this.setListener.listener_id = this.$q.localStorage.getItem("listener_id")
-      this.setListener.password = this.$q.localStorage.getItem("password")
+      this.listener.listener_id = this.$q.localStorage.getItem("listener_id")
+      this.listener.password = this.$q.localStorage.getItem("password")
+      this.setListener(this.listener)
+    }
+    if(!this.$q.localStorage.has("listener_id")){
+      this.createListener()
     }
   },
   methods:{
     ...mapActions('modulePlayer', ['setEpisode','setListener']),
+    createListener(){
+      axios
+      .post('api/listener/create.php', {
+        listener_name: "Listener"
+        })
+      .then(response=> {
+        this.listener.listener_id = response.data.listener_id
+        this.listener.listener_name = response.data.listener_name
+        this.listener.date_last_logon = response.data.date_last_logon
+        this.listener.password = response.data.password
+        this.setListener(this.listener)
+        this.$q.localStorage.set("listener_id", this.listener.listener_id)
+        this.$q.localStorage.set("password", this.listener.password)
+      })
+      .catch(function(error) {
+          console.log("createListener Axios Error: ", error)
+      })
+    },
     currentTime(value, index){
       // tracks time played in seconds while playing
       this.timeupdate = value
@@ -88,11 +111,7 @@ export default {
       this.episode[index].mp3 = item.mp3
       this.episode[index].date = item.date
       this.setEpisode(this.episode)
-      if(!this.$q.localStorage.has("listener_id")){
-        this.$refs.netStatus[index].createListener(this.episode, index)
-      } else {
-        this.$refs.netStatus[index].updateListener(this.episode, index)
-      }
+      this.$refs.netStatus[index].updateListener(this.episode, index)
       if(item.element != this.oldElement){
         // pause old player
         this.newElement = item.element

@@ -40,8 +40,12 @@ export default {
     },
     
     createEpisode(item, index){
-     this.currentEpisode[index].listener_id = this.getListener.listener_id
+      this.currentEpisode[index].listener_id = this.getListener.listener_id
       this.currentEpisode[index].password = this.getListener.password
+      console.log("this.getListener.listener_id: ", this.getListener.listener_id)
+      console.log("this.getListener.password: ", this.getListener.password)
+      console.log("this.currentEpisode[index].listener_id: ", this.currentEpisode[index].listener_id)
+      console.log("this.currentEpisode[index].password: ", this.currentEpisode[index].password)
       axios
       .post('api/episode/create.php', {
         listener_id: this.currentEpisode[index].listener_id,
@@ -56,34 +60,12 @@ export default {
         this.currentEpisode[index].episode_title = response.data.episode_title
         this.currentEpisode[index].ip_address = response.data.ip_address
         this.setEpisode(this.currentEpisode)
+        console.log("response.data in createListener: ", response.data)
         console.log("this.currentEpisode in createEpisode: ", this.currentEpisode)
       })
       .catch(function(error) {
           console.log("createEpisode Axios Error: ", error)
       })
-    },
-
-    createListener(item, index){
-      axios
-      .post('api/listener/create.php', {
-        listener_id: this.currentEpisode[index].listener_id,
-        password: this.currentEpisode[index].password,
-        listener_name: this.currentListener.listener_name
-        })
-      .then(response=> {
-        this.currentListener.listener_id = response.data.listener_id
-        this.currentListener.listener_name = response.data.listener_name
-        this.currentListener.date_last_logon = response.data.date_last_logon
-        this.currentListener.password = response.data.password
-        console.log("this.currentListener in createListener: ", this.currentListener)
-        this.setListener(this.currentListener)
-        this.$q.localStorage.set("listener_id", this.currentListener.listener_id)
-        this.$q.localStorage.set("password", this.currentListener.password)
-      })
-      .catch(function(error) {
-          console.log("createListener Axios Error: ", error)
-      })
-      this.createEpisode(item, index)
     },
 
     updateEpisode(item, index){
@@ -129,6 +111,7 @@ export default {
       axios
       .post('api/listener/update.php', {
         listener_id: this.currentListener.listener_id,
+        listener_name: this.currentListener.listener_name,
         password: this.currentListener.password,
         date_last_logon: d
       })
