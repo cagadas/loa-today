@@ -20,6 +20,7 @@ export default async (/* { app, router, Vue ... } */) => {
   let feed = []
   let date = ''
   let episodeId = 0
+  let episodeNumber = 0
   let count = 5
   for (let i = 21; i < Math.min(length,25+21); i++) {
     title = xml.elements[0].elements[0].elements[i].elements[0].elements[0].text
@@ -29,12 +30,14 @@ export default async (/* { app, router, Vue ... } */) => {
     }
     episodeId = episodeId.substring(28, count + 28)
     count++
+    episodeNumber = xml.elements[0].elements[0].elements[i].elements[11].elements[0].text
     description = xml.elements[0].elements[0].elements[i].elements[4].elements[0].cdata
     mp3 = xml.elements[0].elements[0].elements[i].elements[6].attributes.url
     date = Date.parse(xml.elements[0].elements[0].elements[i].elements[2].elements[0].text)
     date = new Date(date).toDateString()
     feed.push({
       element: (i - 21),
+      episodeNumber: episodeNumber,
       title: title,
       description: description,
       mp3: mp3,

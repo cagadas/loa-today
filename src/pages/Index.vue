@@ -14,9 +14,7 @@
         <h6
           @click="startPlay(item.element)"
           class="pointer"
-          >{{
-          item.title
-          }}</h6>
+          >{{ item.episodeNumber }} {{  item.title }}</h6>
         <p><span style="color: white;">{{ item.date }} &ndash; </span> {{ item.description }}</p>
         <player
           :mp3="item.mp3"
@@ -108,6 +106,8 @@ export default {
       this.episode[index].description = item.description
       this.episode[index].element = item.element
       this.episode[index].episode_title = item.title
+      this.episode[index].episode_number = item.number
+      this.episode[item.element].episode_time_start = this.timeupdate
       this.episode[index].mp3 = item.mp3
       this.episode[index].date = item.date
       this.setEpisode(this.episode)
@@ -140,9 +140,6 @@ export default {
       const isoLocal = iso.slice(0, 19);
       return isoLocal;
     }
-  },
-  mounted(){
-    //this.setEpisode()
   }
 }
 </script>

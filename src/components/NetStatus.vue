@@ -42,26 +42,25 @@ export default {
     createEpisode(item, index){
       this.currentEpisode[index].listener_id = this.getListener.listener_id
       this.currentEpisode[index].password = this.getListener.password
-      console.log("this.getListener.listener_id: ", this.getListener.listener_id)
-      console.log("this.getListener.password: ", this.getListener.password)
-      console.log("this.currentEpisode[index].listener_id: ", this.currentEpisode[index].listener_id)
-      console.log("this.currentEpisode[index].password: ", this.currentEpisode[index].password)
+      this.currentEpisode[index].episode_number = item[index].episodeNumber
+      this.currentEpisode[index].episode_time_start = item[index].episode_time_start
       axios
       .post('api/episode/create.php', {
         listener_id: this.currentEpisode[index].listener_id,
         password: this.currentEpisode[index].password,
         episode_title: this.currentEpisode[index].episode_title,
-        episode_time_update: this.currentEpisode[index].episode_time_update
+        episode_number: this.currentEpisode[index].episode_number,
+        episode_time_update: this.currentEpisode[index].episode_time_update,
+        episode_time_start: this.currentEpisode[index].episode_time_start
         })
       .then(response=> {
         this.currentEpisode[index].episode_id = response.data.episode_id
         this.currentEpisode[index].listener_id = response.data.listener_id
         this.currentEpisode[index].episode_date_started = response.data.episode_date_started
         this.currentEpisode[index].episode_title = response.data.episode_title
+        this.currentEpisode[index].episode_number = response.data.episode_number
         this.currentEpisode[index].ip_address = response.data.ip_address
         this.setEpisode(this.currentEpisode)
-        console.log("response.data in createListener: ", response.data)
-        console.log("this.currentEpisode in createEpisode: ", this.currentEpisode)
       })
       .catch(function(error) {
           console.log("createEpisode Axios Error: ", error)
@@ -84,14 +83,13 @@ export default {
         listener_id: this.currentEpisode[index].listener_id,
         password: this.currentEpisode[index].password,
         episode_id: this.currentEpisode[index].episode_id,
+        episode_number: this.currentEpisode[index].episode_number,
         episode_title: this.currentEpisode[index].episode_title,
         episode_time_update: this.currentEpisode[index].episode_time_update,
         episode_date_stopped: d
       })
       .then(response=> {
-        console.log("response.data in updateEpisode: ", response.data )
         this.currentEpisode[index].episode_date_stopped = response.data.episode_date_stopped
-        console.log("this.currentEpisode in updateEpisode: ", this.currentEpisode)
         this.setEpisode(this.currentEpisode)
       })
       .catch(function(error) {
@@ -107,7 +105,6 @@ export default {
       //d = d.toISOString().slice(0, 19).replace('T', ' ') -- hang on to this!
       d = this.timeZoneShift(d)
       d = d.replace('T', ' ')
-      console.log("d: ", d)
       axios
       .post('api/listener/update.php', {
         listener_id: this.currentListener.listener_id,
@@ -119,7 +116,6 @@ export default {
         this.currentListener.listener_id = response.data.listener_id
         this.currentListener.listener_name = response.data.listener_name
         this.currentListener.date_last_logon = response.data.date_last_logon
-        // console.log("this.currentListener in updateListener: ", this.currentListener)
         this.setListener(this.currentListener)
       })
       .catch(function(error) {

@@ -4,6 +4,7 @@ const state = {
     {
       episode_id: 0,
       listener_id: 0,
+      episode_number: 0,
       episode_title: "",
       episode_time_update: 0,
       episode_date_started: "",
