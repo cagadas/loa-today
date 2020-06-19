@@ -14,7 +14,7 @@
         <h6
           @click="startPlay(item.element)"
           class="pointer"
-          >{{ item.episodeNumber }} {{  item.title }}</h6>
+          >{{ item.episodeNumber }} - {{  item.title }}</h6>
         <p><span style="color: white;">{{ item.date }} &ndash; </span> {{ item.description }}</p>
         <player
           :mp3="item.mp3"
