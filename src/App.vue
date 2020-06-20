@@ -26,6 +26,15 @@ Vue.use(VuePlyr, {
   emit: ['ended']
 })
 export default {
-  name: 'App'
+  name: 'App',
+  /*
+  mounted(){
+    if(this.$q.platform.is.electron){
+      require('electron').ipcRenderer.on('show-terms', () => {
+        this.$router.push('/terms')
+      })
+    }
+  }
+  */
 }
 </script>
