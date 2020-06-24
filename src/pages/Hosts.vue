@@ -38,11 +38,6 @@
       classes on Facebook and is an absolute expert at teaching people how to successfully 
       manifest what they want most in life. Dan does the Tuesday and Thursday shows with Alyx and 
       Walt at 4 PM New York time. You can reach Dan on <a href="https://www.facebook.com/dreamwithdan">Facebook</a>. </span></p>
-    <q-img src="images/Uohna.jpg" alt="Dr. Uohna June Thiessen" class="myImage"></q-img>
-    <p>Dr. Uohna June Thiessen - <span class="bluetext">Uohna has her PhD in Statistics and is 
-      an expert in neurobiology and a part-time life coach. She brings a scientific viewpoint to 
-      the show and ardently defends data-driven research. Uohna joins Walt and Louis on Mondays 
-      at 4 PM New York time. You can find her on <a href="https://www.facebook.com/uohnajune">Facebook</a>.</span></p>
     <q-img src="images/Rita.jpg" alt="Rita Gigange" class="myImage"></q-img>
     <p>Rita Gigante - <span class="bluetext">The author of <em>The Godfather's Daughter: An Unlikely 
       Story of Love, Healing, and Redemption,</em> Rita's father was the notorious NYC crime boss, 
