@@ -8,6 +8,7 @@ const routes = [
       { path: '/hosts', component: () => import('pages/Hosts.vue') },
       { path: '/privacy', component: () => import('pages/Privacy.vue') },
       { path: '/terms', component: () => import('pages/Terms.vue') },
+      { path: '/contact', component: () => import('pages/Contact.vue') },
       { path: '/youtube', component: () => import('pages/YouTube.vue') }
     ]
   }

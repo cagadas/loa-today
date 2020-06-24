@@ -71,7 +71,7 @@ export default {
           title: 'Contact LOA Today',
           caption: 'Send an email',
           icon: 'email',
-          link: 'mailto:Walt%20Thiessen<walt@loatoday.net>?subject=Contact From LOA Today App'
+          link: './#/contact'
         },
         {
           title: 'Your Daily Dose Of Happy',
@@ -83,7 +83,7 @@ export default {
           title: 'LOA Today Podcast Videos',
           caption: 'youtube.com',
           icon: 'play_circle_outline',
-          link: 'https://www.youtube.com/channel/UCIIeEmpNHA1mt0kF1brblQg'
+          link: './#/youtube'
         },
         {
           title: 'Livestream on YouTube',
