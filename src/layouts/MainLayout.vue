@@ -77,7 +77,7 @@ export default {
           title: 'Your Daily Dose Of Happy',
           caption: 'Book: Real success stories of the Law of Attraction',
           icon: 'book',
-          link: 'https://amzn.to/2LjXm5d'
+          link: './#/book'
         },
         {
           title: 'LOA Today Podcast Videos',
@@ -89,25 +89,25 @@ export default {
           title: 'Livestream on YouTube',
           caption: 'youtube.com',
           icon: 'play_circle_outline',
-          link: './#/youtube'
+          link: './#/livestream'
         },
         {
           title: 'LOA Today on Zoom',
           caption: 'where we record the podcast episodes',
           icon: 'featured_video',
-          link: 'https://zoom.us/j/8602645432'
+          link: './#/zoom'
         },
         {
           title: 'The Grass Is Greener website',
           caption: 'thegrassisgreener.loatoday.net',
           icon: 'web',
-          link: 'https://thegrassisgreener.loatoday.net/'
+          link: './#/grass'
         },
         {
           title: 'LOA Today website',
           caption: 'www.loatoday.net',
           icon: 'web',
-          link: 'https://www.loatoday.net'
+          link: './#/loatoday'
         },
         {
           title: 'Privacy Policy',

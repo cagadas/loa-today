@@ -7,7 +7,7 @@
 
 <script>
 import { openURL } from 'quasar'
-openURL('https://www.youtube.com/channel/UCIIeEmpNHA1mt0kF1brblQg')
+openURL('https://www.youtube.com/c/loatodaypodcastvideos/live')
 export default {
 }
 </script>
