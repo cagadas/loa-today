@@ -75,23 +75,32 @@ export default {
   },
   methods:{
     ...mapActions('modulePlayer', ['setEpisode','setListener']),
-    createListener(){
+
+    axiosSend(data){
       axios
-      .post('api/listener/create.php', {
-        listener_name: "Listener"
+      .post('api/episode/create.php', {
+        data
         })
       .then(response=> {
-        this.listener.listener_id = response.data.listener_id
-        this.listener.listener_name = response.data.listener_name
-        this.listener.date_last_logon = response.data.date_last_logon
-        this.listener.password = response.data.password
-        this.setListener(this.listener)
-        this.$q.localStorage.set("listener_id", this.listener.listener_id)
-        this.$q.localStorage.set("password", this.listener.password)
+        return response
       })
       .catch(function(error) {
-          console.log("createListener Axios Error: ", error)
+          console.log("createEpisode Axios Error: ", error)
       })
+    },
+    
+    createListener(){
+      const data = {
+        listener_name: "Listener"
+      }
+      this.axiosSend(data)
+      this.listener.listener_id = data.listener_id
+      this.listener.listener_name = data.listener_name
+      this.listener.date_last_logon = data.date_last_logon
+      this.listener.password = data.password
+      this.setListener(this.listener)
+      this.$q.localStorage.set("listener_id", this.listener.listener_id)
+      this.$q.localStorage.set("password", this.listener.password)
     },
     currentTime(value, index){
       // tracks time played in seconds while playing

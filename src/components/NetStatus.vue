@@ -31,6 +31,19 @@ export default {
   methods:{
     ...mapActions('modulePlayer', ['setEpisode','setListener']),
 
+    axiosSend(data){
+      axios
+      .post('api/episode/create.php', {
+        data
+        })
+      .then(response=> {
+        return response
+      })
+      .catch(function(error) {
+          console.log("createEpisode Axios Error: ", error)
+      })
+    },
+    
     connCheck(){
       if(this.isOnline){
         console.log("You are now online.")
@@ -44,33 +57,29 @@ export default {
       this.currentEpisode[index].password = this.getListener.password
       this.currentEpisode[index].episode_number = item[index].episodeNumber
       this.currentEpisode[index].episode_time_start = item[index].episode_time_start
-      axios
-      .post('api/episode/create.php', {
+
+      const data = {
         listener_id: this.currentEpisode[index].listener_id,
         password: this.currentEpisode[index].password,
         episode_title: this.currentEpisode[index].episode_title,
         episode_number: this.currentEpisode[index].episode_number,
         episode_time_update: this.currentEpisode[index].episode_time_update,
         episode_time_start: this.currentEpisode[index].episode_time_start
-        })
-      .then(response=> {
-        this.currentEpisode[index].episode_id = response.data.episode_id
-        this.currentEpisode[index].listener_id = response.data.listener_id
-        this.currentEpisode[index].episode_date_started = response.data.episode_date_started
-        this.currentEpisode[index].episode_title = response.data.episode_title
-        this.currentEpisode[index].episode_number = response.data.episode_number
-        this.currentEpisode[index].ip_address = response.data.ip_address
-        this.setEpisode(this.currentEpisode)
-      })
-      .catch(function(error) {
-          console.log("createEpisode Axios Error: ", error)
-      })
+      }
+      this.axiosSend(data)
+      this.currentEpisode[index].episode_id = data.episode_id
+      this.currentEpisode[index].listener_id = data.listener_id
+      this.currentEpisode[index].episode_date_started = data.episode_date_started
+      this.currentEpisode[index].episode_title = data.episode_title
+      this.currentEpisode[index].episode_number = data.episode_number
+      this.currentEpisode[index].ip_address = data.ip_address
+      this.setEpisode(this.currentEpisode)
+
     },
 
     updateEpisode(item, index){
       this.currentEpisode[index].listener_id = this.getListener.listener_id
       this.currentEpisode[index].password = this.getListener.password
-      // update existing user id
       let d = new Date(Date.now())
       //d = d.toISOString().slice(0, 19).replace('T', ' ') -- hang on to this!
       d = this.timeZoneShift(d)
@@ -78,8 +87,7 @@ export default {
       if(this.getEpisode.episode_time_update < this.currentEpisode[index].episode_time_update){
         this.setEpisode(this.currentEpisode[index].episode_time_update)
       }
-      axios
-      .post('api/episode/update.php', {
+      const data = {
         listener_id: this.currentEpisode[index].listener_id,
         password: this.currentEpisode[index].password,
         episode_id: this.currentEpisode[index].episode_id,
@@ -87,40 +95,31 @@ export default {
         episode_title: this.currentEpisode[index].episode_title,
         episode_time_update: this.currentEpisode[index].episode_time_update,
         episode_date_stopped: d
-      })
-      .then(response=> {
-        this.currentEpisode[index].episode_date_stopped = response.data.episode_date_stopped
-        this.setEpisode(this.currentEpisode)
-      })
-      .catch(function(error) {
-        console.log("updateEpisode Axios Error: ", error)
-      })
+      }
+      this.axiosSend(data)
+      this.currentEpisode[index].episode_date_stopped = data.episode_date_stopped
+      this.setEpisode(this.currentEpisode)
     },
 
     updateListener(item, index){
       this.currentListener.listener_id = this.getListener.listener_id
       this.currentListener.password = this.getListener.password
-      // update existing user id
-      let d = new Date(Date.now())
+     let d = new Date(Date.now())
       //d = d.toISOString().slice(0, 19).replace('T', ' ') -- hang on to this!
       d = this.timeZoneShift(d)
       d = d.replace('T', ' ')
-      axios
-      .post('api/listener/update.php', {
+      const data = {
         listener_id: this.currentListener.listener_id,
         listener_name: this.currentListener.listener_name,
         password: this.currentListener.password,
         date_last_logon: d
-      })
-      .then(response=> {
-        this.currentListener.listener_id = response.data.listener_id
-        this.currentListener.listener_name = response.data.listener_name
-        this.currentListener.date_last_logon = response.data.date_last_logon
-        this.setListener(this.currentListener)
-      })
-      .catch(function(error) {
-          console.log("updateListener Axios Error: ", error)
-      })
+      }
+      this.axiosSend(data)
+      this.currentListener.listener_id = data.listener_id
+      this.currentListener.listener_name = data.listener_name
+      this.currentListener.date_last_logon = data.date_last_logon
+      this.setListener(this.currentListener)
+      
       this.createEpisode(item, index)
     },
     
