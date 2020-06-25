@@ -19,7 +19,7 @@
         <player
           :mp3="item.mp3"
           ref="pauseMe"
-          @timeupdate="currentTime($event, item.element)"
+          @timeupdate="secondsOnPlayer($event, item.element)"
           @playing="playing(item, item.element)"
           @paused="paused(item, item.element)"
         ></player>
@@ -44,7 +44,6 @@ export default {
       newElement: 0,
       elapsedTime: 0,
       state: '',
-      timeupdate: 0,
       listener: {
         listener_id: 0,
         listener_name: 'Listener',
@@ -76,38 +75,28 @@ export default {
   methods:{
     ...mapActions('modulePlayer', ['setEpisode','setListener']),
 
-    axiosSend(data){
+    createListener(){
       axios
-      .post('api/episode/create.php', {
-        data
+      .post('api/listener/create.php', {
+        listener_name: "Listener"
         })
       .then(response=> {
-        return response
+        this.listener.listener_id = response.data.listener_id
+        this.listener.listener_name = response.data.listener_name
+        this.listener.date_last_logon = response.data.date_last_logon
+        this.listener.password = response.data.password
+        this.setListener(this.listener)
+        this.$q.localStorage.set("listener_id", this.listener.listener_id)
+        this.$q.localStorage.set("password", this.listener.password)
       })
       .catch(function(error) {
-          console.log("createEpisode Axios Error: ", error)
+          console.log("createListener Axios Error: ", error)
       })
     },
-    
-    createListener(){
-      const data = {
-        listener_name: "Listener"
-      }
-      this.axiosSend(data)
-      this.listener.listener_id = data.listener_id
-      this.listener.listener_name = data.listener_name
-      this.listener.date_last_logon = data.date_last_logon
-      this.listener.password = data.password
-      this.setListener(this.listener)
-      this.$q.localStorage.set("listener_id", this.listener.listener_id)
-      this.$q.localStorage.set("password", this.listener.password)
-    },
-    currentTime(value, index){
-      // tracks time played in seconds while playing
-      this.timeupdate = value
-    },
+
     playing(item, index){
       this.episode[index] = item
+      this.episode[index].playing = true
       let d = new Date(Date.now())
       d = this.timeZoneShift(d)
       d = d.replace('T', ' ')
@@ -116,7 +105,7 @@ export default {
       this.episode[index].element = item.element
       this.episode[index].episode_title = item.title
       this.episode[index].episode_number = item.number
-      this.episode[item.element].episode_time_start = this.timeupdate
+      console.log("playing: ", this.episode[index].episode_time_start)
       this.episode[index].mp3 = item.mp3
       this.episode[index].date = item.date
       this.setEpisode(this.episode)
@@ -130,17 +119,31 @@ export default {
         this.oldElement = this.newElement
       }
     },
+
     paused(item, index){
-      this.episode[item.element].episode_time_update = this.timeupdate  // this line causes vuex error
+      this.episode[index].playing = false
+      console.log("paused: ", this.episode[index].episode_time_update)
       this.setEpisode(this.episode)
       this.$refs.netStatus[item.element].updateEpisode(this.episode, item.element)
       if(item.element != this.oldElement){
         this.oldElement = this.newElement
       }
     },
+
+    secondsOnPlayer(value, index){
+      if(this.episode[index].playing === true){
+        this.episode[index].episode_time_start = value
+        this.episode[index].episode_time_update = value
+      }
+      if(this.episode[index].playing === false){
+        this.episode[index].episode_time_update = value
+      }
+    },
+
     startPlay(id){
       this.$refs.pauseMe[id].play()
     },
+
     timeZoneShift(date){
       const offsetMs = date.getTimezoneOffset() * 60 * 1000;
       const msLocal =  date.getTime() - offsetMs;

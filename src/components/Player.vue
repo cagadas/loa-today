@@ -5,6 +5,7 @@
         <source :src="mp3" type="audio/mp3" ref="source"/>
       </audio>
     </vue-plyr>
+
   </div>
 </template>
 
