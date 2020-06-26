@@ -105,7 +105,7 @@ export default {
       this.episode[index].element = item.element
       this.episode[index].episode_title = item.title
       this.episode[index].episode_number = item.number
-      console.log("playing: ", this.episode[index].episode_time_start)
+      // console.log("playing: ", this.episode[index].episode_time_start)
       this.episode[index].mp3 = item.mp3
       this.episode[index].date = item.date
       this.setEpisode(this.episode)
@@ -122,7 +122,7 @@ export default {
 
     paused(item, index){
       this.episode[index].playing = false
-      console.log("paused: ", this.episode[index].episode_time_update)
+      // console.log("paused: ", this.episode[index].episode_time_update)
       this.setEpisode(this.episode)
       this.$refs.netStatus[item.element].updateEpisode(this.episode, item.element)
       if(item.element != this.oldElement){
