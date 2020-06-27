@@ -141,7 +141,8 @@ export default {
   }
   .image {
     width: 100px;
-    margin: 30px;
+    margin: 20px;
+    margin-bottom: 0;
     padding: 0;
     float: left;
   }
