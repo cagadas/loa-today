@@ -2,9 +2,12 @@
   <div>
     <h4 class="center">Links To Web Pages And Apps</h4>
     <div style="margin: 0 auto;width: 280px;">
-      <iframe style="width:120px;height:240px;margin-left:20px;float:left;margin-top:20px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=professiona07-20&marketplace=amazon&region=US&placement=B07D6DR3RV&asins=B07D6DR3RV&linkId=056f6d558e214051bc93146cf568c267&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
-      </iframe>
-      <a href="https://www.youtube.com/c/loatodaypodcastvideos"><img class="image" src="images/YouTube Channel Logo.jpg" alt="LOA Today YouTube Channel Videos" /></a>
+      <div>
+        <a target="_blank" href="https://www.amazon.com/Your-Daily-Dose-Happy-Attraction-ebook/dp/B07D6DR3RV/ref=sr_1_2?dchild=1&amp;keywords=your+daily+dose+of+happy&amp;qid=1593257176&amp;s=books&amp;sr=1-2&_encoding=UTF8&tag=professiona07-20&linkCode=ur2&linkId=dce69a0475f1892958336cc259c941c2&camp=1789&creative=9325">
+          <img class="image" src="images/your-daily-dose-of-happy.jpg" alt="Your Daily Dose Of Happy: Real Life Success Stories Of The Law Of Attraction">
+        </a>
+      </div>
+      <a href="https://www.youtube.com/c/loatodaypodcastvideos"><img class="image" style="margin-bottom: 32px;" src="images/YouTube Channel Logo.jpg" alt="LOA Today YouTube Channel Videos" /></a>
       <a href="https://www.youtube.com/c/loatodaypodcastvideos/live"><img class="image" src="images/Youtube-live-streaming.png" alt="YouTube Livestream"></a>
       <a href="https://zoom.us/j/8602645432"><img class="image" src="images/zoom.jpg" alt="Our Zoom Meeting Room"></a>
       <a href="https://www.loatoday.net"><img class="image" src="icons/favicon-128x128.png" alt="LOA Today Website"></a>

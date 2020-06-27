@@ -140,9 +140,8 @@ export default {
     text-align: center;
   }
   .image {
-    width: 100px;
-    margin: 20px;
-    margin-bottom: 0;
+    width: 120px;
+    margin: 20px 20px 0 0;
     padding: 0;
     float: left;
   }
