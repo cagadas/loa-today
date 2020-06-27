@@ -9,12 +9,7 @@ const routes = [
       { path: '/privacy', component: () => import('pages/Privacy.vue') },
       { path: '/terms', component: () => import('pages/Terms.vue') },
       { path: '/contact', component: () => import('pages/Contact.vue') },
-      { path: '/livestream', component: () => import('pages/Livestream.vue') },
-      { path: '/youtube', component: () => import('pages/YouTube.vue') },
-      { path: '/book', component: () => import('pages/Book.vue') },
-      { path: '/zoom', component: () => import('pages/Zoom.vue') },
-      { path: '/grass', component: () => import('pages/TheGrassIsGreener.vue') },
-      { path: '/loatoday', component: () => import('pages/LOAToday.vue') }
+      { path: '/links', component: () => import('pages/Links.vue') }
     ]
   }
 ]

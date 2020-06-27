@@ -74,40 +74,10 @@ export default {
           link: './#/contact'
         },
         {
-          title: 'Your Daily Dose Of Happy',
-          caption: 'Book: Real success stories of the Law of Attraction',
-          icon: 'book',
-          link: './#/book'
-        },
-        {
-          title: 'LOA Today Podcast Videos',
-          caption: 'youtube.com',
-          icon: 'play_circle_outline',
-          link: './#/youtube'
-        },
-        {
-          title: 'Livestream on YouTube',
-          caption: 'youtube.com',
-          icon: 'play_circle_outline',
-          link: './#/livestream'
-        },
-        {
-          title: 'LOA Today on Zoom',
-          caption: 'where we record the podcast episodes',
-          icon: 'featured_video',
-          link: './#/zoom'
-        },
-        {
-          title: 'The Grass Is Greener website',
-          caption: 'thegrassisgreener.loatoday.net',
+          title: 'External Links',
+          caption: 'Links to other websites',
           icon: 'web',
-          link: './#/grass'
-        },
-        {
-          title: 'LOA Today website',
-          caption: 'www.loatoday.net',
-          icon: 'web',
-          link: './#/loatoday'
+          link: './#/links'
         },
         {
           title: 'Privacy Policy',
@@ -165,5 +135,14 @@ export default {
   }
   .padDiv {
     padding: 0;
+  }
+  .center {
+    text-align: center;
+  }
+  .image {
+    width: 100px;
+    margin: 30px;
+    padding: 0;
+    float: left;
   }
 </style>
