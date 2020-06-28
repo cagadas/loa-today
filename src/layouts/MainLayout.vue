@@ -59,37 +59,37 @@ export default {
           title: 'Playlist',
           caption: 'Our most recent episodes',
           icon: 'radio',
-          link: './index.html/#/'
+          link: './index.html#/'
         },
         {
           title: 'Co-Hosts On LOA Today',
           caption: 'Meet the team',
           icon: 'person',
-          link: './index.html/#/hosts'
+          link: './index.html#/hosts'
         },
         {
           title: 'Contact LOA Today',
           caption: 'Send an email',
           icon: 'email',
-          link: './index.html/#/contact'
+          link: './index.html#/contact'
         },
         {
           title: 'External Links',
           caption: 'Links to other websites',
           icon: 'web',
-          link: './index.html/#/links'
+          link: './index.html#/links'
         },
         {
           title: 'Privacy Policy',
           caption: 'for the LOA Today App',
           icon: 'security',
-          link: './index.html/#/privacy'
+          link: './index.html#/privacy'
         },
         {
           title: 'Terms of Service',
           caption: 'with the LOA Today App',
           icon: 'thumb_up_alt',
-          link: './index.html/#/terms'
+          link: './index.html#/terms'
         },
         {
           title: '',
