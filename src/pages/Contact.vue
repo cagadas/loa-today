@@ -1,6 +1,6 @@
 <template>
   <div>
-    <meta http-equiv="refresh" content="20; url=./#/">
+    <meta http-equiv="refresh" content="20; url=./index.html#/">
     <h4 style="text-align: center;">Please wait while we create an email for you to send to Walt ...</h4>
   </div>
 </template>
