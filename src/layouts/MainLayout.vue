@@ -15,7 +15,7 @@
           LOA Today App
         </q-toolbar-title>
 
-        <div>Version 1.00</div>
+        <div>Version 1.0.0</div>
       </q-toolbar>
     </q-header>
 
@@ -66,6 +66,12 @@ export default {
           caption: 'Meet the team',
           icon: 'person',
           link: './index.html#/hosts'
+        },
+        {
+          title: 'Schedule',
+          caption: 'Our 5-day-per-week schedule',
+          icon: 'calendar',
+          link: './index.html#/schedule'
         },
         {
           title: 'Contact LOA Today',
