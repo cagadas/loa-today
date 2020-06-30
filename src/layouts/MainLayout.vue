@@ -70,7 +70,7 @@ export default {
         {
           title: 'Schedule',
           caption: 'Our 5-day-per-week schedule',
-          icon: 'calendar',
+          icon: 'schedule',
           link: './index.html#/schedule'
         },
         {
