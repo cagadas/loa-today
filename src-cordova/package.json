@@ -1,7 +1,7 @@
 {
   "name": "loa.today",
   "displayName": "LOA Today",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,8 @@
   },
   "cordova": {
     "plugins": {
-      "cordova-plugin-whitelist": {}
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-wkwebview-engine": {}
     },
     "platforms": [
       "ios"
