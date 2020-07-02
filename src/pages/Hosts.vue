@@ -45,6 +45,17 @@
       psychic healer and life coach who brings a uniquely "New York" viewpoint to the topics we 
       discuss on the show. Rita joins Linda and Walt on Fridays at 4 PM New York time. You can find 
       Rita on <a href="https://www.facebook.com/rita.gigante.16">Facebook</a>.</span></p>
+    <q-img src="images/David_Strickel.jpg" alt="David Strickel" class="myImage"></q-img>
+    <p>David Strickel - <span class="bluetext">The Stream of David is here, and it's like having our
+      very own version of Abraham-Hicks, only more down-to-earth. David shares eternal wisdom 
+      from a group of non-physical entities—a conscious energy—that he calls The Stream. He has
+      had this ability as long as he can recall, and it has guided him through some very rough 
+      times to a life of freedom and joy. He shares The Stream now with LOA Today listeners, 
+      during these challenging times for those who are ready, those who are aligned (or wish to be)
+      with higher vibrational living. Discover a life of joy, clarity and abundance. Enjoy this 
+      special time and live the life you came here to experience. Ask your questions of The Stream
+      Tuesdays here on LOA Today. David can also be reached on 
+      <a href="https://www.facebook.com/strickel">Facebook</a>.</span></p>
   </q-page>
 </template>
 
