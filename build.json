@@ -1,0 +1,16 @@
+{
+  "ios": {
+  "debug": {
+  "buildFlag": [
+  "-UseModernBuildSystem=0"
+  ],
+  "developmentTeam": "Walt Thiessen"
+  },
+  "release": {
+  "buildFlag": [
+  "-UseModernBuildSystem=0"
+  ],
+  "developmentTeam": "Walt Thiessen"
+  }
+  }
+  }

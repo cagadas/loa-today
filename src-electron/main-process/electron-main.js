@@ -21,7 +21,7 @@ function createWindow () {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    width: 400,
+    width: 1000,
     height: 600,
     useContentSize: true,
     webPreferences: {
@@ -34,8 +34,6 @@ function createWindow () {
       // preload: path.resolve(__dirname, 'electron-preload.js')
     }
   })
-
-  mainWindow.menuBarVisible = false
 
   mainWindow.loadURL(process.env.APP_URL)
 
