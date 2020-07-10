@@ -56,6 +56,13 @@
       special time and live the life you came here to experience. Ask your questions of The Stream
       Tuesdays here on LOA Today. David can also be reached on 
       <a href="https://www.facebook.com/strickel">Facebook</a>.</span></p>
+    <q-img src="images/Ami-wide.jpg" alt="Ami Blackford" class="myImage"></q-img>
+    <p>Ami Blackford - <span class="bluetext">Ami brings a breath of fresh air and high energy to
+      Monday's show with Louis de Souza. She lives in Atlanta, Georgia and is a self-proclaimed 
+      word nerd. She's always on the hunt for a great story to escape into.  She is so passionate 
+      about the Law of Attraction and how important this skill is to learn and practice, especially 
+      these days. Ami can also be reached via 
+      <a href="https://ami-blackford.com/contact">her website</a>.</span></p>
   </q-page>
 </template>
 
