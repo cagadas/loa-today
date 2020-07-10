@@ -62,6 +62,12 @@ export default {
           link: './index.html#/'
         },
         {
+          title: 'Beyond Intention',
+          caption: 'Audio course by Dan Mangena',
+          icon: 'radio',
+          link: './index.html#/bi'
+        },
+        {
           title: 'Co-Hosts On LOA Today',
           caption: 'Meet the team',
           icon: 'person',

@@ -5,6 +5,7 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
+      { path: '/bi', component: () => import('pages/BI.vue') },
       { path: '/hosts', component: () => import('pages/Hosts.vue') },
       { path: '/privacy', component: () => import('pages/Privacy.vue') },
       { path: '/terms', component: () => import('pages/Terms.vue') },
