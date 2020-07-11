@@ -13,13 +13,14 @@
       <div v-for="item in feed" :key="item.element">
         <h6
           class="pointer"
+          @click="startPlay(item.element)"
           >{{  item.title }}</h6>
         <p><span style="color: white;">{{ item.date }} &ndash; </span> {{ item.description }} <span style="color: green;">Show #{{ item.episodeNumber }}</span></p>
         <player
           :mp3="item.m4a"
           ref="pauseMe"
-          @playing="playing(item)"
-          @paused="paused(item)"
+          @playing="playing(item, item.element)"
+          @paused="paused(item, item.element)"
         ></player>
         <hr>
       </div>
@@ -46,25 +47,25 @@ export default {
   },
   
   methods: {
-    playing(item){
-      console.log("this.oldElement: ", this.oldElement)
-      console.log("this.newElement: ", this.newElement)
-      console.log("item.element: ", item.element)
+    playing(item, index){
       if(item.element != this.oldElement){
         // pause old player
         this.newElement = item.element
         if(this.oldElement != -1){
           this.$refs.pauseMe[this.oldElement].pause()
-          console.log("auto-pause indicated")
         }
         this.oldElement = this.newElement
       }
     },
 
-    paused(item){
+    paused(item, index){
       if(item.element != this.oldElement){
         this.oldElement = this.newElement
       }
+    },
+
+    startPlay(id){
+      this.$refs.pauseMe[id].play()
     }
   }
 }

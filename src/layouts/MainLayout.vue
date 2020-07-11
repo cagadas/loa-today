@@ -63,13 +63,19 @@ export default {
         },
         {
           title: 'Beyond Intention',
-          caption: 'Audio course by Dan Mangena',
+          caption: 'LOA Mastery Audio Course by Daniel Mangena',
           icon: 'radio',
           link: './index.html#/bi'
         },
         {
+          title: 'The Money Game',
+          caption: 'An E-Book Course by Daniel Mangena',
+          icon: 'book',
+          link: './index.html#/moneygame'
+        },
+        {
           title: 'The Grass Is Greener',
-          caption: 'Audio play',
+          caption: 'Audio Play - Fiction',
           icon: 'radio',
           link: './index.html#/tgig'
         },

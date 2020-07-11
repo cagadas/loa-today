@@ -13,13 +13,14 @@
       <div v-for="item in feed" :key="item.element">
         <h6
           class="pointer"
+          @click="startPlay(item.element)"
           >{{  item.title }}</h6>
-        <p><span style="color: white;">{{ item.date }} &ndash; </span> {{ item.description }} <span style="color: green;">Show #{{ item.episodeNumber }}</span></p>
+        <p></span> {{ item.description }}</p>
         <player
           :mp3="item.m4a"
           ref="pauseMe"
-          @playing="playing(item)"
-          @paused="paused(item)"
+          @playing="playing(item, item.element)"
+          @paused="paused(item, item.element)"
         ></player>
         <hr>
       </div>
@@ -47,36 +48,64 @@ export default {
   },
   
   methods: {
-    playing(item){
+    playing(item, index){
       if(item.element != this.oldElement){
         // pause old player
         this.newElement = item.element
         if(this.oldElement != -1){
           this.$refs.pauseMe[this.oldElement].pause()
-          console.log("auto-pause indicated")
         }
         this.oldElement = this.newElement
       }
     },
 
-    paused(item){
+    paused(item, index){
       if(item.element != this.oldElement){
         this.oldElement = this.newElement
       }
+    },
+
+    startPlay(id){
+      this.$refs.pauseMe[id].play()
     }
+
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-.pointer {
-  cursor: pointer;
-}
-.pointer:hover {
-  color: aqua;
-}
-.pointer:active {
-  color: aqua;
-  text-decoration: underline;
-}
+  .flex-center {
+    background-color: rgb(0,0,32);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: aqua;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: lightblue;
+    font-size: 16px;
+  }
+  ul {
+    color: lightblue;
+    font-size: 16px;
+  }
+  a {
+    color: orange;
+    text-text-decoration: underline;
+  }
+  hr {
+    border-color: purple;
+    border-width : 0.5px;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+  .pointer:hover {
+    color: aqua;
+  }
+  .pointer:active {
+    color: aqua;
+    text-decoration: underline;
+  }
 </style>

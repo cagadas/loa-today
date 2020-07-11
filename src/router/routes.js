@@ -12,7 +12,8 @@ const routes = [
       { path: '/terms', component: () => import('pages/Terms.vue') },
       { path: '/contact', component: () => import('pages/Contact.vue') },
       { path: '/links', component: () => import('pages/Links.vue') },
-      { path: '/schedule', component: () => import('pages/Schedule.vue') }
+      { path: '/schedule', component: () => import('pages/Schedule.vue') },
+      { path: '/moneygame', component: () => import('pages/MoneyGame.vue') }
     ]
   }
 ]

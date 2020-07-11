@@ -23,7 +23,7 @@ export default async (/* { app, router, Vue ... } */) => {
   let episodeId = 0
   let episodeNumber = 0
   let count = 5
-  for (let i = 27; i > Math.max(length-25, 18); i--) {
+  for (let i = 19; i < Math.min(length, 25 + 19); i++) {
     title = xml.elements[0].elements[0].elements[i].elements[0].elements[0].text
     episodeId = xml.elements[0].elements[0].elements[i].elements[1].elements[0].text
     if (episodeId.substring(32, 33) === '-') {
@@ -36,8 +36,8 @@ export default async (/* { app, router, Vue ... } */) => {
     m4a = xml.elements[0].elements[0].elements[i].elements[6].attributes.url
     date = Date.parse(xml.elements[0].elements[0].elements[i].elements[2].elements[0].text)
     date = new Date(date).toDateString()
-    feed.push({
-      element: (i - 18),
+    feed.unshift({
+      element: (length - i -1),
       episodeNumber: episodeNumber,
       title: title,
       description: description,
