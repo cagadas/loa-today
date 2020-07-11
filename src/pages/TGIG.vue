@@ -2,7 +2,7 @@
   <q-page class="flex-center">
     <div class="padDiv">
       <img style="width: 100px; float: left; margin-right: 20px;" :src="this.showImage">
-      <h5>Beyond Intention - Audio Course</h5>
+      <h5>The Grass Is Greener - Audio Play</h5>
       <p>{{ this.showDescription }}</p>
     </div>
     <div style="clear: both;"></div>
@@ -31,9 +31,9 @@
 export default {
   data() {
     return {
-      feed: this.$feedBi,
-      showDescription: this.$showDescriptionBi,
-      showImage: this.$showImageBi,
+      feed: this.$feedTgig,
+      showDescription: this.$showDescriptionTgig,
+      showImage: this.$showImageTgig,
       episode: [
         {}
       ],
@@ -41,13 +41,15 @@ export default {
       oldElement: -1
     }
   },
-
   components: {
     'player' : require('components/Player.vue').default
   },
   
   methods: {
     playing(item){
+      console.log("this.oldElement: ", this.oldElement)
+      console.log("this.newElement: ", this.newElement)
+      console.log("item.element: ", item.element)
       if(item.element != this.oldElement){
         // pause old player
         this.newElement = item.element

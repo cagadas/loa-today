@@ -68,6 +68,12 @@ export default {
           link: './index.html#/bi'
         },
         {
+          title: 'The Grass Is Greener',
+          caption: 'Audio play',
+          icon: 'radio',
+          link: './index.html#/tgig'
+        },
+        {
           title: 'Co-Hosts On LOA Today',
           caption: 'Meet the team',
           icon: 'person',
