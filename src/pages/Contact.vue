@@ -65,7 +65,7 @@ export default {
         .post('/forms/process-contact.php', {
           name: this.$refs.name.value,
           email: this.$refs.email.value,
-          message: this.$refs.message._value
+          message: this.$refs.message.value
         })
         .then(response=> {
           console.log(response.data)
