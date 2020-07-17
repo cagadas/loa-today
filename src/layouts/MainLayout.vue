@@ -93,7 +93,7 @@ export default {
         },
         {
           title: 'Contact LOA Today',
-          caption: 'Send an email',
+          caption: 'Send a message to Walt',
           icon: 'email',
           link: './index.html#/contact'
         },
@@ -133,7 +133,7 @@ export default {
 <style lang="stylus">
   body {
     background-color: rgb(0,32,0);
-    padding: 20px;
+    padding: 10px;
   }
   h1, h2, h3, h4, h5, h6 {
     margin: 0;

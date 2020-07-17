@@ -51,7 +51,7 @@ module.exports = function (/* ctx */) {
         importStrategy: "auto",
 
         // Quasar plugins
-        plugins: ["LocalStorage"]
+        plugins: ["LocalStorage","Notify"]
       },
 
       // https://quasar.dev/quasar-cli/cli-documentation/supporting-ts

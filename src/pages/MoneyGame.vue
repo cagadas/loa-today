@@ -1,6 +1,6 @@
 <template>
    <q-page class="flex-center">
-      <img src="images/cover.jpg" alt="Beyond Intention" />
+      <img src="images/cover.jpg" alt="Beyond Intention" style="max-width: 100%;" />
       <div id="top"></div>
       <h5 class="header">CONTENTS</h5>
       <p><a href="#introduction" class="href">INTRODUCTION</a></p>
