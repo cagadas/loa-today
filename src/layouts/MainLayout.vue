@@ -15,7 +15,7 @@
           LOA Today App
         </q-toolbar-title>
 
-        <div>Version 1.0.12</div>
+        <div>Version 1.1.0</div>
       </q-toolbar>
     </q-header>
 
@@ -143,7 +143,7 @@ export default {
     margin: 0;
     margin-bottom: 10px;
     color: lime;
-    font-size: 16px;
+    font-size: 18px;
   }
   ul {
     color: lime;
