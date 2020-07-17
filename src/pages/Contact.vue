@@ -1,7 +1,7 @@
 <template>
   <q-page class="flex-center">
     <q-form
-      @submit.prevent="onSubmit"
+      @submit="onSubmit"
       @reset="onReset"
       class="q-gutter-md bkd"
     >
@@ -75,6 +75,7 @@ export default {
         })
 
         this.$q.notify("Your message has been sent!")
+        window.location.href = "./index.html#/contacted"
         this.onReset()
     },
 
