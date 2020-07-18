@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <q-page class="flex-center">
     <h5>Terms and Conditions</h5>
     <h6>Welcome to LOA Today Podcasts!</h6>
     <p>These terms and conditions outline the rules and regulations for the use of LOA Today 
@@ -165,5 +165,5 @@
     </ul>
     <p>As long as the website and the information and services on the website are provided 
       free of charge, we will not be liable for any loss or damage of any nature.</p>
-  </div>
+  </q-page>
 </template>

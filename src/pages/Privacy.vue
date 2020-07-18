@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <q-page class="flex-center">
     <h5>Privacy Policy for LOA Today Podcasts</h5>
     <p>At LOA Today Podcasts, one of our main priorities is the privacy of our visitors. 
       This Privacy Policy document contains types of information that is collected and recorded 
@@ -31,13 +31,10 @@
         <p>You may consult this list to find the Privacy Policy for each of the advertising 
           partners of LOA Today Podcasts. Our Privacy Policy was created with the help of the 
           Free Privacy Policy Generator and the Privacy Policy Generator Online.</p>
-<<<<<<< HEAD
         <p>Third-party ad servers or ad networks use technologies like cookies, JavaScript, 
           or Web Beacons that are used in their respective advertisements and links that can appear 
-=======
         <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, 
           or Web Beacons that are used in their respective advertisements and links that appear 
->>>>>>> 302453020f5869bb8c677cc95f90540329e6185a
           on LOA Today Podcasts, which are sent directly to users' browser. They automatically 
           receive your IP address when this occurs. These technologies are used to measure the 
           effectiveness of their advertising campaigns and/or to personalize the advertising 
@@ -70,5 +67,10 @@
         <h6>Consent</h6>
         <p>By using our app, you hereby consent to our Privacy Policy and agree to its Terms 
           and Conditions.</p>
-  </div>
+  </q-page>
 </template>
+<script>
+export default {
+  
+}
+</script>
