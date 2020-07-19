@@ -15,7 +15,7 @@
           LOA Today App
         </q-toolbar-title>
 
-        <div>Version 1.1.9</div>
+        <div>Version 1.1.28</div>
       </q-toolbar>
     </q-header>
 
@@ -28,7 +28,7 @@
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
-          v-bind="link"
+          v-bind="link"cd 
           content-class="text-white"
         />
       </q-list>
