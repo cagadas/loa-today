@@ -4,6 +4,7 @@
       <img style="width: 100px; float: left; margin-right: 20px;" :src="this.showImage">
       <h5>Beyond Intention - Audio Course</h5>
       <p>{{ this.showDescription }}</p>
+      <p>Theme music courtesy of <a href="#" @click="myLink('https://www.purple-planet.com/')">Purple Planet Music</a>.</p>
     </div>
     <div style="clear: both;"></div>
     <div style="margin-top: 18px;">
@@ -29,6 +30,7 @@
 </template>
 
 <script>
+import { openURL } from 'quasar'
 export default {
   data() {
     return {
@@ -48,6 +50,10 @@ export default {
   },
   
   methods: {
+    myLink(myURL){
+      openURL(myURL)
+    },
+
     playing(item, index){
       if(item.element != this.oldElement){
         // pause old player
