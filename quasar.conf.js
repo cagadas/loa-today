@@ -163,7 +163,7 @@ module.exports = function (/* ctx */) {
         builder: {
           // https://www.electron.build/configuration/configuration
 
-          appId: "loa-today"
+          appId: "net.loatoday.player"
         },
 
         // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
