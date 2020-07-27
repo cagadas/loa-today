@@ -4,7 +4,10 @@
       <img style="width: 100px; float: left; margin-right: 20px;" :src="this.showImage">
       <h5>LOA Today</h5>
       <p>{{ this.showDescription }}</p>
-      <playlist :key="callKey" />
+      <playlist 
+        :key="callKey" 
+        @nowPlaying="isPlayerPlaying($event)"
+      />
     </div>
   </q-page>
 </template>
@@ -36,7 +39,8 @@ export default {
         {}
       ],
       value: 0,
-      offline: false
+      offline: false,
+      isNowPlaying: undefined
     }
   },
   components: {
@@ -59,7 +63,7 @@ export default {
   },
 
   cron:{
-    time: 900000,
+    time: 300000, // 5 minutes
     method: 'updateList'
   },
 
@@ -85,67 +89,19 @@ export default {
       })
     },
 
-    playing(item, index){
-      this.episode[index] = item
-      this.episode[index].playing = true
-      let d = new Date(Date.now())
-      d = this.timeZoneShift(d)
-      d = d.replace('T', ' ')
-      this.episode[index].episode_date_started = d
-      this.episode[index].description = item.description
-      this.episode[index].element = item.element
-      this.episode[index].episode_title = item.title
-      this.episode[index].episode_number = item.number
-      // console.log("playing: ", this.episode[index].episode_time_start)
-      this.episode[index].mp3 = item.mp3
-      this.episode[index].date = item.date
-      this.setEpisode(this.episode)
-      this.$refs.netStatus[index].updateListener(this.episode, index)
-      if(item.element != this.oldElement){
-        // pause old player
-        this.newElement = item.element
-        if(this.oldElement != -1){
-          this.$refs.pauseMe[this.oldElement].pause()
-        }
-        this.oldElement = this.newElement
+    isPlayerPlaying(value) {
+      if(value===0){
+        this.isNowPlaying = false
+      } else {
+        this.isNowPlaying = true
       }
-    },
-
-    paused(item, index){
-      this.episode[index].playing = false
-      // console.log("paused: ", this.episode[index].episode_time_update)
-      this.setEpisode(this.episode)
-      this.$refs.netStatus[item.element].updateEpisode(this.episode, item.element)
-      if(item.element != this.oldElement){
-        this.oldElement = this.newElement
-      }
-    },
-
-    secondsOnPlayer(value, index){
-      if(this.episode[index].playing === true){
-        this.episode[index].episode_time_start = value
-        this.episode[index].episode_time_update = value
-      }
-      if(this.episode[index].playing === false){
-        this.episode[index].episode_time_update = value
-      }
-    },
-
-    startPlay(id){
-      this.$refs.pauseMe[id].play()
-    },
-
-    timeZoneShift(date){
-      const offsetMs = date.getTimezoneOffset() * 60 * 1000;
-      const msLocal =  date.getTime() - offsetMs;
-      const dateLocal = new Date(msLocal);
-      const iso = dateLocal.toISOString();
-      const isoLocal = iso.slice(0, 19);
-      return isoLocal;
+      // console.log("this.isNowPlaying: ", this.isNowPlaying)
     },
 
     updateList(){
-      this.callKey += 1
+      if(this.isNowPlaying === false){
+        this.callKey += 1
+      }
     }
   }
 }

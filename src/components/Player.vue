@@ -44,7 +44,7 @@ export default {
 </script>
 <style lang="stylus">
   .plyr--audio .plyr__controls {
-    background-color: rgb(0,64,0)!important;
+    background-color: rgb(32,160,32)!important;
     margin-bottom: 16px;
   }
 </style>

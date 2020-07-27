@@ -48,7 +48,8 @@ export default {
       episode: [
         {}
       ],
-      value: 0
+      value: 0,
+      playerIsPlaying: 0
     }
   },
   components: {
@@ -141,6 +142,8 @@ export default {
     },
 
     playing(item, index){
+      this.playerIsPlaying ++
+      this.$emit('nowPlaying', this.playerIsPlaying)
       this.episode[index] = item
       this.episode[index].playing = true
       let d = new Date(Date.now())
@@ -167,6 +170,8 @@ export default {
     },
 
     paused(item, index){
+      this.playerIsPlaying --
+      this.$emit('nowPlaying', this.playerIsPlaying)
       this.episode[index].playing = false
       // console.log("paused: ", this.episode[index].episode_time_update)
       this.setEpisode(this.episode)
