@@ -1,5 +1,7 @@
 <template>
   <q-page class="flex-center">
+    <h6>Ask The Stream a question.</h6>
+    <p>We will email you when it gets asked to tell you which episodes it is in.</p>
     <q-form
       @submit="onSubmit"
       @reset="onReset"
@@ -65,7 +67,7 @@ export default {
         .post('/forms/process-contact.php', {
           name: this.$refs.name.value,
           email: this.$refs.email.value,
-          subject: "LOA Today App Contact",
+          subject: "LOA Today App - Question For The Stream",
           message: this.$refs.message.value
         })
         .then(response=> {

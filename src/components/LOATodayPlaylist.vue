@@ -1,28 +1,41 @@
 <template>
-  <q-page class="flex-center">
-    <div class="padDiv">
-      <img style="width: 100px; float: left; margin-right: 20px;" :src="this.showImage">
-      <h5>LOA Today</h5>
-      <p>{{ this.showDescription }}</p>
-      <playlist :key="callKey" />
+  <div>
+    <div v-for="item in feed" :key="item.element">
+      <div
+        v-if="item.element === 0" 
+        class="full-width" 
+        style="height: 12px;">
+      </div>
+      <h6
+        @click="startPlay(item.element)"
+        class="pointer"
+        >{{  item.title }}</h6>
+      <p><span style="color: white;">{{ item.date }} &ndash; </span> {{ item.description }} <span style="color: green;">Show #{{ item.episodeNumber }}</span></p>
+      <player
+        :mp3="item.mp3"
+        ref="pauseMe"
+        @timeupdate="secondsOnPlayer($event, item.element)"
+        @playing="playing(item, item.element)"
+        @paused="paused(item, item.element)"
+      ></player>
+      <net-status ref="netStatus" :listener="listener" :episode="episode" />
+      <hr>
     </div>
-  </q-page>
+  </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 import axios from 'axios'
-import { crono } from 'vue-crono'
-
+import convert from 'xml-js'
 export default {
-  mixins: [crono],
+  props: ['playlist'],
   data() {
     return {
-      feed: this.$feed,
-      callKey: 0,
-      showDescription: this.$showDescription,
-      showImage: this.$showImage,
+      feed: '',
+      showDescription: '',
+      showImage: '',
       oldElement: -1,
       newElement: 0,
       elapsedTime: 0,
@@ -35,13 +48,11 @@ export default {
       episode: [
         {}
       ],
-      value: 0,
-      offline: false
+      value: 0
     }
   },
   components: {
     'player' : require('components/Player.vue').default,
-    'playlist' : require('components/LOATodayPlaylist.vue').default,
     'net-status' : require('components/NetStatus.vue').default
   },
   computed: {
@@ -57,12 +68,6 @@ export default {
       this.createListener()
     }
   },
-
-  cron:{
-    time: 900000,
-    method: 'updateList'
-  },
-
   methods:{
     ...mapActions('modulePlayer', ['setEpisode','setListener']),
 
@@ -83,6 +88,56 @@ export default {
       .catch(function(error) {
           console.log("createListener Axios Error: ", error)
       })
+    },
+
+    getFeed(){
+      axios.get('https://www.loatoday.net/feed/mp3')
+          .then(function (response) {
+            Vue.prototype.$xml = convert.xml2json(response.data, { compact: false, spaces: 1 })
+          })
+          .catch(function (error) {
+            console.log("axios error in xmlJs.js: ",error)
+          })
+          .then(function () {
+            // always executed
+          })
+        let xml = JSON.parse(Vue.prototype.$xml)
+        let length = xml.elements[0].elements[0].elements.length
+        let title = 'string'
+        let description = 'string'
+        let mp3 = 'string'
+        let feedHere = []
+        let date = ''
+        let episodeId = 0
+        let episodeNumber = 0
+        let count = 5
+        for (let i = 21; i < Math.min(length,25+21); i++) {
+          title = xml.elements[0].elements[0].elements[i].elements[0].elements[0].text
+          episodeId = xml.elements[0].elements[0].elements[i].elements[1].elements[0].text
+          if (episodeId.substring(32, 33) === '-') {
+            count--
+          }
+          episodeId = episodeId.substring(28, count + 28)
+          count++
+          episodeNumber = xml.elements[0].elements[0].elements[i].elements[11].elements[0].text
+          description = xml.elements[0].elements[0].elements[i].elements[4].elements[0].cdata
+          mp3 = xml.elements[0].elements[0].elements[i].elements[6].attributes.url
+          date = Date.parse(xml.elements[0].elements[0].elements[i].elements[2].elements[0].text)
+          date = new Date(date).toDateString()
+          feedHere.push({
+            element: (i - 21),
+            episodeNumber: episodeNumber,
+            title: title,
+            description: description,
+            mp3: mp3,
+            date: date
+          })
+        }
+        this.showImage = xml.elements[0].elements[0].elements[4].elements[0].elements[0].text
+        // Vue.prototype.$showTitle = xml.elements[0].elements[0].elements[4].elements[1].elements[0].text
+        // Vue.prototype.$showUrl = xml.elements[0].elements[0].elements[4].elements[2].elements[0].text
+        this.showDescription = xml.elements[0].elements[0].elements[2].elements[0].text
+        this.feed = feedHere
     },
 
     playing(item, index){
@@ -142,19 +197,16 @@ export default {
       const iso = dateLocal.toISOString();
       const isoLocal = iso.slice(0, 19);
       return isoLocal;
-    },
-
-    updateList(){
-      this.callKey += 1
     }
+  },
+
+  mounted(){
+    this.getFeed()
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-.counter {
-  color: pink;
-}
 .pointer {
   cursor: pointer;
 }

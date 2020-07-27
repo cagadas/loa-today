@@ -15,7 +15,7 @@
           LOA Today App
         </q-toolbar-title>
 
-        <div>Version 1.1.33</div>
+        <div>Version 1.1.34</div>
       </q-toolbar>
     </q-header>
 
@@ -60,6 +60,12 @@ export default {
           caption: 'Our most recent episodes',
           icon: 'radio',
           link: './index.html#/'
+        },
+        {
+          title: 'Ask The Stream a Question',
+          caption: 'We will email you when it gets asked to tell you which episodes it is in.',
+          icon: 'email',
+          link: './index.html#/question'
         },
         {
           title: 'Beyond Intention',
