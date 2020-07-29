@@ -7,7 +7,6 @@
           <img class="image" src="images/your-daily-dose-of-happy.jpg" alt="Your Daily Dose Of Happy: Real Life Success Stories Of The Law Of Attraction">
         </a>
       </div>
-      <a href="#" @click="myLink('https://www.youtube.com/c/loatodaypodcastvideos')"><img class="image" style="margin-bottom: 32px;" src="images/YouTube Channel Logo.jpg" alt="LOA Today YouTube Channel Videos" /></a>
       <a href="#" @click="myLink('https://www.youtube.com/c/loatodaypodcastvideos/live')"><img class="image" src="images/Youtube-live-streaming.png" alt="YouTube Livestream"></a>
       <a href="#" @click="myLink('https://zoom.us/j/8602645432')"><img class="image" src="images/zoom.jpg" alt="Our Zoom Meeting Room"></a>
       <a href="#" @click="myLink('https://www.loatoday.net')"><img class="image" src="images/favicon-128x128.png" alt="LOA Today Website"></a>
