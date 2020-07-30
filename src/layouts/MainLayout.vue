@@ -15,7 +15,7 @@
           LOA Today App
         </q-toolbar-title>
 
-        <div>Version 1.1.41</div>
+        <div>Version 1.1.42</div>
       </q-toolbar>
     </q-header>
 
@@ -28,7 +28,7 @@
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
-          v-bind="link"cd 
+          v-bind="link"
           content-class="text-white"
         />
       </q-list>
@@ -72,6 +72,12 @@ export default {
           caption: 'LOA Mastery Audio Course by Daniel Mangena',
           icon: 'radio',
           link: './index.html#/bi'
+        },
+        {
+          title: 'The Lovely Magician’s Guide to Soulmate Success',
+          caption: 'An E-Book by Cindie Chavez',
+          icon: 'book',
+          link: './index.html#/lmgss'
         },
         {
           title: 'The Money Game',
@@ -143,20 +149,22 @@ export default {
   }
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    margin-bottom: 10px;
     color: yellow;
   }
   p {
     margin: 0;
     margin-bottom: 10px;
-    color: lime;
+    color: rgb(191,255,191);
     font-size: 18px;
+    text-indent: 2em;
   }
   ul {
-    color: lime;
+    color: rgb(191,255,191);
     font-size: 16px;
   }
   a {
-    color: orange;
+    color: lime;
     text-text-decoration: underline;
   }
   hr {
@@ -168,6 +176,13 @@ export default {
   }
   .center {
     text-align: center;
+  }
+  .centerNoIndent {
+    text-align: center;
+    text-indent: 0;
+  }
+  .right {
+    text-align: right;
   }
   .image {
     width: 120px;

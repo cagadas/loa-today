@@ -1,5 +1,6 @@
 <template>
   <q-page class="flex-center">
+    <p>&nbsp;</p>
     <q-form
       @submit="onSubmit"
       @reset="onReset"
