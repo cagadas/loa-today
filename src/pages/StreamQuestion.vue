@@ -35,8 +35,8 @@
         type="textarea"
         v-model="message"
         ref="message"
-        label="Your message *"
-        hint="Enter your message in this box."
+        label="Your question *"
+        hint="Enter your question in this box."
         lazy-rules
         :rules="[
           val => val !== null && val !== '' || 'Please type your message'

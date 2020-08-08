@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex-center">
-    <img src="images/LMGSS.jpg" alt="The Lovely Magician’s Guide to Soulmate Success" />
+    <img style="max-width: 100%;" src="images/LMGSS.jpg" alt="The Lovely Magician’s Guide to Soulmate Success" />
     <p>&nbsp;</p>
     <p class="centerNoIndent">©2016 Cindie Chavez</p>
     <p>&nbsp;</p>
