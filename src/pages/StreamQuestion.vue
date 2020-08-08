@@ -39,7 +39,7 @@
         hint="Enter your question in this box."
         lazy-rules
         :rules="[
-          val => val !== null && val !== '' || 'Please type your message'
+          val => val !== null && val !== '' || 'Please type your questions'
         ]"
       />
 
