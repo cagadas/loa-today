@@ -662,18 +662,18 @@
     <hr id="resources"/>
     <p>&nbsp;</p>
     <h5>Resources</h5>
-    <p><a href="#" @click="myLink('http://www.cindiechavez.com/')">Cindie Chavez &ndash; 
+    <p><a href="#resources" @click="myLink('http://www.cindiechavez.com/')">Cindie Chavez &ndash; 
     My website &amp; Blog</a> – Lots of articles and information to support you in creating a life full of Love &amp; Magic.</p>
-    <p><a href="#" @click="myLink('http://www.cindiechavez.com/healing-for-a-broken-heart/')">Healing 
+    <p><a href="#resources" @click="myLink('http://www.cindiechavez.com/healing-for-a-broken-heart/')">Healing 
     for a Broken Heart</a> is another quick and powerful free guide that may benefit you. I’ve often said that “Everything you want is on the other side of your broken heart.” If your heart has been broken, this free guide will help you begin healing.</p>
 
-    <p><a href="#" @click="myLink('https://www.facebook.com/groups/TheLoveAndMagicSalon/')">The 
+    <p><a href="#resources" @click="myLink('https://www.facebook.com/groups/TheLoveAndMagicSalon/')">The 
     Love &amp; Magic Salon</a> is a free private Facebook group full of Lovely Magicians that support and encourage each other in creating beautiful lives.  Come join us!</p>
 
-    <p><a href="#" @click="myLink('http://www.cindiechavez.com/meditation-for-attracting-love/')">Meditation 
+    <p><a href="#resources" @click="myLink('http://www.cindiechavez.com/meditation-for-attracting-love/')">Meditation 
     for Attracting Love</a> is a 20-minute guided meditation that promotes peace, tranquility, and love, with gorgeous music composed by Christopher Lloyd Clarke.</p>
 
-    <p><a href="#" @click="myLink('mailto:cindie@cindiechavez.com')">My email: cindie@cindiechavez.com</a> – 
+    <p><a href="#resources" @click="myLink('mailto:cindie@cindiechavez.com')">My email: cindie@cindiechavez.com</a> – 
     I’d love to hear from you!</p>
 
     <p>Cindie Chavez, the "Love &amp; Magic Coach" is a Best Selling Author, Certified Life and 
