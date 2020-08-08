@@ -15,7 +15,7 @@
           LOA Today App
         </q-toolbar-title>
 
-        <div>Version 1.1.42</div>
+        <div>Version 1.1.44</div>
       </q-toolbar>
     </q-header>
 
@@ -65,7 +65,13 @@ export default {
           title: 'Ask The Stream a Question',
           caption: 'We will email you when it gets asked to tell you which episodes it is in.',
           icon: 'email',
-          link: './index.html#/question'
+          link: './index.html#/stream-question'
+        },
+        {
+          title: 'Ask Rita a Question',
+          caption: 'We will email you when it gets asked to tell you which episodes it is in.',
+          icon: 'email',
+          link: './index.html#/rita-question'
         },
         {
           title: 'Beyond Intention',
@@ -152,15 +158,18 @@ export default {
     margin-bottom: 10px;
     color: yellow;
   }
-  p {
+  p, li {
     margin: 0;
     margin-bottom: 10px;
-    color: rgb(191,255,191);
+    color: rgb(212,255,212);
     font-size: 18px;
     text-indent: 2em;
   }
+  li {
+    text-indent: 0;
+  }
   ul {
-    color: rgb(191,255,191);
+    color: rgb(212,255,212);
     font-size: 16px;
   }
   a {

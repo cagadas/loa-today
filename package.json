@@ -1,6 +1,6 @@
 {
   "name": "loa-today",
-  "version": "1.1.42",
+  "version": "1.1.44",
   "description": "A playlist app for our listeners",
   "productName": "LOA Today",
   "author": "Walt Thiessen <walt@loatoday.net>",
@@ -19,6 +19,7 @@
     "plyr": "^3.6.2",
     "quasar": "^1.12.10",
     "vue-crono": "^2.0.8",
+    "vue-linkify": "^1.0.1",
     "vue-offline": "^2.0.8",
     "vue-plyr": "^6.0.4",
     "vuex": "^3.5.1",

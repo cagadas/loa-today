@@ -10,7 +10,7 @@
         @click="startPlay(item.element)"
         class="pointer"
         >{{  item.title }}</h6>
-      <p><span style="color: white;">{{ item.date }} &ndash; </span> {{ item.description }} <span style="color: green;">Show #{{ item.episodeNumber }}</span></p>
+      <p><span style="color: aqua;">{{ item.date }} &ndash; </span> <span v-html="item.description" v-linkified /> &nbsp; <span style="color: green;">Show #{{ item.episodeNumber }}</span></p>
       <player
         :mp3="item.mp3"
         ref="pauseMe"
@@ -29,6 +29,8 @@ import Vue from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 import axios from 'axios'
 import convert from 'xml-js'
+import linkify from 'vue-linkify'
+Vue.directive('linkified', linkify)
 export default {
   props: ['playlist'],
   data() {
@@ -221,5 +223,8 @@ export default {
 .pointer:active {
   color: aqua;
   text-decoration: underline;
+}
+p {
+  text-indent: 0;
 }
 </style>

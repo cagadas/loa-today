@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex-center">
-    <h6>Ask The Stream a question.</h6>
+    <h6>Ask Rita a question.</h6>
     <p>We will email you when it gets asked to tell you which episodes it is in.</p>
     <p>&nbsp;</p>
     <q-form
@@ -68,7 +68,7 @@ export default {
         .post('/forms/process-contact.php', {
           name: this.$refs.name.value,
           email: this.$refs.email.value,
-          subject: "LOA Today App - Question For The Stream",
+          subject: "LOA Today App - Question For Rita",
           message: this.$refs.message.value
         })
         .then(response=> {
@@ -96,5 +96,8 @@ export default {
 .bkd {
   background-color: beige;
   border: 1pt black solid;
+}
+p {
+  text-indent: 0;
 }
 </style>

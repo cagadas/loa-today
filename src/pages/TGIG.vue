@@ -6,6 +6,17 @@
       <p>{{ this.showDescription }}</p>
     </div>
     <div style="clear: both;"></div>
+      <div
+        style="margin: 0 auto; width: 150px;"
+      >
+        <q-btn
+          class="glossy full-width"
+          rounded
+          color="secondary"
+          label="Update List"
+          @click="updateList()"
+        />
+      </div>
     <div style="margin-top: 18px;">
       <hr>
     </div>
@@ -15,7 +26,7 @@
           class="pointer"
           @click="startPlay(item.element)"
           >{{  item.title }}</h6>
-        <p><span style="color: white;">{{ item.date }} &ndash; </span> {{ item.description }} <span style="color: green;">Show #{{ item.episodeNumber }}</span></p>
+        <p><span style="color: aqua;">{{ item.date }} &ndash; </span> {{ item.description }}</p>
         <player
           :mp3="item.m4a"
           ref="pauseMe"
@@ -81,5 +92,8 @@ export default {
 .pointer:active {
   color: aqua;
   text-decoration: underline;
+}
+p {
+  text-indent: 0;
 }
 </style>

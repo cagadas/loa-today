@@ -9,12 +9,18 @@
     <p><strong>Thursday,</strong> 4pm - 5pm (with Alyx King, Dan Mangena, &amp; Walt Thiessen)</p>
     <p><strong>Friday,</strong> 4pm - 5pm (with Linda Armstrong, Rita Gigante, &amp; Walt Thiessen)</p>
     <p>&nbsp;</p>
+    <p class="center"><a href="#" @click="myLink('https://www.youtube.com/c/loatodaypodcastvideos/live')">Click here to connect to the Livestream</a></p>
+    <p>&nbsp;</p>
     <p>Theme Music Copyright: <a href="https://www.123rf.com/profile_plastic3music">plastic3music / 123RF Stock Photo</a></p>
   </div>
 </template>
 
 <script>
 export default {
-  
+  methods:{
+    myLink(myURL){
+      openURL(myURL)
+    }
+  }
 }
 </script>
