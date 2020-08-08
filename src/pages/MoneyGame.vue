@@ -103,10 +103,10 @@
         tool to you, so that you too can enjoy the benefits of developing a new paradigm of 
         creative power into your experience.</p>
       <hr id="work" />
-      <p><a href="#top" id="inner-work">Back To Top</a></p>
+      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">INNER WORK AND OUTER WORK</h5>
       <p>In my book, 
-        <em><a href="#inner-work" @click="myLink('https://www.amazon.com/Stepping-Beyond-Intention-Daniel-Mangena-ebook/dp/B07CRQG5WS/ref=sr_1_1?dchild=1&keywords=stepping+beyond+intention&qid=1596467072&sr=8-1')">Stepping Beyond Intention,</a></em>, 
+        <em><a href="#work" @click="myLink('https://www.amazon.com/Stepping-Beyond-Intention-Daniel-Mangena-ebook/dp/B07CRQG5WS/ref=sr_1_1?dchild=1&keywords=stepping+beyond+intention&qid=1596467072&sr=8-1')">Stepping Beyond Intention,</a></em>, 
         I touched on the idea of alignment that Jess (my co-creator on the &ldquo;Method 
         Meets Magic&rdquo; project) and I also spoke about over the course of a 9-week series 
         on creating the life you desire.</p>
@@ -810,7 +810,7 @@
       <p>Use this table to keep track of your progress! It is important to stay on top of the 
         edge changes and to hold yourself accountable for having celebrated each step. You can 
         also connect with other Dreamers in our free 
-        <a href="https://www.facebook.com/groups/626830771085464/">Facebook group</a>.</p>
+        <a href="#record" @click="myLink('https://www.facebook.com/groups/626830771085464/')">Facebook group</a>.</p>
       <table>
          <tr>
             <td class="cell" style="width: 30px;">STEP</td>
@@ -1030,8 +1030,8 @@
       and is also included in my best selling book,
       <em><a href="#dan3" @click="myLink('https://www.amazon.com/Stepping-Beyond-Intention-Daniel-Mangena-ebook/dp/B07CRQG5WS/ref=sr_1_1?dchild=1&keywords=stepping+beyond+intention&qid=1596467072&sr=8-1')">Stepping Beyond Intention,</a></em></p>
       <h6><em>Heartspeak </em></h6>
-      <p id="courses">&ndash; in particular the
-        <a href="#courses" @click="myLink('http://heartspeak.com/courses/')">Heartspeak 
+      <p>&ndash; in particular the
+        <a href="#dan3" @click="myLink('http://heartspeak.com/courses/')">Heartspeak 
         &ldquo;Money Protocol&rdquo;</a> by Dr. Anne Jensen.</p>
       <p>As the human race grows in awareness, the interventions of yesterday become inadequate. 
         At the cutting edge of mindbody medicine, HeartSpeak is the next-generation healing tool 
@@ -1099,9 +1099,9 @@
         desired brainwave state you can put yourself into your desired corresponding mood 
         state within minutes. Live with your heart forward and your mind open. Peace &amp; 
         Love.</p>
-      <p id="sines">Learn more at 
-        <a href="#sines" @click="myLink('https://sinesmusic.com/')">Sinesmusic.com</a> &amp;
-         <a href="https://gregpapania.com/">Gregpapania.com</a></p>
+      <p id="theta">Learn more at 
+        <a href="#heartspeak" @click="myLink('https://sinesmusic.com/')">Sinesmusic.com</a> &amp;
+        <a href="#heartspeak" @click="myLink('https://gregpapania.com/')">Gregpapania.com</a></p>
       <h6><em>Theta Healing</em></h6>
       <p>One of the most powerful energy-healing techniques, ThetaHealing&reg; is a process of 
         meditation that we believe creates physical, psychological, and spiritual healing 
@@ -1117,9 +1117,9 @@
         seeking to expand ability that are lying dormant in their mind. This is what 
         ThetaHealing&reg; is designed to do, teach people how to harness their psychic 
         abilities through spiritual awareness.</p>
-      <p id="theta">(From <a href="#theta" @click="myLink('https://www.thetahealing.com/')">ThetaHealing.com</a>)</p>
+      <p>(From <a href="#theta" @click="myLink('https://www.thetahealing.com/')">ThetaHealing.com</a>)</p>
       <p>For more information you can speak to my personal Theta Healing Practitioner, Jess.</p>
-      <p id="jess"><a href="#jess" @click="myLink('http://www.jessbubbico.com/')">www.jessbubbico.com</a></p>
+      <p><a href="#theta" @click="myLink('http://www.jessbubbico.com/')">www.jessbubbico.com</a></p>
       <hr id="template" />
       <p><a href="#top">Back To Top</a></p>
       <h5 class="header">THE JOURNAL TEMPLATE</h5>
