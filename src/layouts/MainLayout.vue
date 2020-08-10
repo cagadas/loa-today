@@ -15,7 +15,7 @@
           LOA Today App
         </q-toolbar-title>
 
-        <div>Version 1.1.44</div>
+        <div>Version 1.1.45</div>
       </q-toolbar>
     </q-header>
 

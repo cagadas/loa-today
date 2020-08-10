@@ -1,5 +1,16 @@
 <template>
   <div>
+      <div
+        style="margin: 0 auto; width: 150px;"
+      >
+        <q-btn
+          class="glossy full-width"
+          rounded
+          color="secondary"
+          label="Update List"
+          @click="updateList()"
+        />
+      </div>
     <div v-for="item in feed" :key="item.element">
       <div
         v-if="item.element === 0" 
@@ -36,6 +47,7 @@ export default {
   data() {
     return {
       feed: '',
+      callKey: 0,
       showDescription: '',
       showImage: '',
       oldElement: -1,
@@ -51,7 +63,8 @@ export default {
         {}
       ],
       value: 0,
-      playerIsPlaying: 0
+      playerIsPlaying: 0,
+      newXml: ''
     }
   },
   components: {
@@ -95,16 +108,16 @@ export default {
 
     getFeed(){
       axios.get('https://www.loatoday.net/feed/mp3')
-          .then(function (response) {
-            Vue.prototype.$xml = convert.xml2json(response.data, { compact: false, spaces: 1 })
+          .then((response) => {
+            this.newXml = convert.xml2json(response.data, { compact: false, spaces: 1 })
+            //let newVar = JSON.parse(this.newXml)
+            //console.log("newVar: ", this.newVar)
           })
           .catch(function (error) {
             console.log("axios error in xmlJs.js: ",error)
           })
-          .then(function () {
-            // always executed
-          })
-        let xml = JSON.parse(Vue.prototype.$xml)
+        let xml = JSON.parse(this.newXml)
+        console.log("this.newXml: ", this.newXml)
         let length = xml.elements[0].elements[0].elements.length
         let title = 'string'
         let description = 'string'
@@ -204,6 +217,15 @@ export default {
       const iso = dateLocal.toISOString();
       const isoLocal = iso.slice(0, 19);
       return isoLocal;
+    },
+
+    updateList(){
+      if(this.playerIsPlaying === 0){
+        //this.callKey += 1
+        //this.$forceUpdate()
+        console.log("updatedList")
+        this.getFeed()
+      }
     }
   },
 

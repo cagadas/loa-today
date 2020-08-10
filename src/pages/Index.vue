@@ -4,17 +4,6 @@
       <img style="width: 100px; float: left; margin-right: 20px;" :src="this.showImage">
       <h5>LOA Today</h5>
       <p>{{ this.showDescription }}</p>
-      <div
-        style="margin: 0 auto; width: 150px;"
-      >
-        <q-btn
-          class="glossy full-width"
-          rounded
-          color="secondary"
-          label="Update List"
-          @click="updateList()"
-        />
-      </div>
       <playlist 
         :key="callKey" 
         @nowPlaying="isPlayerPlaying($event)"
@@ -111,6 +100,7 @@ export default {
     updateList(){
       if(this.isNowPlaying === false){
         this.callKey += 1
+        //this.$forceUpdate()
       }
     }
   }
