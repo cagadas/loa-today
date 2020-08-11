@@ -5,7 +5,6 @@
       <h5>LOA Today</h5>
       <p>{{ this.showDescription }}</p>
       <playlist 
-        :key="callKey" 
         @nowPlaying="isPlayerPlaying($event)"
       />
     </div>
@@ -16,40 +15,29 @@
 import Vue from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 import axios from 'axios'
-import { crono } from 'vue-crono'
 export default {
-  mixins: [crono],
   data() {
     return {
-      feed: this.$feed,
-      callKey: 0,
       showDescription: this.$showDescription,
       showImage: this.$showImage,
-      oldElement: -1,
-      newElement: 0,
-      elapsedTime: 0,
-      state: '',
       listener: {
         listener_id: 0,
         listener_name: 'Listener',
         date_last_logon: ''
       },
-      episode: [
-        {}
-      ],
       value: 0,
-      offline: false,
       isNowPlaying: undefined
     }
   },
+  
   components: {
-    'player' : require('components/Player.vue').default,
-    'playlist' : require('components/LOATodayPlaylist.vue').default,
-    'net-status' : require('components/NetStatus.vue').default
+    'playlist' : require('components/LOATodayPlaylist.vue').default
   },
+
   computed: {
     ...mapGetters('modulePlayer', ['getEpisode','getListener'])
   },
+
   created(){
     if(this.$q.localStorage.has("listener_id")){
       this.listener.listener_id = this.$q.localStorage.getItem("listener_id")
@@ -59,11 +47,6 @@ export default {
     if(!this.$q.localStorage.has("listener_id")){
       this.createListener()
     }
-  },
-
-  cron:{
-    time: 300000, // 5 minutes
-    method: 'updateList'
   },
 
   methods:{
@@ -95,13 +78,6 @@ export default {
         this.isNowPlaying = true
       }
       // console.log("this.isNowPlaying: ", this.isNowPlaying)
-    },
-
-    updateList(){
-      if(this.isNowPlaying === false){
-        this.callKey += 1
-        //this.$forceUpdate()
-      }
     }
   }
 }

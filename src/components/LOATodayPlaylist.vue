@@ -1,16 +1,14 @@
 <template>
   <div>
-      <div
-        style="margin: 0 auto; width: 150px;"
-      >
-        <q-btn
-          class="glossy full-width"
-          rounded
-          color="secondary"
-          label="Update List"
-          @click="updateList()"
-        />
-      </div>
+    <div style="margin: 0 auto; width: 150px;">
+      <q-btn
+        class="glossy full-width"
+        rounded
+        color="secondary"
+        label="Update List"
+        @click="updateList"
+      />
+    </div>
     <div v-for="item in feed" :key="item.element">
       <div
         v-if="item.element === 0" 
@@ -39,14 +37,20 @@
 import Vue from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 import axios from 'axios'
+import { crono } from 'vue-crono'
 import convert from 'xml-js'
 import linkify from 'vue-linkify'
 Vue.directive('linkified', linkify)
 export default {
-  props: ['playlist'],
+  props: {
+      playlist : String
+    },
+
+  mixins: [crono],
+
   data() {
     return {
-      feed: '',
+      feed: undefined,
       callKey: 0,
       showDescription: '',
       showImage: '',
@@ -67,13 +71,16 @@ export default {
       newXml: ''
     }
   },
+
   components: {
     'player' : require('components/Player.vue').default,
     'net-status' : require('components/NetStatus.vue').default
   },
+
   computed: {
     ...mapGetters('modulePlayer', ['getEpisode','getListener'])
   },
+
   created(){
     if(this.$q.localStorage.has("listener_id")){
       this.listener.listener_id = this.$q.localStorage.getItem("listener_id")
@@ -84,6 +91,16 @@ export default {
       this.createListener()
     }
   },
+
+  cron:{
+    time: 60000, // 5 minutes
+    method: 'updateList'
+  },
+
+  mounted(){
+    this.getFeed()
+  },
+
   methods:{
     ...mapActions('modulePlayer', ['setEpisode','setListener']),
 
@@ -109,15 +126,13 @@ export default {
     getFeed(){
       axios.get('https://www.loatoday.net/feed/mp3')
           .then((response) => {
-            this.newXml = convert.xml2json(response.data, { compact: false, spaces: 1 })
-            //let newVar = JSON.parse(this.newXml)
-            //console.log("newVar: ", this.newVar)
+            Vue.prototype.$xml = convert.xml2json(response.data, { compact: false, spaces: 1 })
+            //console.log("this.newXml: ", this.newXml)
           })
           .catch(function (error) {
             console.log("axios error in xmlJs.js: ",error)
           })
-        let xml = JSON.parse(this.newXml)
-        console.log("this.newXml: ", this.newXml)
+        let xml = JSON.parse(Vue.prototype.$xml)
         let length = xml.elements[0].elements[0].elements.length
         let title = 'string'
         let description = 'string'
@@ -221,16 +236,12 @@ export default {
 
     updateList(){
       if(this.playerIsPlaying === 0){
-        //this.callKey += 1
+        this.callKey += 1
         //this.$forceUpdate()
         console.log("updatedList")
         this.getFeed()
       }
     }
-  },
-
-  mounted(){
-    this.getFeed()
   }
 }
 </script>
