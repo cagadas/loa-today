@@ -93,7 +93,7 @@ export default {
   },
 
   cron:{
-    time: 60000, // 5 minutes
+    time: 60000, // 1 minute
     method: 'updateList'
   },
 

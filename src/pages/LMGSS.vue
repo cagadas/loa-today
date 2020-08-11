@@ -702,3 +702,20 @@ export default {
   }
 }
 </script>
+<style lang="stylus" scoped>
+  h1, h2, h3, h4, h5, h6 {
+    color: white
+  }
+  p, li {
+    color: pink;
+  }
+  ul {
+    color: pink;
+  }
+  a {
+    color: rgb(160,160,255);
+  }
+  hr {
+    border-color: rgb(128,128,255);
+  }
+</style>
