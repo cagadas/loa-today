@@ -1,13 +1,29 @@
 <template>
   <q-page class="flex-center">
-    <h6>Ask Rita a question.</h6>
-    <p>We will email you when it gets asked to tell you which episodes it is in.</p>
+    <h6>Ask Us A Question!</h6>
+    <p>Pick the co-host you want to answer your question live on the show.
+      We will email you to let you know in which episode they answer it.</p>
     <p>&nbsp;</p>
     <q-form
       @submit="onSubmit"
       @reset="onReset"
       class="q-gutter-md bkd"
     >
+      <p style="color:black;">Who do you want to answer your question?</p>
+      <div class="q-gutter-sm">
+        <q-radio ref="subject" v-model="subject" val="Alyx" label="Alyx" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="Ami" label="Ami" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="Cindie" label="Cindie" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="Daniel" label="Daniel" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="David" label="David" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="Linda" label="Linda" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="Louis" label="Louis" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="Psychic Rita" label="Psychic Rita" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="The Stream" label="The Stream" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="Walt" label="Walt" />
+        <q-radio ref="subject" v-model="subject" val="General Contact" label="General Contact" />
+      </div>
+      
       <q-input
         v-model="name"
         ref="name"
@@ -21,7 +37,7 @@
         v-model="email"
         ref="email"
         label="Your email address *"
-        hint="Tap above to enter your email address. We need a valid email address in case we need to write back to you!"
+        hint="Tap above to enter your email address. We need a valid email address so we can write back to you!"
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'Please enter a valid email address.']"
       />
@@ -58,7 +74,8 @@ export default {
     return {
       name: "",
       email: "",
-      message: ""
+      message: "",
+      subject: "General Contact"
     }
   },
 
@@ -68,7 +85,7 @@ export default {
         .post('/forms/process-contact.php', {
           name: this.$refs.name.value,
           email: this.$refs.email.value,
-          subject: "LOA Today App - Question For Rita",
+          subject: this.$refs.subject.value,
           message: this.$refs.message.value
         })
         .then(response=> {

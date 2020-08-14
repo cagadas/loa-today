@@ -11,13 +11,13 @@ const routes = [
       { path: "/hosts", component: () => import("pages/Hosts.vue") },
       { path: "/privacy", component: () => import("pages/Privacy.vue") },
       { path: "/terms", component: () => import("pages/Terms.vue") },
+      { path: "/question", component: () => import("pages/Question.vue") },
       { path: "/contact", component: () => import("pages/Contact.vue") },
-      { path: "/rita-question", component: () => import("pages/RitaQuestion.vue") },
-      { path: "/stream-question", component: () => import("pages/StreamQuestion.vue") },
       { path: "/contacted", component: () => import("pages/Contacted.vue") },
       { path: "/links", component: () => import("pages/Links.vue") },
       { path: "/schedule", component: () => import("pages/Schedule.vue") },
-      { path: "/moneygame", component: () => import("pages/MoneyGame.vue") }
+      { path: "/moneygame", component: () => import("pages/MoneyGame.vue") },
+      { path: "/highvibeliving", component: () => import("pages/HighVibeLiving.vue") }
     ]
   }
 ];

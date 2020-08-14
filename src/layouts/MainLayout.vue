@@ -6,16 +6,18 @@
           flat
           dense
           round
-          icon="menu"
-          aria-label="Menu"
+          icon="list"
+          aria-label="Goodies"
+          label="˂-- Goodies"
+          style="padding-right: 24px;"
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
 
         <q-toolbar-title>
-          LOA Today App
+          LOA Today
         </q-toolbar-title>
 
-        <div>Version 1.1.55</div>
+        <div>Ver. 1.1.66</div>
       </q-toolbar>
     </q-header>
 
@@ -62,22 +64,22 @@ export default {
           link: './index.html#/'
         },
         {
-          title: 'Ask The Stream a Question',
-          caption: 'We will email you when it gets asked to tell you which episodes it is in.',
+          title: 'Ask A Question',
+          caption: 'Ask The Stream, Psychic Rita, Louis, Ami, Daniel, Alyx, Cindie, Linda, or Walt',
           icon: 'email',
-          link: './index.html#/stream-question'
-        },
-        {
-          title: 'Ask Rita a Question',
-          caption: 'We will email you when it gets asked to tell you which episodes it is in.',
-          icon: 'email',
-          link: './index.html#/rita-question'
+          link: './index.html#/question'
         },
         {
           title: 'Beyond Intention',
           caption: 'LOA Mastery Audio Course by Daniel Mangena',
           icon: 'radio',
           link: './index.html#/bi'
+        },
+        {
+          title: 'High Vibe Living',
+          caption: 'A video course by Linda Armstrong',
+          icon: 'movie',
+          link: './index.html#/highvibeliving'
         },
         {
           title: 'The Lovely Magician’s Guide to Soulmate Success',
@@ -87,7 +89,7 @@ export default {
         },
         {
           title: 'The Money Game',
-          caption: 'An E-Book Course by Daniel Mangena',
+          caption: 'An E-Book by Daniel Mangena',
           icon: 'book',
           link: './index.html#/moneygame'
         },
@@ -108,12 +110,6 @@ export default {
           caption: 'Our 5-day-per-week schedule',
           icon: 'schedule',
           link: './index.html#/schedule'
-        },
-        {
-          title: 'Contact LOA Today',
-          caption: 'Send a message to Walt',
-          icon: 'email',
-          link: './index.html#/contact'
         },
         {
           title: 'External Links',

@@ -58,8 +58,9 @@
         coherent message to convey in written form so that money might not be the excuse again 
         for not taking up the offer to walk a proven road to free yourself from lack in the realm 
         of money.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="book" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">IN THIS BOOK</h5>
       <p>I am going to do my best to outline the optimal way to create not only abundance with 
         ease and grace, but through this medium, anything that you desire.</p>
@@ -73,8 +74,9 @@
       <p>In this book I will give you the exact blueprint that my clients pay thousands of 
         dollars to learn from me in person. So without further ado, I will begin with the story 
         of where it all started.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="story" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">NEW YORK, NY</h5>
       <p>The origins of this method go back to a book by my dear friend, Tim Shields, entitled 
         <em>A Curious Year in the Great Vivarium experiment.</em> In the book (which I 
@@ -102,8 +104,9 @@
       <p>After months of case studies, testimonials and trial by fire, I now bring this powerful 
         tool to you, so that you too can enjoy the benefits of developing a new paradigm of 
         creative power into your experience.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="work" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">INNER WORK AND OUTER WORK</h5>
       <p>In my book, 
         <em><a href="#work" @click="myLink('https://www.amazon.com/Stepping-Beyond-Intention-Daniel-Mangena-ebook/dp/B07CRQG5WS/ref=sr_1_1?dchild=1&keywords=stepping+beyond+intention&qid=1596467072&sr=8-1')">Stepping Beyond Intention,</a></em>, 
@@ -129,8 +132,9 @@
       <p>In short, if we tighten up our inner game, then the mind can do the heavy lifting, 
         creating enough momentum that it can eventually do all of the lifting &ndash; if we 
         are aligned with that belief.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="lied" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">THEY LIED TO YOU</h5>
       <p>I used to get a little mad when the snake oil sellers spoke about putting a cheque on 
         the wall and waiting for your millions to show up.</p>
@@ -147,8 +151,9 @@
       <p>In nearly 20 years, having searched deep in the caverns of open and secret knowledge, 
         I am yet to find even a single case of a proven manifest who achieved anything without 
         some form of action.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="suffering" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">THE FAIRY TALE ON SUFFERING</h5>
       <p>The inner work that must be done will not always be easy and the road will not always 
         be smooth, but it is vital to do the work of shedding the stories that are the true 
@@ -176,8 +181,9 @@
         create consciously, or subconsciously, it is mandatory that we believe it first. The 
         reason why sometimes it does not happen is that our belief system has created a single 
         road upon which it must happen.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="expectation" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">LINEAR EXPECTATION</h5>
       <p>The illusion of linear time sometimes makes us believe that there must be time space 
         between when we set our intentions and them showing up. Some have a fantasy that they 
@@ -187,8 +193,8 @@
         must work for it.</p>
       <p>It is essential that we shift our belief system definitively to reflect what we want 
         according to <em>how</em> we want things to show up for us. Suppose one believes that 
-        in relationships it is hard to cope; you cannot find your Prince of joy, or it is you 
-        who have to differ each time then, indeed they are going to see it based on how they 
+        in relationships it is hard to cope; you cannot find your Prince of Joy, or it is you 
+        who have to differ each time then. Indeed they are going to see it based on how they 
         perceive it.</p>
       <p>Do not live as if something is going to happen, but instead live as though what you 
         want has already been. It is consistently imprinting a new way of being on yourself 
@@ -212,15 +218,16 @@
         the sum just gives you a minimum deliverable. Your mind just needs this to be low enough 
         to not have resistance, so that you can build up a nice pattern of success and dissolve 
         the resistance at higher and higher levels.</p>
-      <p>&ldquo;Microshifting&rdquo; is taking a consistence series of baby steps in the direction 
+      <p>&ldquo;Microshifting&rdquo; is taking a consistent series of baby steps in the direction 
         of a chosen outcome. Push your edge without pushing your buttons. Just start nice and low 
         to get the momentum going, and before long you will call in thousands at a time, very much 
         on purpose.</p>
       <p>Start nice and low. Go for no more than $5-$10 (or the equivalent currency). Look for an 
         amount of money that you believe you could find on the streets as your starting point and 
-        watch yourself flying in no time at all.</p>
+        watch yourself fly in no time at all.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="framework" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">THE FRAMEWORK</h5>
       <p>I would like to offer you an insight into the mechanics of the universe, succinctly 
         summarized neatly into what we call the &ldquo;Beyond Intention Flow Funnel.&rdquo;</p>
@@ -228,16 +235,16 @@
         in the Hermetic Teachings, that have since been backed up by scientific exploration of 
         the various levels of density that make up our reality.</p>
       <p>In essence we are looking at the building blocks of reality, pure energy, slowing down 
-        and taking shape according to the &ldquo;instructions&rdquo; given to it. This is 
+        and taking shape according to the &ldquo;instructions&rdquo; given to them. This is 
         happening all the time with our subconscious mind running the show (according to Dr Bruce 
         Lipton and other leading researchers) up to 95% of the time.</p>
       <p>As energy slows down in frequency and takes shape, we connect with it as a being on a 
-        range of densities. Each level of density, having different interactions, some of which 
-        support the energy dropping to another level of density, and some that represent 
+        range of densities. Each level of density has different interactions, some of which 
+        support the energy dropping to another level of density, and some of which represent 
         resistance that stops any further development.</p>
       <p>When we have a thought, any thought, it slows down and becomes a thing that we experience 
         with our five senses here in the 3<sup>rd</sup> dimension. The only time this does not 
-        happen is when the journey of that thought is disrupted by resistance. The Money Game 
+        happen is when the journey of that thought is disrupted by resistance. <em>The Money Game</em> 
         is designed to cut resistance to the experience of money showing up for you in 
         microshifts that bypass the security systems in the mind, reprogramming them to allow 
         for infinite possibility. 
@@ -246,32 +253,33 @@
           name="image14.jpg" align="bottom" width="295" height="364" border="0" /></div>
       <p>I taught a class on the specific application of this wisdom for Micro2Millions in 
         relation to creating money, but again, these principles can be applied to the creation 
-        of anything and we will look at some of those later on in this book.</p>
+        of anything, and we will look at some of those later on in this book.</p>
       <p>As you can see in the above diagram, there are three general environments, or levels 
         of density, that make up our reality once we drop into the polarity that occurs in the 
-        forth dimension of time.</p>
+        4<sup>th</sup> dimension of time.</p>
       <p>This is not restrictive of the infinity of reality, but a reflection of the hermetic 
-        teachings that of course go much further into this and break down further sub categories 
+        teachings that, of course, go much further into this and break down further sub-categories 
         within these. You have the spiritual/energetic environment (I veer towards 
         &ldquo;energy&rdquo; vs &ldquo;spiritual&rdquo; as it has several connotations, but as 
-        everything is energy there can at times be confusion when not using spiritual, but the 
-        two are interchangeable). Next up is the mental environment and then the physical, 
+        everything is energy there can at times be confusion when not using the word "spiritual". 
+        The two are interchangeable). Next up is the mental environment and then the physical, 
         which is where we engage with reality though our five primary senses.</p>
-      <p>I am going to explain what each of these environments are and then going to show you 
-        how The Money Game offers an easy to follow strategy that you can employ to clear where 
+      <p>I am going to explain what each of these environments are and show you 
+        how <em>The Money Game</em> offers an easy to follow strategy that you can employ to clear where 
         the resistance lies for you.</p>
-      <p>The most important thing to remember is that the money game has built into it 
+      <p>The most important thing to remember is that <em>The Money Game</em> has built into it 
         intentions that are tried and tested. They are based on over a decade and a half of 
-        research, testing and experimention to ensure that the intentions get the results that 
+        research, testing, and experimention to ensure that the intentions get the results that 
         they are supposed to get.</p>
       <p>Now as we looked at before, every single thought that you have shows up in your reality. 
         The only ones that do not show up viscerally in your reality as something that you 
         physically experience are those that are met with resistance in any of these three 
         environments or do not have a clear, viable intention. The viability of the intention, 
-        I might add, is determined only by your belief systems about what is possible. The Money 
-        Game stretches and expands this belief around money.</p>
+        I might add, is determined only by your belief systems about what is possible. 
+        <em>The Money Game</em> stretches and expands this belief around money.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="time" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">TIME IS NOT REAL</h5>
       <p>The fact of the matter is that in nature, the thing that we call &ldquo;time&rdquo; 
         does not exist. It just doesn't exist. All that we have are clocks. We have the movements 
@@ -279,45 +287,45 @@
         seconds, minutes, hours, days, months and years that we collectively agree to call 
         &ldquo;time&rdquo;. So the only thing standing time-wise between you and any of these 
         or other intentions that you set for yourself is the illusion that we have all agreed 
-        to: that things must take time without that illusion.</p>
+        to: that things must take time within that illusion.</p>
       <div class="pull-quote">Time is an illusion between you and the intended manifestation</div>
-      <p>Things can and do show up instantly and this happens in some things in our life, as 
+      <p>Things can and do show up instantly, and this happens in some things in our life as 
         we will see as we go through the three environments we are going to look at today. So 
         as I said, the very first thing that must be there is a clear intention, and every time 
-        that we move into another phase of the money game, we set the intention following a 
+        that we move into another phase of <em>The Money Game</em>, we set the intention following a 
         specific formula that does the job of pulling this down through the flow funnel.</p>
       <p>Now, this isn't necessarily a linear process; in fact the funnel is happening at 
         lightening speed as energy expands and contracts, in and out of form. The offering of 
-        the flow funnel gives a framework within which tweaks to the system can be made, so that 
-        you have a new upgraded autopilot that works on command.</p>
-      <p>You can then start to apply specific strategies such as The Money Game to overcome other 
+        the flow funnel gives a framework within which tweaks to the system can be made so that 
+        you have a new, upgraded autopilot that works on command.</p>
+      <p>You can then start to apply specific strategies such as <em>The Money Game</em> to overcome other 
         resistance lines. By that I mean anyone who tells you that anything has an absolute and 
         that things ONLY work when they are done their &ldquo;specific way&rdquo;, I would suggest 
-        for you to run away from them. We live in a Universe of infinite possibilities, and the 
+        for you to run away from them. We live in a universe of infinite possibilities, and the 
         purpose of this game is to open you up to those possibilities.</p>
       <p>Once the intention has been dropped into the flow funnel, it then is a matter of it 
         moving through the three environments and showing up in our lives. Now I think this is a 
         very apt time to step into what the first environment is, the environment of spirit.</p>
-      <p>In this energy environment we're looking at the level of density that relates to 
-        feelings, emotions, the metaphysical realm and what we might call the sprit world, with 
+      <p>In this energy environment, we're looking at the level of density that relates to 
+        feelings, emotions, the metaphysical realm, and what we might call the spirit world with 
         all things related to lower density states of being. In my work, I speak a lot to how 
         this connects with spiritual practices, such as prayer and meditation, and how to direct 
         the power of these practices to specific results. In <em>Beyond Intention</em>, we 
-        deliberately use this power to create a super charged container, into which we place 
+        deliberately use this power to create a supercharged container into which we place 
         our intentions and leverage the power of this container to create the outcomes we desire.</p>
-      <p>In Micro2Millions, we have a variety of energy based modalities that we employ to blast 
+      <p>In Micro2Millions, we have a variety of energy-based modalities that we employ to blast 
         through any resistance to unlimited wealth and abundance in the lives of our members. 
-        One tool that supplements that work is The Money Game, and here is how.</p>
+        One tool that supplements that work is <em>The Money Game</em>, and here is how.</p>
       <div class="pull-quote" id="manifestation-eletromagnets">We are Manifestation 
         Electromagnets</div>
       <p>When moving through each phase, do not let the process of writing your intention be a 
-        passive thing. Feel the feelings associated with each intention, document if you must 
+        passive thing. Feel the feelings associated with each intention. Document if you must 
         what those feelings are, and use memories of past experiences where you have felt those 
-        feelings and emotions to create a framework for how to feel now. Consciousness cannot 
-        be in two places at the same time, so when you bring your awareness to a time where you 
-        felt those feelings, then that is the frequency that your feelings are programming into 
-        your body now. As we are powerful electro magnets, those feelings and the associated 
-        frequency that we call in, connects us to the experiences that relate to them.</p>
+        feelings and emotions to create a framework for how to feel now.</p>
+      <p>Consciousness cannot be in two places at the same time, so when you bring your awareness 
+        to a time where you felt those feelings, that is the frequency that your feelings are 
+        programming into your body now. As we are powerful electromagnets, those feelings and the 
+        associated frequency that we call in connect us to the experiences that relate to them.</p>
       <p>Now, this book is not an in-depth exploration of the creation process as a whole, and I 
         invite you to grab a copy of my book, 
         <em><a href="#manifestation-eletromagnets" @click="myLink('https://www.amazon.com/Stepping-Beyond-Intention-Daniel-Mangena-ebook/dp/B07CRQG5WS/ref=sr_1_1?dchild=1&keywords=stepping+beyond+intention&qid=1596467072&sr=8-1')">Stepping Beyond Intention,</a></em> 
@@ -328,12 +336,12 @@
         multiple places, then our energy is going to be scattered too. In fact, one of the things 
         that often causes disruption or resistance in our energy environment is simply just 
         having our energy spread out and not focused in one place.</p>
-      <p>In Beyond Intention we talk about energy traps in relation to step two. In fact, step 
+      <p>In <em>Stepping Beyond Intention</em> we talk about energy traps in relation to step two. In fact, step 
         two of the Beyond Intention paradigm is all about removing energy traps and collecting 
         your energy in one space, the &ldquo;Now&rdquo; or the present moment, because as we said 
         a short while ago, time doesn't really exist &ndash; the Now is all there really is.</p>
       <p>When setting your intentions, be present in the process. Set those moments aside as 
-        sacred, and commit yourself to conscious creation. Being present in the now is something 
+        sacred, and commit yourself to conscious creation. Being present in the Now is something 
         that I cannot underestimate the importance of. The choice to direct the creative power 
         can only be exercised in the Now.</p>
       <p>It came up once on a group call for Micro2Millions that one of our members did not feel 
@@ -382,8 +390,9 @@
         energetic environment, all you actually need to do is spend time connecting with people 
         who have created the &pound;1,600. For some of you that may mean connecting with people 
         that are closer to you in life experience, so that you don't have that resistance.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="mind" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">THE MIND JUST FOLLOWS PROTOCOLS</h5>
       <p>The mind is not set up to lie to itself, it is simply following protocols that have 
         been fed to it by prior inputs. By giving it evidence via your inputs and from that 
@@ -425,8 +434,9 @@
         truth of what you want to see. By spending time being abundant in the present, using 
         the tactics and strategies I give you, such as playing The Money Game, you will start 
         to break down resistance and prove to yourself that everything you want is already yours.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="system" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">THE SYSTEM</h5>
       <p>Now as I said, this system has so far been exclusively taught to my top paying clients 
         and mastermind members.</p>
@@ -553,8 +563,9 @@
         reality is not all that important. The steps herein have been laid out in a particular way. 
         Stick to them and remember to have FUN. Once you have made it through all 15 rounds, you 
         can start applying this to amounts of money you actually need for different purposes.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="tips" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">PRO-TIPS</h5>
       <p>So you have made it through all 15 rounds and established that the 
         &ldquo;<em>Money Game&rdquo;</em> really works. Let's now delve deeper and unlock even more 
@@ -658,8 +669,9 @@
         opportunities way outside of what you thought was possible at the beginning. The 
         obstacle to all this abundance was you, but now you are a different person, one with 
         a supercharged ability to play with and redirect energy.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="manifesting" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">MANIFESTING FROM MICRO &hellip;  TO MILLIONS</h5>
       <p><em>How to make a million bucks show up out of &ldquo;nowhere&rdquo;</em></p>
       <p>The first thing that I would offer is to not even go for it.</p>
@@ -710,8 +722,9 @@
         unlimited wealth. As you will see in the next section, there is plenty of scope to apply 
         <em>The Money Game</em> to all areas, not only of business and wealth generation, 
         but also of life.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="applications" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">OTHER APPLICATIONS OF THE GAME</h5>
       <p>There are several applications of this game. I would like to invite you to join me on 
         my next free abundance webinar where you can ask me directly any questions that you 
@@ -761,8 +774,9 @@
         you have had given to you in the past and build up a pattern of success of just getting 
         something as you start to cement a clear path to concert tickets, free flights and 
         upgrades.</p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="work2" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">DOES IT REALLY WORK?</h5>
       <p>Below are some results that have been reported by players of this game &ndash; evidence 
         of their reports are all available on request, and many of them would even be happy to 
@@ -804,8 +818,9 @@
         string of wins for this Money Game player who admitted that they had &ldquo;never set 
         an intention for anything before&rdquo;, NM also manifested the deposit for a first 
         home and &euro;900 in lieu of a per hour pay increase, and it still going strong.</em></p>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="record" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">RECORD KEEPING</h5>
       <p>Use this table to keep track of your progress! It is important to stay on top of the 
         edge changes and to hold yourself accountable for having celebrated each step. You can 
@@ -1016,8 +1031,9 @@
             </td>
          </tr>
       </table>
+      <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+      <p>&nbsp;</p>
       <hr id="tools" />
-      <p><a href="#top">Back To Top</a></p>
       <h5 class="header">CLEARING TOOLS</h5>
       <p>Below is a directory of some of the tools pulled from the Beyond Intention Clearing 
         Encyclopaedia that we have effectively used in our work with Micro2Millions, to really 
@@ -1120,8 +1136,8 @@
       <p>(From <a href="#theta" @click="myLink('https://www.thetahealing.com/')">ThetaHealing.com</a>)</p>
       <p>For more information you can speak to my personal Theta Healing Practitioner, Jess.</p>
       <p><a href="#theta" @click="myLink('http://www.jessbubbico.com/')">www.jessbubbico.com</a></p>
-      <hr id="template" />
       <p><a href="#top">Back To Top</a></p>
+      <hr id="template" />
       <h5 class="header">THE JOURNAL TEMPLATE</h5>
       <p><a name="_GoBack"></a> This simple journal template will help give you some structure 
       in how best you can document your journey. Journaling is a powerful tool and I really 

@@ -17,14 +17,17 @@
       information that is personally identifiable. The purpose of the information is for 
       analyzing trends, administering the site, tracking users' movement on the app or website, and 
       gathering demographic information.</p>
-      <h6>Our Advertising Partners</h6>
+      <h6 id="advertising">Our Advertising Partners</h6>
       <p>Some of advertisers on our site may use cookies and web beacons. Our advertising 
         partners are listed below. Each of our advertising partners has their own Privacy 
         Policy for their policies on user data. For easier access, we hyperlinked to their 
         Privacy Policies below.</p>
         <ul>
           <li>Amazon<br>
-            <a href="https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=468496&ref_=footer_privacy">https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=468496&ref_=footer_privacy</a>
+            <a href="#advertising" @click="myLink('https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=468496&ref_=footer_privacy')">https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=468496&ref_=footer_privacy</a>
+          </li>
+          <li>YouTube<br>
+            <a href="#advertising" @click="myLink('https://www.youtube.com/howyoutubeworks/policies/community-guidelines/')">https://www.youtube.com/howyoutubeworks/policies/community-guidelines/</a>
           </li>
         </ul>
         <h6>Privacy Policies</h6>
@@ -33,13 +36,13 @@
           Free Privacy Policy Generator and the Privacy Policy Generator Online.</p>
         <p>Third-party ad servers or ad networks use technologies like cookies, JavaScript, 
           or Web Beacons that are used in their respective advertisements and links that can appear 
-        <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, 
+        <p id="cookies">Third-party ad servers or ad networks uses technologies like cookies, JavaScript, 
           or Web Beacons that are used in their respective advertisements and links that appear 
           on LOA Today Podcasts, which are sent directly to users' browser. They automatically 
           receive your IP address when this occurs. These technologies are used to measure the 
           effectiveness of their advertising campaigns and/or to personalize the advertising 
           content that you see on websites that you visit. 
-          <a href="http://www.whatarecookies.com/">What are cookies?</a></p>
+          <a href="#cookies" @click="myLink('http://www.whatarecookies.com/')">What are cookies?</a></p>
         <p>Note that LOA Today Podcasts has no access to or control over these cookies that 
           are used by third-party advertisers.</p>
         <h6>Third Party Privacy Policies</h6>
@@ -70,7 +73,12 @@
   </q-page>
 </template>
 <script>
+import { openURL } from 'quasar'
 export default {
-  
+  methods:{
+    myLink(myURL){
+      openURL(myURL)
+    }
+  }
 }
 </script>

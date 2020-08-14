@@ -3,7 +3,7 @@
     <div class="padDiv">
       <img style="width: 100px; float: left; margin-right: 20px;" :src="this.showImage">
       <h5>LOA Today</h5>
-      <p>{{ this.showDescription }}</p>
+      <p style="text-indent: 0;">{{ this.showDescription }}</p>
       <playlist 
         @nowPlaying="isPlayerPlaying($event)"
       />
