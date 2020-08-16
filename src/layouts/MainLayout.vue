@@ -8,7 +8,7 @@
           round
           icon="list"
           aria-label="Goodies"
-          label="˂-- Goodies"
+          label="Goodies"
           style="padding-right: 24px;"
           @click="leftDrawerOpen = !leftDrawerOpen"
         />

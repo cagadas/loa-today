@@ -53,90 +53,66 @@
     <p>&nbsp;</p>
     <h5>High Vibe Living Intro</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/87-wEblh8Io"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      <p>&nbsp;</p>
+      />
     </div>
+    <p>&nbsp;</p>
     <h5>TIP #1 &ndash; The Vibe-Ometer</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/R_4rDPe01Yk"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>TIP #2 &ndash; Cancel That</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/wecHHRk1Y7M"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>TIP #3 &ndash; Change Your Story</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/ZCbH-lL3SSA"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>TIP #4 &ndash; Practice Allowing</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/CpPTlI8N5bg"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>TIP #5 &ndash; Spread The LOVE</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/9v7DfjrOMo4"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>TIP #6 &ndash; Connect With Spirit</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/CYGY_mj5ARM"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>TIP #7 &ndash; Reclaim Your Power</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/y1lTpJqZoiY"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
@@ -159,35 +135,26 @@
     <p>&nbsp;</p>
     <h5>Energy Clearing Intro</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/otvlXRTvB60"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>Energy Clearing Part 1</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/t7TY1TXayII"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>Energy Clearing Part 2</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/JEvQxQD27ZI"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
@@ -220,13 +187,10 @@
     <p>&nbsp;</p>
     <h5>Energy Clearing BONUS</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/MM4qzF9LYsI"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
@@ -249,46 +213,34 @@
     <p>&nbsp;</p>
     <h5>Vibe Enhancer Hypnosis &ndash; Raw</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/AQOvTm1Uuvw"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>Vibe Enhancer Hypnosis &ndash; Brain Entrainment</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/d6tVINZYZbY"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>Love Enhancer Hypnosis &ndash; Raw</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/ZHRfY8qFzsk"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>Love Enhancer Hypnosis &ndash; Brain Entrainment</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/mdnYj2Ga9II"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
@@ -320,57 +272,42 @@
     <p>&nbsp;</p>
     <h5>Sub-Personality Reboot &ndash; Raw</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/ZVFlQpJQeeo"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>Sub-Personality Reboot &ndash; Brain Entrainment</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/pz7B62e3d5A"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>Desire Focused Manifester &ndash; Raw</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/n0bTLyjX8sY"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>Desire Focused Manifester &ndash; Brain Entrainment</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/Zfut_8OWKP8"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <h5>Heaven &amp; Earth Grounding</h5>
     <div class="video-responsive">
-      <iframe
-        width="560"
-        height="315"
+      <q-video
+        :ratio="16/9"
         src="https://www.youtube-nocookie.com/embed/kW9kgewCNoQ"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+      />
     </div>
     <p>&nbsp;</p>
     <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
