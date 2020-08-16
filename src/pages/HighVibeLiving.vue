@@ -330,11 +330,6 @@ FROM THIS APP WHILE DRIVING OR OPERATING MACHINERY</h6>
 <script>
 import { openURL } from 'quasar'
 export default {
-  methods:{
-    myLink(myURL){
-      openURL(myURL)
-    }
-  }
 }
 </script>
 <style lang="stylus" scoped>
