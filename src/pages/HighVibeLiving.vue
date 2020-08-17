@@ -249,6 +249,9 @@
     <h4>Meditations</h4>
     <p>These great meditations will assist you in holding the focus of your desires and clearing
     out the energy that is standing in your way. They work great together and seperately.</p>
+    <p>Be sure to use earbuds or headphones when listening. To get the full benefits of the 
+    Brain Entrainment* music you need to use your headphones. Plus, even the RAW recordings 
+    are enhanced with headphones.</p>
     <p>The <span class="callouts">DESIRE FOCUS</span> meditation is great as it will give you focus as well as clear away
     energetic blocks while receiving healing. Plus, you will be working with a Majestic Eagle
     and feel so free and energized. Use this repeatedly for all of your goals and desires.
