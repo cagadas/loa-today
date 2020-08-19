@@ -28,9 +28,7 @@
       "cordova-plugin-wkwebview-engine": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-splashscreen": {},
-      "cordova-plugin-media": {
-        "KEEP_AVAUDIOSESSION_ALWAYS_ACTIVE": "NO"
-      }
+      "cordova-plugin-media": {}
     },
     "platforms": [
       "android",
