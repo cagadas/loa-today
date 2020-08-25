@@ -22,6 +22,7 @@
       <p><span style="color: aqua;">{{ item.date }} &ndash; </span> <span v-html="item.description" v-linkified /> &nbsp; <span style="color: green;">Show #{{ item.episodeNumber }}</span></p>
       <player
         :mp3="item.mp3"
+        :key="callKey"
         ref="pauseMe"
         @timeupdate="secondsOnPlayer($event, item.element)"
         @playing="playing(item, item.element)"
@@ -165,8 +166,6 @@ export default {
           })
         }
         this.showImage = xml.elements[0].elements[0].elements[4].elements[0].elements[0].text
-        // Vue.prototype.$showTitle = xml.elements[0].elements[0].elements[4].elements[1].elements[0].text
-        // Vue.prototype.$showUrl = xml.elements[0].elements[0].elements[4].elements[2].elements[0].text
         this.showDescription = xml.elements[0].elements[0].elements[2].elements[0].text
         this.feed = feedHere
     },
@@ -237,7 +236,7 @@ export default {
     updateList(){
       if(this.playerIsPlaying === 0){
         this.callKey += 1
-        //this.$forceUpdate()
+        // this.$forceUpdate()
         console.log("updatedList")
         this.getFeed()
       }

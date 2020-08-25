@@ -12,12 +12,7 @@ module.exports = function (/* ctx */) {
       // app boot file (/src/boot)
       // --> boot files are part of "main.js"
       // https://quasar.dev/quasar-cli/cli-documentation/boot-files
-      boot: [
-        "axios.js",
-        "xmlJs.js",
-        "xmlBi.js",
-        "xmlTgig.js"
-      ],
+      boot: ["axios.js", "xmlJs.js", "xmlBi.js", "xmlTgig.js"],
 
       // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
       css: ["app.sass"],
@@ -51,7 +46,7 @@ module.exports = function (/* ctx */) {
         importStrategy: "auto",
 
         // Quasar plugins
-        plugins: ["LocalStorage","Notify"]
+        plugins: ["LocalStorage", "Notify"]
       },
 
       // https://quasar.dev/quasar-cli/cli-documentation/supporting-ts
@@ -137,7 +132,8 @@ module.exports = function (/* ctx */) {
       // Full list of options: https://quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
       cordova: {
         // noIosLegacyBuildFlag: true, // uncomment only if you know what you are doing
-        id: "net.loatoday.player"
+        id: "net.loatoday.player",
+        playAudioWhenScreenIsLocked: true
       },
 
       // Full list of options: https://quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor

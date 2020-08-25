@@ -33,7 +33,7 @@ export default {
     },
     play(){
       // used by clicking episode title in Index.vue
-      this.player.play({ playAudioWhenScreenIsLocked : true })
+      this.player.play()
     }
   },
   mounted(){
