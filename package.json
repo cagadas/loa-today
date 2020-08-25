@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@quasar/app": "^2.0.4",
+    "@quasar/quasar-app-extension-qmediaplayer": "^1.0.28",
     "devtron": "^1.4.0",
     "electron": "^9.1.0",
     "electron-builder": "^22.7.0",
