@@ -20,6 +20,7 @@
     "cordova-plugin-splashscreen": "^5.0.4"
   },
   "devDependencies": {
+    "cordova-plugin-background-audio": "^1.1.0",
     "cordova-plugin-whitelist": "1"
   },
   "cordova": {
@@ -28,7 +29,8 @@
       "cordova-plugin-wkwebview-engine": {},
       "cordova-plugin-inappbrowser": {},
       "cordova-plugin-splashscreen": {},
-      "cordova-plugin-media": {}
+      "cordova-plugin-media": {},
+      "cordova-plugin-background-audio": {}
     },
     "platforms": [
       "android",
