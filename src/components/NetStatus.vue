@@ -36,26 +36,25 @@ export default {
     },
     
     createEpisode(item, index){
-      this.currentEpisode[index].listener_id = this.getListener.listener_id
-      this.currentEpisode[index].password = this.getListener.password
-      this.currentEpisode[index].episode_number = item[index].episodeNumber
-      this.currentEpisode[index].episode_time_start = item[index].episode_time_start
+      this.connCheck
+      this.currentEpisode = item[index]
+      this.currentEpisode.episode_time_start = item[index].episode_time_start
       axios
       .post('api/episode/create.php', {
-        listener_id: this.currentEpisode[index].listener_id,
-        password: this.currentEpisode[index].password,
-        episode_title: this.currentEpisode[index].episode_title,
-        episode_number: this.currentEpisode[index].episode_number,
-        episode_time_update: this.currentEpisode[index].episode_time_update,
-        episode_time_start: this.currentEpisode[index].episode_time_start
+        listener_id: this.$q.localStorage.getItem("listener_id"),
+        password: this.$q.localStorage.getItem("password"),
+        episode_title: this.currentEpisode.episode_title,
+        episode_number: this.currentEpisode.episode_number,
+        episode_time_update: this.currentEpisode.episode_time_update,
+        episode_time_start: this.currentEpisode.episode_time_start
         })
       .then(response=> {
-        this.currentEpisode[index].episode_id = response.data.episode_id
-        this.currentEpisode[index].listener_id = response.data.listener_id
-        this.currentEpisode[index].episode_date_started = response.data.episode_date_started
-        this.currentEpisode[index].episode_title = response.data.episode_title
-        this.currentEpisode[index].episode_number = response.data.episode_number
-        this.currentEpisode[index].ip_address = response.data.ip_address
+        this.currentEpisode.episode_id = response.data.episode_id
+        this.currentEpisode.listener_id = response.data.listener_id
+        this.currentEpisode.episode_date_started = response.data.episode_date_started
+        this.currentEpisode.episode_title = response.data.episode_title
+        this.currentEpisode.episode_number = response.data.episode_number
+        this.currentEpisode.ip_address = response.data.ip_address
         this.setEpisode(this.currentEpisode)
       })
       .catch(function(error) {
@@ -64,29 +63,28 @@ export default {
     },
     
     updateEpisode(item, index){
-      this.currentEpisode[index].listener_id = this.getListener.listener_id
-      this.currentEpisode[index].password = this.getListener.password
       // update existing user id
       let d = new Date(Date.now())
       //d = d.toISOString().slice(0, 19).replace('T', ' ') -- hang on to this!
       d = this.timeZoneShift(d)
       d = d.replace('T', ' ')
-      if(this.getEpisode.episode_time_update < this.currentEpisode[index].episode_time_update){
-        this.setEpisode(this.currentEpisode[index].episode_time_update)
+      if(this.getEpisode.episode_time_update < this.currentEpisode.episode_time_update){
+        this.setEpisode(this.currentEpisode.episode_time_update)
       }
+      console.log("this.currentEpisode in updateEpisode in NetStatus: ", this.currentEpisode)
       axios
       .post('api/episode/update.php', {
-        listener_id: this.currentEpisode[index].listener_id,
-        password: this.currentEpisode[index].password,
-        episode_id: this.currentEpisode[index].episode_id,
-        episode_number: this.currentEpisode[index].episode_number,
-        episode_title: this.currentEpisode[index].episode_title,
-        episode_time_start: this.currentEpisode[index].episode_time_start,
-        episode_time_update: this.currentEpisode[index].episode_time_update,
+        listener_id: this.$q.localStorage.getItem("listener_id"),
+        password: this.$q.localStorage.getItem("password"),
+        episode_id: this.currentEpisode.episode_id,
+        episode_number: this.currentEpisode.episode_number,
+        episode_title: this.currentEpisode.episode_title,
+        episode_time_start: this.currentEpisode.episode_time_start,
+        episode_time_update: this.currentEpisode.episode_time_update,
         episode_date_stopped: d
       })
       .then(response=> {
-        this.currentEpisode[index].episode_date_stopped = response.data.episode_date_stopped
+        this.currentEpisode.episode_date_stopped = response.data.episode_date_stopped
         this.setEpisode(this.currentEpisode)
       })
       .catch(function(error) {
@@ -95,8 +93,6 @@ export default {
     },
 
     updateListener(item, index){
-      this.currentListener.listener_id = this.getListener.listener_id
-      this.currentListener.password = this.getListener.password
       // update existing user id
       let d = new Date(Date.now())
       //d = d.toISOString().slice(0, 19).replace('T', ' ') -- hang on to this!
@@ -104,9 +100,9 @@ export default {
       d = d.replace('T', ' ')
       axios
       .post('api/listener/update.php', {
-        listener_id: this.currentListener.listener_id,
+        listener_id: this.$q.localStorage.getItem("listener_id"),
         listener_name: this.currentListener.listener_name,
-        password: this.currentListener.password,
+        password: this.$q.localStorage.getItem("password"),
         date_last_logon: d
       })
       .then(response=> {
@@ -114,6 +110,7 @@ export default {
         this.currentListener.listener_name = response.data.listener_name
         this.currentListener.date_last_logon = response.data.date_last_logon
         this.setListener(this.currentListener)
+        console.log("response.data in updateListener in NetStatus: ", response.data)
       })
       .catch(function(error) {
           console.log("updateListener Axios Error: ", error)

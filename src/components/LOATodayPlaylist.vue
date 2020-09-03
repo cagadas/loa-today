@@ -25,10 +25,10 @@
         :key="callKey"
         ref="pauseMe"
         @timeupdate="secondsOnPlayer($event, item.element)"
-        @playing="playing(item, item.element)"
-        @paused="paused(item, item.element)"
+        @nowPlaying="playerPlaying(item, item.element)"
+        @nowPaused="playerPaused(item, item.element)"
       ></player>
-      <net-status ref="netStatus" :listener="listener" :episode="episode" />
+      <net-status ref="netStatus" :listener="listener" :episode="item" />
       <hr>
     </div>
   </div>
@@ -51,7 +51,7 @@ export default {
 
   data() {
     return {
-      feed: undefined,
+      feed: [],
       callKey: 0,
       showDescription: '',
       showImage: '',
@@ -64,9 +64,6 @@ export default {
         listener_name: 'Listener',
         date_last_logon: ''
       },
-      episode: [
-        {}
-      ],
       value: 0,
       playerIsPlaying: 0,
       newXml: ''
@@ -87,6 +84,7 @@ export default {
       this.listener.listener_id = this.$q.localStorage.getItem("listener_id")
       this.listener.password = this.$q.localStorage.getItem("password")
       this.setListener(this.listener)
+      console.log("finished created in LOATodayPlaylist")
     }
     if(!this.$q.localStorage.has("listener_id")){
       this.createListener()
@@ -115,6 +113,7 @@ export default {
         this.listener.listener_name = response.data.listener_name
         this.listener.date_last_logon = response.data.date_last_logon
         this.listener.password = response.data.password
+        console.log("listener in createListener in LOATodayPlaylist: ", this.listener)
         this.setListener(this.listener)
         this.$q.localStorage.set("listener_id", this.listener.listener_id)
         this.$q.localStorage.set("password", this.listener.password)
@@ -131,7 +130,7 @@ export default {
             //console.log("this.newXml: ", this.newXml)
           })
           .catch(function (error) {
-            console.log("axios error in xmlJs.js: ",error)
+            console.log("axios error in LOATodayPlaylist.vue: ",error)
           })
         let xml = JSON.parse(Vue.prototype.$xml)
         let length = xml.elements[0].elements[0].elements.length
@@ -170,24 +169,23 @@ export default {
         this.feed = feedHere
     },
 
-    playing(item, index){
+    playerPlaying(item, index){
       this.playerIsPlaying ++
       this.$emit('nowPlaying', this.playerIsPlaying)
-      this.episode[index] = item
-      this.episode[index].playing = true
+      this.feed[index] = item
+      this.feed[index].playing = true
       let d = new Date(Date.now())
       d = this.timeZoneShift(d)
       d = d.replace('T', ' ')
-      this.episode[index].episode_date_started = d
-      this.episode[index].description = item.description
-      this.episode[index].element = item.element
-      this.episode[index].episode_title = item.title
-      this.episode[index].episode_number = item.number
-      // console.log("playing: ", this.episode[index].episode_time_start)
-      this.episode[index].mp3 = item.mp3
-      this.episode[index].date = item.date
-      this.setEpisode(this.episode)
-      this.$refs.netStatus[index].updateListener(this.episode, index)
+      this.feed[index].episode_date_started = d
+      this.feed[index].description = item.description
+      this.feed[index].element = item.element
+      this.feed[index].episode_title = item.title
+      this.feed[index].episode_number = item.number
+      this.feed[index].mp3 = item.mp3
+      this.feed[index].date = item.date
+      this.setEpisode(this.feed)
+      this.$refs.netStatus[index].updateListener(this.feed, index)
       if(item.element != this.oldElement){
         // pause old player
         this.newElement = item.element
@@ -196,27 +194,29 @@ export default {
         }
         this.oldElement = this.newElement
       }
+      console.log("playerPlaying at LOATodayPLaylist item: ", item)
+      console.log("playerPlaying at LOATodayPLaylist index: ", index)
     },
 
-    paused(item, index){
+    playerPaused(item, index){
       this.playerIsPlaying --
       this.$emit('nowPlaying', this.playerIsPlaying)
-      this.episode[index].playing = false
-      // console.log("paused: ", this.episode[index].episode_time_update)
-      this.setEpisode(this.episode)
-      this.$refs.netStatus[item.element].updateEpisode(this.episode, item.element)
+      this.feed[index].playing = false
+      // console.log("paused: ", this.feed[index].episode_time_update)
+      this.setEpisode(this.feed)
+      this.$refs.netStatus[item.element].updateEpisode(this.feed, item.element)
       if(item.element != this.oldElement){
         this.oldElement = this.newElement
       }
     },
 
     secondsOnPlayer(value, index){
-      if(this.episode[index].playing === true){
-        this.episode[index].episode_time_start = value
-        this.episode[index].episode_time_update = value
+      if(this.feed[index].playing === true){
+        this.feed[index].episode_time_start = value
+        this.feed[index].episode_time_update = value
       }
-      if(this.episode[index].playing === false){
-        this.episode[index].episode_time_update = value
+      if(this.feed[index].playing === false){
+        this.feed[index].episode_time_update = value
       }
     },
 

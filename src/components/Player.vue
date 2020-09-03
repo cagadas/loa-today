@@ -1,17 +1,22 @@
 <template>
   <div>
-    <vue-plyr ref="plyr">
-      <audio preload="none" ref="audio">
-        <source :src="mp3" type="audio/mp3" ref="source"/>
-      </audio>
-    </vue-plyr>
+    <q-media-player
+      ref="myPlayer"
+      type="audio"
+      :source="mp3"
+      background-color="green-14"
+      color="green-3"
+      @playing="play"
+      @paused="pause"
+      @error="error"
+      @stalled="stalled"
+      @timeupdate="timeupdate"
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Player',
-
   props: {
       mp3 : String
     },
@@ -20,32 +25,35 @@ export default {
     return{
     }
   },
-  computed: {
-    player() {
-      return this.$refs.plyr.player 
-    }
-  },
   methods: {
+    error(MediaError){
+      console.log("player error: ", MediaError)
+    },
     pause(){
       // used by "playing" method to pause episode that was already playing
       // after user starts playing a new episode
-      this.player.pause()
+      // this.player.pause()
+      this.$emit('nowPaused')
+      console.log("player pause")
     },
     play(){
       // used by clicking episode title in Index.vue
-      this.player.play( )
+      // this.player.play( )
+      this.$emit('nowPlaying')
+      console.log("player play")
+    },
+    stalled(){
+      console.log("player stalled")
+    },
+    timeupdate(curTime){
+      this.$emit('timeupdate', curTime)
+      //console.log("player timeupdate:", curTime)
     }
   },
   mounted(){
-    this.player.on('playing', () => this.$emit('playing')),
-    this.player.on('pause', () => this.$emit('paused')),
-    this.player.on('timeupdate', () => this.$emit('timeupdate', this.player.currentTime))
+    // this.player.on('playing', () => this.$emit('playing')),
+    // this.player.on('pause', () => this.$emit('paused')),
+    // this.player.on('timeupdate', () => this.$emit('timeupdate', this.player.currentTime))
   }
 }
 </script>
-<style lang="stylus">
-  .plyr--audio .plyr__controls {
-    background-color: rgb(96,180,96)!important;
-    margin-bottom: 16px;
-  }
-</style>
