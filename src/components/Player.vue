@@ -30,15 +30,10 @@ export default {
       console.log("player error: ", MediaError)
     },
     pause(){
-      // used by "playing" method to pause episode that was already playing
-      // after user starts playing a new episode
-      // this.player.pause()
       this.$emit('nowPaused')
       console.log("player pause")
     },
     play(){
-      // used by clicking episode title in Index.vue
-      // this.player.play( )
       this.$emit('nowPlaying')
       console.log("player play")
     },
@@ -47,13 +42,7 @@ export default {
     },
     timeupdate(curTime){
       this.$emit('timeupdate', curTime)
-      //console.log("player timeupdate:", curTime)
     }
-  },
-  mounted(){
-    // this.player.on('playing', () => this.$emit('playing')),
-    // this.player.on('pause', () => this.$emit('paused')),
-    // this.player.on('timeupdate', () => this.$emit('timeupdate', this.player.currentTime))
   }
 }
 </script>
