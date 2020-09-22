@@ -1,6 +1,7 @@
 <template>
   <div>
     <q-media-player
+      dense
       ref="myPlayer"
       type="audio"
       :source="mp3"
