@@ -18,3 +18,9 @@ export default {
   */
 }
 </script>
+
+<style>
+video::-webkit-media-controls {
+  display: none;
+}
+</style>
