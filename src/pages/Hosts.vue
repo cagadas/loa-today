@@ -24,7 +24,7 @@
     <p>Louis de Souza - <span class="bluetext">Louis is an adept follower of the teachings of
       Abraham-Hicks and brings a calm, unique perspective to the show. During his younger years 
       he suffered from a variety of ailments, illnesses, and chronic conditions, all of which he 
-      healed using his knowledge of the Law of Attraction. Louis joins Uohna and Walt on Mondays 
+      healed using his knowledge of the Law of Attraction. Louis joins Ami and Walt on Mondays 
       at 4 PM New York time. You can reach out to Louis on 
       <a href="#louis" @click="myLink('https://www.facebook.com/Louisdesouza')">Facebook</a>.</span></p>
     <q-img id="alyx" src="images/Alyx-wide.jpg" alt="Alyx King" class="myImage"></q-img>

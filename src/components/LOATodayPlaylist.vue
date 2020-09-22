@@ -52,6 +52,8 @@ export default {
   data() {
     return {
       feed: [],
+      oldFeed: [],
+      feedUpdated: false,
       callKey: 0,
       showDescription: '',
       showImage: '',
@@ -93,7 +95,7 @@ export default {
 
   cron:{
     time: 60000, // 1 minute
-    method: 'updateList'
+    method: 'checkList'
   },
 
   mounted(){
@@ -102,6 +104,12 @@ export default {
 
   methods:{
     ...mapActions('modulePlayer', ['setEpisode','setListener']),
+
+    checkList() {
+      if(this.feedUpdated === true) {
+        this.updateList()
+      }
+    },
 
     createListener(){
       axios
@@ -167,6 +175,10 @@ export default {
         this.showImage = xml.elements[0].elements[0].elements[4].elements[0].elements[0].text
         this.showDescription = xml.elements[0].elements[0].elements[2].elements[0].text
         this.feed = feedHere
+        if(this.feed != this.oldFeed) {
+          this.feedUpdated = true
+        }
+        this.oldFeed = this.feed
     },
 
     playerPlaying(item, index){
@@ -183,6 +195,7 @@ export default {
       this.feed[index].episode_title = item.title
       this.feed[index].episode_number = item.number
       this.feed[index].mp3 = item.mp3
+      console.log("this.feed[index].mp3: ", this.feed[index].mp3)
       this.feed[index].date = item.date
       this.setEpisode(this.feed)
       this.$refs.netStatus[index].updateListener(this.feed, index)
@@ -194,8 +207,8 @@ export default {
         }
         this.oldElement = this.newElement
       }
-      console.log("playerPlaying at LOATodayPLaylist item: ", item)
-      console.log("playerPlaying at LOATodayPLaylist index: ", index)
+      console.log("playerPlaying at LOATodayPlaylist item: ", item)
+      console.log("playerPlaying at LOATodayPlaylist index: ", index)
     },
 
     playerPaused(item, index){
@@ -239,6 +252,7 @@ export default {
         // this.$forceUpdate()
         console.log("updatedList")
         this.getFeed()
+        this.feedUpdated = false
       }
     }
   }
