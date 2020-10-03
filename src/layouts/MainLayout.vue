@@ -17,7 +17,7 @@
           LOA Today
         </q-toolbar-title>
 
-        <div>Ver. 1.1.76</div>
+        <div>Ver. 1.1.77</div>
       </q-toolbar>
     </q-header>
 
@@ -45,14 +45,11 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink'
-
 export default {
   name: 'MainLayout',
-
   components: {
     EssentialLink
   },
-
   data () {
     return {
       leftDrawerOpen: false,
