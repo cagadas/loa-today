@@ -15,6 +15,7 @@
         class="full-width" 
         style="height: 12px;">
       </div>
+      <hr>
       <h6
         @click="startPlay(item.element)"
         class="pointer"
@@ -29,7 +30,6 @@
         @nowPaused="playerPaused(item, item.element)"
       ></player>
       <net-status ref="netStatus" :listener="listener" :episode="item" />
-      <hr>
     </div>
   </div>
 </template>
@@ -151,7 +151,7 @@ export default {
         let episodeNumber = 0
         let count = 5
         for (let i = 21; i < Math.min(length,25+21); i++) {
-          title = xml.elements[0].elements[0].elements[i].elements[0].elements[0].text
+          title = xml.elements[0].elements[0].elements[i].elements[10].elements[0].text
           episodeId = xml.elements[0].elements[0].elements[i].elements[1].elements[0].text
           if (episodeId.substring(32, 33) === '-') {
             count--

@@ -47,7 +47,7 @@ export default async (/* { app, router, Vue ... } */) => {
   Vue.prototype.$showImage = xml.elements[0].elements[0].elements[4].elements[0].elements[0].text
   // Vue.prototype.$showTitle = xml.elements[0].elements[0].elements[4].elements[1].elements[0].text
   // Vue.prototype.$showUrl = xml.elements[0].elements[0].elements[4].elements[2].elements[0].text
-  Vue.prototype.$showDescription = xml.elements[0].elements[0].elements[2].elements[0].text
+  Vue.prototype.$showDescription = xml.elements[0].elements[0].elements[2].elements[0].cdata
   Vue.prototype.$feed = feed
   return feed
 }

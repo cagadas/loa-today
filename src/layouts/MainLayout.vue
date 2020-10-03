@@ -91,6 +91,12 @@ export default {
           link: './index.html#/moneygame'
         },
         {
+          title: 'Meditation',
+          caption: 'The Stream Of David - Guided Meditation Seeing Through The Eyes of Source',
+          icon: 'movie',
+          link: './index.html#/streammeditation'
+        },
+        {
           title: 'The Grass Is Greener',
           caption: 'Audio Play - Fiction',
           icon: 'radio',
