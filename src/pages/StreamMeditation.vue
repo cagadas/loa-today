@@ -10,6 +10,39 @@
 </template>
 <script>
 import { openURL } from 'quasar'
+
+import { Plugins } from '@capacitor/core';
+
+const { App, BackgroundTask } = Plugins;
+
+App.addListener('appStateChange', (state) => {
+
+  if (!state.isActive) {
+    // The app has become inactive. We should check if we have some work left to do, and, if so,
+    // execute a background task that will allow us to finish that work before the OS
+    // suspends or terminates our app:
+
+    let taskId = BackgroundTask.beforeExit(async () => {
+      // In this function We might finish an upload, let a network request
+      // finish, persist some data, or perform some other task
+
+      // Example of long task
+      var start = new Date().getTime();
+      for (var i = 0; i < 1e18; i++) {
+        // 90 minutes = 5400 seconds
+        if ((new Date().getTime() - start) > 5400000){
+          break;
+        }
+      }
+      // Must call in order to end our task otherwise
+      // we risk our app being terminated, and possibly
+      // being labeled as impacting battery life
+      BackgroundTask.finish({
+        taskId
+      });
+    });
+  }
+})
 export default {
 }
 </script>
