@@ -138,6 +138,8 @@ module.exports = function (/* ctx */) {
 
       // Full list of options: https://quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor
       capacitor: {
+        id: "net.loatoday.player",
+        playAudioWhenScreenIsLocked: true,
         hideSplashscreen: true
       },
 
