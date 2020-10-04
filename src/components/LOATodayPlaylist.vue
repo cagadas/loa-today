@@ -26,8 +26,8 @@
         :key="callKey"
         ref="pauseMe"
         @timeupdate="secondsOnPlayer($event, item.element)"
-        @nowPlaying="playerPlaying(item, item.element)"
-        @nowPaused="playerPaused(item, item.element)"
+        @playing="playerPlaying(item, item.element)"
+        @paused="playerPaused(item, item.element)"
       ></player>
       <net-status ref="netStatus" :listener="listener" :episode="item" />
     </div>

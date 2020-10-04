@@ -44,7 +44,7 @@ export default {
         listener_id: this.$q.localStorage.getItem("listener_id"),
         password: this.$q.localStorage.getItem("password"),
         episode_title: this.currentEpisode.episode_title,
-        episode_number: this.currentEpisode.episode_number,
+        episode_number: this.currentEpisode.episodeNumber,
         episode_time_update: this.currentEpisode.episode_time_update,
         episode_time_start: this.currentEpisode.episode_time_start
         })
@@ -53,7 +53,7 @@ export default {
         this.currentEpisode.listener_id = response.data.listener_id
         this.currentEpisode.episode_date_started = response.data.episode_date_started
         this.currentEpisode.episode_title = response.data.episode_title
-        this.currentEpisode.episode_number = response.data.episode_number
+        this.currentEpisode.episodeNumber = response.data.episode_number
         this.currentEpisode.ip_address = response.data.ip_address
         this.setEpisode(this.currentEpisode)
       })
@@ -77,7 +77,7 @@ export default {
         listener_id: this.$q.localStorage.getItem("listener_id"),
         password: this.$q.localStorage.getItem("password"),
         episode_id: this.currentEpisode.episode_id,
-        episode_number: this.currentEpisode.episode_number,
+        episode_number: this.currentEpisode.episodeNumber,
         episode_title: this.currentEpisode.episode_title,
         episode_time_start: this.currentEpisode.episode_time_start,
         episode_time_update: this.currentEpisode.episode_time_update,
