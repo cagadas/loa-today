@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/waltthiessen/Documents/loa-today/loa-today/src-capacitor/ios/App/LOA Today.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/waltthiessen/Documents/loa-today/loa-today/src-capacitor/ios/App/Pods/LOA Today.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:App.xcodeproj">
    </FileRef>
    <FileRef
