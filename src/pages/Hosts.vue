@@ -45,7 +45,7 @@
       website. Also, check out his 
       <a href="#dan" @click="myLink('https://www.facebook.com/groups/dreamwithdan/')">Dream With 
       Dan</a> group on Facebook</span></p>
-    <q-img id="rita" src="images/Rita.jpg" alt="Rita Gigange" class="myImage"></q-img>
+    <q-img id="rita" src="images/Rita.jpg" alt="Rita Gigante" class="myImage"></q-img>
     <p>Rita Gigante - <span class="bluetext">The author of <em>The Godfather's Daughter: An Unlikely 
       Story of Love, Healing, and Redemption,</em> Rita's father was the notorious NYC crime boss, 
       Vincent "the Chin" Gigante, head of all five New York crime families. But today she is a 
@@ -64,7 +64,7 @@
       Tuesdays here on LOA Today. David can also be reached on his
       <a href="#david" @click="myLink('https://www.facebook.com/strickel')">Facebook</a> page or in 
       his <a href="#david" @click="myLink('https://www.facebook.com/groups/378945439249736/')">TYA
-      Global Awakening</a> group on Facebook.</span></p>
+      Global Awakening</a> group on Facebook.</span> <a href="#david" @click="myLink('https://thestreamofdavid.mykajabi.com/registration-page')">Click here for FREE access to The Stream Of David's master class.</a></p>
     <q-img id="ami" src="images/Ami-wide.jpg" alt="Ami Blackford" class="myImage"></q-img>
     <p>Ami Blackford - <span class="bluetext">Ami brings a breath of fresh air and high energy to
       Monday's show with Louis de Souza. She lives in Atlanta, Georgia and is a self-proclaimed 
