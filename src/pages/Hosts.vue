@@ -77,6 +77,34 @@
 
 <script>
 import { openURL } from 'quasar'
+import { Plugins, AppState } from '@capacitor/core';
+
+const { App } = Plugins;
+
+App.addListener('appStateChange', (state) => {
+  // state.isActive contains the active state
+  console.log('App state changed. Is active?', state.isActive);
+});
+
+var ret = App.canOpenUrl({ url: 'com.getcapacitor.myapp' });
+console.log('Can open url: ', ret.value);
+
+ret = App.openUrl({ url: 'com.getcapacitor.myapp://page?id=ionicframework' });
+console.log('Open url response: ', ret);
+
+ret = App.getLaunchUrl();
+if(ret && ret.url) {
+  console.log('App opened with URL: ' + ret.url);
+}
+console.log('Launch url: ', ret);
+
+App.addListener('appUrlOpen', (data) => {
+  console.log('App opened with URL: ' +  data.url);
+});
+
+App.addListener('appRestoredResult', (data) => {
+  console.log('Restored state:', data);
+});
 export default {
   name: 'Hosts',
   methods: {
