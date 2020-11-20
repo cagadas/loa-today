@@ -14,11 +14,13 @@ import { Plugins } from '@capacitor/core';
 const { App, BackgroundTask } = Plugins;
 
 App.addListener('appStateChange', (state) => {
-
+  console.log("state.isActive in Player.vue: ", state.isActive)
   if (!state.isActive) {
     // The app has become inactive. We should check if we have some work left to do, and, if so,
     // execute a background task that will allow us to finish that work before the OS
     // suspends or terminates our app:
+
+    console.log("Start BackgroundTask in Player.vue")
 
     let taskId = BackgroundTask.beforeExit(async () => {
       // In this function We might finish an upload, let a network request
@@ -40,6 +42,7 @@ App.addListener('appStateChange', (state) => {
       BackgroundTask.finish({
         taskId
       });
+      console.log("Finish BackgroundTask in Player.vue")
     });
   }
 })

@@ -9,9 +9,10 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
+    "@capacitor/android": "^2.4.2",
     "@capacitor/core": "^2.4.2",
     "@quasar/cli": "^1.1.2",
-    "@quasar/extras": "^1.9.5",
+    "@quasar/extras": "^1.9.10",
     "@quasar/icongenie": "^2.3.2",
     "axios": "^0.19.2",
     "cordova": "^9.0.0",
@@ -21,7 +22,7 @@
     "cordova-plugin-whitelist": "^1.3.4",
     "cordova-plugin-wkwebview-engine": "^1.2.1",
     "plyr": "^3.6.2",
-    "quasar": "^1.13.2",
+    "quasar": "^1.14.3",
     "vue-crono": "^2.0.8",
     "vue-linkify": "^1.0.1",
     "vue-offline": "^2.0.8",
@@ -32,8 +33,8 @@
     "xml-js": "^1.6.11"
   },
   "devDependencies": {
-    "@quasar/app": "^2.0.9",
-    "@quasar/quasar-app-extension-qmediaplayer": "^1.0.28",
+    "@quasar/app": "^2.1.6",
+    "@quasar/quasar-app-extension-qmediaplayer": "^1.1.2",
     "devtron": "^1.4.0",
     "electron": "^10.1.3",
     "electron-builder": "^22.7.0",

@@ -1,5 +1,12 @@
 <template>
   <q-page class="flex-center">
+    <q-btn
+      class="glossy full-width"
+      rounded
+      color="secondary"
+      label="Update"
+      @click="update"
+    />
     <h4 style="text-align: center; margin-bottom: 20px;">LOA Today Co&#8209;Hosts</h4>
     <q-img src="images/Walt.jpg" alt="Walt Thiessen" class="myImage"></q-img>
     <p>Walt Thiessen - <span class="bluetext">Walt founded LOA Today with his wife, Louise, on
@@ -79,37 +86,45 @@
 import { openURL } from 'quasar'
 import { Plugins, AppState } from '@capacitor/core';
 
-const { App } = Plugins;
-
-App.addListener('appStateChange', (state) => {
-  // state.isActive contains the active state
-  console.log('App state changed. Is active?', state.isActive);
-});
-
-var ret = App.canOpenUrl({ url: 'com.getcapacitor.myapp' });
-console.log('Can open url: ', ret.value);
-
-ret = App.openUrl({ url: 'com.getcapacitor.myapp://page?id=ionicframework' });
-console.log('Open url response: ', ret);
-
-ret = App.getLaunchUrl();
-if(ret && ret.url) {
-  console.log('App opened with URL: ' + ret.url);
-}
-console.log('Launch url: ', ret);
-
-App.addListener('appUrlOpen', (data) => {
-  console.log('App opened with URL: ' +  data.url);
-});
-
-App.addListener('appRestoredResult', (data) => {
-  console.log('Restored state:', data);
-});
 export default {
   name: 'Hosts',
+  mounted(){
+
+  },
   methods: {
     myLink(myURL){
       openURL(myURL)
+    },
+    update(){
+      const { App } = Plugins;
+
+      App.addListener('appStateChange', (state, AppState) => {
+        // state.isActive contains the active state
+        console.log('App state changed. Is active?', state.isActive)
+      })
+
+      var ret = App.canOpenUrl({ url: 'com.getcapacitor.myapp' })
+      //var ret = App.canOpenUrl({ url: 'net.loatoday.player' })
+      console.log('Can open url: ', ret.value)
+      console.log('Can open url: ', ret)
+
+      ret = App.openUrl({ url: 'com.getcapacitor.myapp://page?id=ionicframework' })
+      //ret = App.openUrl({ url: 'net.loatoday.player://page?id=ionicframework' })
+      console.log('Open url response: ', ret)
+
+      ret = App.getLaunchUrl()
+      if(ret && ret.url) {
+        console.log('App opened with URL: ' + ret.url)
+      }
+      console.log('Launch url: ', ret)
+
+      App.addListener('appUrlOpen', (data) => {
+        console.log('App opened with URL: ' +  data.url)
+      });
+
+      App.addListener('appRestoredResult', (data) => {
+        console.log('Restored state:', data)
+      })
     }
   }
 }
