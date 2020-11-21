@@ -7,7 +7,7 @@
 // Configuration for your app
 // https://quasar.dev/quasar-cli/quasar-conf-js
 
-module.exports = function (/* ctx */) {
+module.exports = function ( /* ctx */ ) {
     return {
       // app boot file (/src/boot)
       // --> boot files are part of "main.js"
@@ -15,7 +15,7 @@ module.exports = function (/* ctx */) {
       boot: ["axios.js", "xmlJs.js", "xmlBi.js", "xmlTgig.js"],
 
       // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
-      css: ["app.sass", "app.scss"],
+      css: ["app.sass"],
 
       // https://github.com/quasarframework/quasar/tree/dev/extras
       extras: [
