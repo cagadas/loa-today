@@ -1,7 +1,6 @@
 {
-    "extends": "@quasar/app/tsconfig-preset",
-    "skipLibCheck": true,
-    "compilerOptions": {
-      "baseUrl": "."
-    }
+  "extends": "@quasar/app/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": "."
   }
+}

@@ -1,7 +1,7 @@
 {
   "name": "loa-today",
-  "version": "1.1.79",
-  "description": "A playlist app for our listeners",
+  "version": "1.1.81",
+  "description": "A podcast player and goodies package for our loyal listeners.",
   "productName": "LOA Today",
   "author": "Walt Thiessen <walt@loatoday.net>",
   "private": true,
@@ -9,43 +9,28 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@capacitor/android": "^2.4.2",
-    "@capacitor/core": "^2.4.2",
-    "@quasar/cli": "^1.1.2",
-    "@quasar/extras": "^1.9.10",
-    "@quasar/icongenie": "^2.3.2",
-    "axios": "^0.19.2",
-    "cordova": "^9.0.0",
-    "cordova-plugin-background-audio": "^1.1.0",
-    "cordova-plugin-inappbrowser": "^4.0.0",
-    "cordova-plugin-media": "^5.0.0",
-    "cordova-plugin-whitelist": "^1.3.4",
-    "cordova-plugin-wkwebview-engine": "^1.2.1",
-    "plyr": "^3.6.2",
-    "quasar": "^1.14.5",
-    "vue-crono": "^2.0.8",
+    "@capacitor/core": "^2.4.3",
+    "@capacitor/ios": "^2.4.3",
+    "@quasar/extras": "^1.0.0",
+    "@vue/composition-api": "^0.6.7",
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "quasar": "^1.0.0",
+    "vue-crono": "^2.0.9",
     "vue-linkify": "^1.0.1",
     "vue-offline": "^2.0.8",
-    "vue-plyr": "^6.0.4",
-    "vuex": "^3.5.1",
-    "walk": "^2.3.14",
-    "workbox-webpack-plugin": "^5.1.3",
+    "vue-plyr": "^7.0.0",
     "xml-js": "^1.6.11"
   },
   "devDependencies": {
-    "@quasar/app": "^2.1.8",
-    "@quasar/quasar-app-extension-qmediaplayer": "^1.1.3",
+    "@quasar/app": "^2.0.0",
+    "@types/node": "^10.17.15",
     "devtron": "^1.4.0",
-    "electron": "^10.1.3",
-    "electron-builder": "^22.7.0",
-    "electron-debug": "^3.1.0",
-    "electron-devtools-installer": "^3.1.1",
-    "electron-packager": "^14.2.1"
-  },
-  "engines": {
-    "node": ">= 10.18.1",
-    "npm": ">= 6.13.4",
-    "yarn": ">= 1.21.1"
+    "electron": "^9.0.0",
+    "electron-debug": "^3.0.1",
+    "electron-devtools-installer": "^3.0.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2"
   },
   "browserslist": [
     "last 10 Chrome versions",
@@ -57,5 +42,10 @@
     "last 8 FirefoxAndroid versions",
     "last 10 iOS versions",
     "last 5 Opera versions"
-  ]
+  ],
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
 }

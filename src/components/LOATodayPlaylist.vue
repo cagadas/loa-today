@@ -25,6 +25,7 @@
         :mp3="item.mp3"
         :key="callKey"
         ref="pauseMe"
+        @ended="episodeEnded($event, item.element)"
         @timeupdate="secondsOnPlayer($event, item.element)"
         @playing="playerPlaying(item, item.element)"
         @paused="playerPaused(item, item.element)"
@@ -41,6 +42,7 @@ import axios from 'axios'
 import { crono } from 'vue-crono'
 import convert from 'xml-js'
 import linkify from 'vue-linkify'
+import { Plugins } from '@capacitor/core'
 Vue.directive('linkified', linkify)
 export default {
   props: {
@@ -55,6 +57,8 @@ export default {
       oldFeed: [],
       feedUpdated: false,
       callKey: 0,
+      currentTime: 0,
+      duration: 0,
       showDescription: '',
       showImage: '',
       oldElement: -1,
@@ -100,6 +104,26 @@ export default {
 
   mounted(){
     this.getFeed()
+
+    const { App, BackgroundTask } = Plugins;
+    App.addListener('appStateChange', (state) => {
+      if (!state.isActive) {
+       let taskId = BackgroundTask.beforeExit(async () => {
+          if(this.playerIsPlaying > 0){
+            // Do something here to keep playing in background
+            console.log("playing in background: true")
+          }
+        })
+        // Must call in order to end our task otherwise we risk our app being terminated, and possibly
+        // being labeled as impacting battery life
+        if(this.playerIsPlaying === 0){
+          console.log("playing in background: false")
+          BackgroundTask.finish({
+            taskId
+          })
+        }
+      }
+    })
   },
 
   methods:{
@@ -129,6 +153,12 @@ export default {
       .catch(function(error) {
           console.log("createListener Axios Error: ", error)
       })
+    },
+
+    episodeEnded(value, index){
+      if(this.feed[index].playing === true){
+        this.feed[index].episodeEnded = value
+      }
     },
 
     getFeed(){
@@ -208,7 +238,6 @@ export default {
         this.oldElement = this.newElement
       }
       console.log("playerPlaying at LOATodayPlaylist item: ", item)
-      console.log("playerPlaying at LOATodayPlaylist index: ", index)
     },
 
     playerPaused(item, index){

@@ -348,17 +348,6 @@ App.addListener('appStateChange', (state) => {
       // In this function We might finish an upload, let a network request
       // finish, persist some data, or perform some other task
 
-      // Example of long task
-      var start = new Date().getTime();
-      for (var i = 0; i < 1e18; i++) {
-        // 5 minutes = 300 seconds
-        if ((new Date().getTime() - start) > 300000){
-          break;
-        }
-      }
-      // Must call in order to end our task otherwise
-      // we risk our app being terminated, and possibly
-      // being labeled as impacting battery life
       BackgroundTask.finish({
         taskId
       });
