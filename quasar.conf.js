@@ -50,7 +50,7 @@ module.exports = function ( /* ctx */ ) {
     },
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ts
-    supportTS: true,
+    supportTS: false,
 
     // https://quasar.dev/quasar-cli/cli-documentation/prefetch-feature
     // preFetch: true
@@ -132,13 +132,13 @@ module.exports = function ( /* ctx */ ) {
     // Full list of options: https://quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
     cordova: {
       // noIosLegacyBuildFlag: true, // uncomment only if you know what you are doing
-      id: "net.loatoday.player",
+      id: "loa.today",
       playAudioWhenScreenIsLocked: true
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor
     capacitor: {
-      id: "net.loatoday.player",
+      id: "loa.today",
       playAudioWhenScreenIsLocked: true,
       hideSplashscreen: true
     },
