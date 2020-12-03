@@ -50,7 +50,7 @@ module.exports = function ( /* ctx */ ) {
     },
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ts
-    supportTS: true,
+    supportTS: false,
 
     // https://quasar.dev/quasar-cli/cli-documentation/prefetch-feature
     // preFetch: true
