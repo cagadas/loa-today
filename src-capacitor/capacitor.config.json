@@ -1,7 +1,0 @@
-{
-  "appId": "loa.today",
-  "appName": "LOA Today",
-  "bundledWebRuntime": false,
-  "npmClient": "yarn",
-  "webDir": "www"
-}
