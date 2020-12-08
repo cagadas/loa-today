@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">LOA Today</string>
+    <string name="title_activity_main">LOA Today</string>
+    <string name="package_name">loa.today</string>
+    <string name="custom_url_scheme">loa.today</string>
+</resources>
