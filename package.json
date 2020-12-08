@@ -1,6 +1,6 @@
 {
   "name": "loa-today",
-  "version": "1.1.80",
+  "version": "1.1.83",
   "description": "A podcast player and goodies package for our loyal listeners.",
   "productName": "LOA Today",
   "author": "Walt Thiessen <walt@loatoday.net>",
@@ -38,10 +38,10 @@
     "last 10 Firefox versions",
     "last 4 Edge versions",
     "last 7 Safari versions",
-    "last 25 Android versions",
+    "last 15 Android versions",
     "last 8 ChromeAndroid versions",
     "last 8 FirefoxAndroid versions",
-    "last 25 iOS versions",
+    "last 15 iOS versions",
     "last 5 Opera versions"
   ],
   "engines": {
