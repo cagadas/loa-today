@@ -1,14 +1,5 @@
 <template>
   <div>
-    <div style="margin: 0 auto; width: 150px;">
-      <q-btn
-        class="glossy full-width"
-        rounded
-        color="secondary"
-        label="Update List"
-        @click="updateList"
-      />
-    </div>
     <div v-for="item in feed" :key="item.element">
       <div
         v-if="item.element === 0" 
@@ -39,7 +30,7 @@
 import Vue from 'vue'
 import { mapActions, mapGetters } from 'vuex'
 import axios from 'axios'
-import { crono } from 'vue-crono'
+//import { crono } from 'vue-crono'
 import convert from 'xml-js'
 import linkify from 'vue-linkify'
 import { Plugins } from '@capacitor/core'
@@ -49,7 +40,7 @@ export default {
       playlist : String
     },
 
-  mixins: [crono],
+  //mixins: [crono],
 
   data() {
     return {
@@ -96,12 +87,12 @@ export default {
       this.createListener()
     }
   },
-
+  /*
   cron:{
     time: 60000, // 1 minute
     method: 'checkList'
   },
-
+  */
   mounted(){
     this.getFeed()
 
@@ -118,6 +109,7 @@ export default {
         // being labeled as impacting battery life
         if(this.playerIsPlaying === 0){
           console.log("playing in background: false")
+          this.updateList()
           BackgroundTask.finish({
             taskId
           })
