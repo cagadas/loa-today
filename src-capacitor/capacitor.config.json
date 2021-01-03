@@ -1,5 +1,5 @@
 {
-  "appId": "loa.today",
+  "appId": "net.loatoday.player",
   "appName": "LOA Today",
   "bundledWebRuntime": false,
   "npmClient": "yarn",

@@ -9,6 +9,7 @@ const routes = [
       { path: "/lmgss", component: () => import("pages/LMGSS.vue") },
       { path: "/tgig", component: () => import("pages/TGIG.vue") },
       { path: "/hosts", component: () => import("pages/Hosts.vue") },
+      { path: "/formerhosts", component: () => import("pages/FormerHosts.vue") },
       { path: "/privacy", component: () => import("pages/Privacy.vue") },
       { path: "/terms", component: () => import("pages/Terms.vue") },
       { path: "/question", component: () => import("pages/Question.vue") },

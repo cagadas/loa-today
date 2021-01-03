@@ -1,11 +1,11 @@
 {
   "name": "loa-today",
-  "version": "1.1.83",
+  "version": "1.1.84",
   "description": "A podcast player and goodies package for our loyal listeners.",
   "author": "Walt Thiessen <walt@loatoday.net>",
   "private": true,
   "dependencies": {
-    "@capacitor/android": "2.4.4",
+    "@capacitor/android": "2.4.5",
     "@capacitor/cli": "^2.0.0",
     "@capacitor/core": "^2.0.0"
   }

@@ -15,11 +15,10 @@
         <q-radio ref="subject" v-model="subject" val="Ami" label="Ami" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Cindie" label="Cindie" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Daniel" label="Daniel" /> &nbsp;&nbsp; 
-        <q-radio ref="subject" v-model="subject" val="David" label="David" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="Dean (psychic)" label="Dean (psychic)" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Linda" label="Linda" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Louis" label="Louis" /> &nbsp;&nbsp; 
-        <q-radio ref="subject" v-model="subject" val="Psychic Rita" label="Psychic Rita" /> &nbsp;&nbsp; 
-        <q-radio ref="subject" v-model="subject" val="The Stream" label="The Stream" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="Rita (psychic)" label="Rita (psychic)" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Walt" label="Walt" />
         <q-radio ref="subject" v-model="subject" val="General Contact" label="General Contact" />
       </div>

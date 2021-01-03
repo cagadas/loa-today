@@ -52,19 +52,6 @@
       psychic healer and life coach who brings a uniquely "New York" viewpoint to the topics we 
       discuss on the show. Rita joins Linda and Walt on Fridays at 4 PM New York time. You can find 
       Rita on <a href="#rita" @click="myLink('https://www.facebook.com/rita.gigante.16')">Facebook</a>.</span></p>
-    <q-img id="david" src="images/David_Strickel.jpg" alt="David Strickel" class="myImage"></q-img>
-    <p>David Strickel - <span class="bluetext">The Stream of David is here, and it's like having our
-      very own version of Abraham-Hicks, only more down-to-earth. David shares eternal wisdom 
-      from a group of non-physical entities—a conscious energy—that he calls The Stream. He has
-      had this ability as long as he can recall, and it has guided him through some very rough 
-      times to a life of freedom and joy. He shares The Stream now with LOA Today listeners, 
-      during these challenging times for those who are ready, those who are aligned (or wish to be)
-      with higher vibrational living. Discover a life of joy, clarity and abundance. Enjoy this 
-      special time and live the life you came here to experience. Ask your questions of The Stream
-      Tuesdays here on LOA Today. David can also be reached on his
-      <a href="#david" @click="myLink('https://www.facebook.com/strickel')">Facebook</a> page or in 
-      his <a href="#david" @click="myLink('https://www.facebook.com/groups/378945439249736/')">TYA
-      Global Awakening</a> group on Facebook.</span> <a href="#david" @click="myLink('https://thestreamofdavid.mykajabi.com/registration-page')">Click here for FREE access to The Stream Of David's master class.</a></p>
     <q-img id="ami" src="images/Ami-wide.jpg" alt="Ami Blackford" class="myImage"></q-img>
     <p>Ami Blackford - <span class="bluetext">Ami brings a breath of fresh air and high energy to
       Monday's show with Louis de Souza. She lives in Atlanta, Georgia and is a self-proclaimed 
@@ -72,6 +59,13 @@
       about the Law of Attraction and how important this skill is to learn and practice, especially 
       these days. Ami can also be reached via 
       <a href="#ami" @click="myLink('https://ami-blackford.com/contact')">her website</a>.</span></p>
+    <q-img id="dean" src="images/Dean.jpg" alt="Dean McMurray" class="myImage"></q-img>
+    <p>Dean McMurray - <span class="bluetext">Dean bills himself as The Military Medium because after 20+
+      years in the military he discovered much to his surprise that he was able to directly connect to
+      Source Energy and share messages from aspects of Spirit that were former family member and loved
+      ones of the people Dean helps. Dean can also be reached on his
+      <a href="#dean" @click="myLink('https://www.facebook.com/TheMilitaryMedium')">Facebook</a> page or via 
+      <a href="#david" @click="myLink('https://deanmcmurray.com/')">deanmcmurray.com</a>.</span></p>
   </q-page>
 </template>
 

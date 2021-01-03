@@ -132,15 +132,16 @@ module.exports = function ( /* ctx */ ) {
     // Full list of options: https://quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
     cordova: {
       // noIosLegacyBuildFlag: true, // uncomment only if you know what you are doing
-      id: "loa.today",
+      id: "net.loatoday.player",
       playAudioWhenScreenIsLocked: true
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor
     capacitor: {
-      id: "loa.today",
+      id: "net.loatoday.player",
       playAudioWhenScreenIsLocked: true,
-      hideSplashscreen: true
+      hideSplashscreen: true,
+      version: "1.1.84"
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/developing-electron-apps/configuring-electron

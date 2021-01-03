@@ -17,7 +17,7 @@
           LOA Today
         </q-toolbar-title>
 
-        <div>Ver. 1.1.83</div>
+        <div>Ver. 1.1.84</div>
       </q-toolbar>
     </q-header>
 
@@ -62,7 +62,7 @@ export default {
         },
         {
           title: 'Ask A Question',
-          caption: 'Ask The Stream, Psychic Rita, Louis, Ami, Daniel, Alyx, Cindie, Linda, or Walt',
+          caption: 'Ask Rita, Louis, Ami, Daniel, Alyx, Cindie, Linda, Dean, or Walt',
           icon: 'email',
           link: './index.html#/question'
         },
@@ -91,16 +91,16 @@ export default {
           link: './index.html#/moneygame'
         },
         {
-          title: 'Meditation',
-          caption: 'The Stream Of David - Guided Meditation Seeing Through The Eyes of Source',
-          icon: 'movie',
-          link: './index.html#/streammeditation'
-        },
-        {
           title: 'Co-Hosts On LOA Today',
           caption: 'Meet the team',
           icon: 'person',
           link: './index.html#/hosts'
+        },
+        {
+          title: 'Former Co-Hosts On LOA Today',
+          caption: 'Former Co-Hosts',
+          icon: 'person',
+          link: './index.html#/formerhosts'
         },
         {
           title: 'Schedule',

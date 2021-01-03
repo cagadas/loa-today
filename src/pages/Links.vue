@@ -8,9 +8,7 @@
         </a>
       </div>
       <a href="#" @click="myLink('https://www.youtube.com/c/loatodaypodcastvideos/live')"><img class="image" src="images/Youtube-live-streaming.png" alt="YouTube Livestream"></a>
-      <a href="#" @click="myLink('https://zoom.us/j/8602645432')"><img class="image" src="images/zoom.jpg" alt="Our Zoom Meeting Room"></a>
       <a href="#" @click="myLink('https://www.loatoday.net')"><img class="image" src="images/favicon-128x128.png" alt="LOA Today Website"></a>
-      <a href="#" @click="myLink('https://thegrassisgreener.loatoday.net')"><img class="image" src="images/tgig-logo.jpg" alt="The Grass Is Greener website"></a>
     </div>
   </q-page>
 </template>
