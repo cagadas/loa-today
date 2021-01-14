@@ -18,6 +18,7 @@
         <q-radio ref="subject" v-model="subject" val="Dean (psychic)" label="Dean (psychic)" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Linda" label="Linda" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Louis" label="Louis" /> &nbsp;&nbsp; 
+        <q-radio ref="subject" v-model="subject" val="Monique" label="Monique" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Rita (psychic)" label="Rita (psychic)" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Walt" label="Walt" />
         <q-radio ref="subject" v-model="subject" val="General Contact" label="General Contact" />

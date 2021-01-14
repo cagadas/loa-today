@@ -17,7 +17,7 @@
           LOA Today
         </q-toolbar-title>
 
-        <div>Ver. 1.1.84</div>
+        <div>Ver. 1.1.85</div>
       </q-toolbar>
     </q-header>
 

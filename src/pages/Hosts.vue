@@ -59,13 +59,20 @@
       about the Law of Attraction and how important this skill is to learn and practice, especially 
       these days. Ami can also be reached via 
       <a href="#ami" @click="myLink('https://ami-blackford.com/contact')">her website</a>.</span></p>
-    <q-img id="dean" src="images/Dean.jpg" alt="Dean McMurray" class="myImage"></q-img>
+    <q-img id="dean" src="images/Dean-wide.jpg" alt="Dean McMurray" class="myImage"></q-img>
     <p>Dean McMurray - <span class="bluetext">Dean bills himself as The Military Medium because after 20+
       years in the military he discovered much to his surprise that he was able to directly connect to
       Source Energy and share messages from aspects of Spirit that were former family member and loved
       ones of the people Dean helps. Dean can also be reached on his
       <a href="#dean" @click="myLink('https://www.facebook.com/TheMilitaryMedium')">Facebook</a> page or via 
-      <a href="#david" @click="myLink('https://deanmcmurray.com/')">deanmcmurray.com</a>.</span></p>
+      <a href="#dean" @click="myLink('https://deanmcmurray.com/')">deanmcmurray.com</a>.</span></p>
+    <q-img id="monique" src="images/Monique-wide.jpg" alt="Monique Scott" class="myImage"></q-img>
+    <p>Monique Scott - <span class="bluetext">Monique was introduced to us by Daniel Mangena, and once again 
+      he hit it out of the park. She is a life coach who teaches how to effectively use the LOA by 
+      building on the foundations of training the subconscious mind and using her HVITIA method in 
+      order to manifest your desires. She is filling in on Wednesdays until the Spring Equinox for Cindie
+      Chavez while Cindie is on sabbatical. Monique can be reached on her
+      <a href="#monique" @click="myLink('https://www.facebook.com/americasfavoritecoach/')">Facebook</a> page.</span></p>
   </q-page>
 </template>
 
