@@ -66,7 +66,7 @@
       ones of the people Dean helps. Dean can also be reached on his
       <a href="#dean" @click="myLink('https://www.facebook.com/TheMilitaryMedium')">Facebook</a> page or via 
       <a href="#dean" @click="myLink('https://deanmcmurray.com/')">deanmcmurray.com</a>.</span></p>
-    <q-img id="monique" src="images/Monique-wide.jpg" alt="Monique Scott" class="myImage"></q-img>
+    <q-img id="monique" src="images/Monique-2-wide.jpg" alt="Monique Scott" class="myImage"></q-img>
     <p>Monique Scott - <span class="bluetext">Monique was introduced to us by Daniel Mangena, and once again 
       he hit it out of the park. She is a life coach who teaches how to effectively use the LOA by 
       building on the foundations of training the subconscious mind and using her HVITIA method in 
