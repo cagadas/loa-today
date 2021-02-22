@@ -17,7 +17,7 @@
           LOA Today
         </q-toolbar-title>
 
-        <div>Ver. 1.1.85</div>
+        <div>Ver. 1.2.0</div>
       </q-toolbar>
     </q-header>
 
@@ -62,9 +62,15 @@ export default {
         },
         {
           title: 'Ask A Question',
-          caption: 'Ask Rita, Louis, Ami, Daniel, Alyx, Cindie, Linda, Dean, or Walt',
+          caption: 'Ask Monique, Louis, Ami, Daniel, Alyx, Linda, Dean, or Walt',
           icon: 'email',
           link: './index.html#/question'
+        },
+        {
+          title: 'Send A Comment, Topic, Or Suggestion!',
+          caption: 'Use this form for general contact with us',
+          icon: 'email',
+          link: './index.html#/contact'
         },
         {
           title: 'Beyond Intention',
@@ -89,6 +95,12 @@ export default {
           caption: 'An E-Book by Daniel Mangena',
           icon: 'book',
           link: './index.html#/moneygame'
+        },
+        {
+          title: 'Real Success Stories Of The Law Of Attraction',
+          caption: 'An E-Book edited by Walt Thiessen',
+          icon: 'book',
+          link: './index.html#/rssotloa'
         },
         {
           title: 'Co-Hosts On LOA Today',

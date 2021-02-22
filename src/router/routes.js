@@ -19,6 +19,7 @@ const routes = [
       { path: "/schedule", component: () => import("pages/Schedule.vue") },
       { path: "/moneygame", component: () => import("pages/MoneyGame.vue") },
       { path: "/highvibeliving", component: () => import("pages/HighVibeLiving.vue") },
+      { path: "/rssotloa", component: () => import("pages/RSSOTLOA.vue") },
       { path: "/streammeditation", component: () => import("pages/StreamMeditation.vue") }
     ]
   }

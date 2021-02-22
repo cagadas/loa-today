@@ -141,7 +141,7 @@ module.exports = function ( /* ctx */ ) {
       id: "net.loatoday.player",
       playAudioWhenScreenIsLocked: true,
       hideSplashscreen: true,
-      version: "1.1.85"
+      version: "1.2.0"
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/developing-electron-apps/configuring-electron

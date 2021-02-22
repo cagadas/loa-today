@@ -1,5 +1,8 @@
 <template>
   <q-page class="flex-center">
+    <h6>Send A Comment, Topic, Or Suggestion!</h6>
+    <p>Want to just give us some feedback on an episode or suggest a topic for a future episode?
+      Or maybe you just want to tell us what you've been thinking about. Use this form to send it to us.</p>
     <p>&nbsp;</p>
     <q-form
       @submit="onSubmit"
