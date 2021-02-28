@@ -14,12 +14,6 @@
       relationships, Cindie is one of the kindest and most lighthearted people you will ever 
       listen to. She cohosts with Walt on Wednesdays at 4 PM New York time. You can contact her 
       at <a href="#cindie" @click="myLink('https://www.cindiechavez.com/contact-cindie/')">cindiechavez.com</a></span></p>
-    <q-img id="linda" src="images/Linda.jpg" alt="Linda Armstrong" class="myImage"></q-img>
-    <p>Linda Armstrong - <span class="bluetext">is an energy coach, certified Theta Healer, GATE 
-      Method Facilitator, and Master Law of Attraction Transformation Coach. Her mission is to help
-      thousands of people to awaken to their true power to heal their lives and live from Love! 
-      Linda joins Walt and Rita on Fridays at 4 PM New York time. You can contact Linda at
-      <a href="#linda" @click="myLink('https://www.lovemylife.coach/company-contact-info/')">lovemylife.coach</a></span></p>
     <q-img id="louis" src="images/Louis.jpg" alt="Louis de Souza" class="myImage"></q-img>
     <p>Louis de Souza - <span class="bluetext">Louis is an adept follower of the teachings of
       Abraham-Hicks and brings a calm, unique perspective to the show. During his younger years 

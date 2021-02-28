@@ -97,8 +97,8 @@ export default {
           link: './index.html#/moneygame'
         },
         {
-          title: 'Real Success Stories Of The Law Of Attraction',
-          caption: 'An E-Book edited by Walt Thiessen',
+          title: 'Your Daily Dose Of Happy',
+          caption: 'Real Success Stories Of The Law Of Attraction E-book',
           icon: 'book',
           link: './index.html#/rssotloa'
         },

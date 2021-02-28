@@ -15,7 +15,6 @@
         <q-radio ref="subject" v-model="subject" val="Ami" label="Ami" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Daniel" label="Daniel" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Dean (The Military Medium)" label="Dean (The Military Medium)" /> &nbsp;&nbsp; 
-        <q-radio ref="subject" v-model="subject" val="Linda" label="Linda" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Louis" label="Louis" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Monique" label="Monique" /> &nbsp;&nbsp; 
         <q-radio ref="subject" v-model="subject" val="Walt" label="Walt" />

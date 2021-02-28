@@ -20,6 +20,7 @@ const routes = [
       { path: "/moneygame", component: () => import("pages/MoneyGame.vue") },
       { path: "/highvibeliving", component: () => import("pages/HighVibeLiving.vue") },
       { path: "/rssotloa", component: () => import("pages/RSSOTLOA.vue") },
+      { path: "/rssotloa2", component: () => import("pages/RSSOTLOA2.vue") },
       { path: "/streammeditation", component: () => import("pages/StreamMeditation.vue") }
     ]
   }

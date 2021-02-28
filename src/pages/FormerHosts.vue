@@ -83,6 +83,12 @@
       <a href="#david" @click="myLink('https://www.facebook.com/strickel')">Facebook</a> page or in 
       his <a href="#david" @click="myLink('https://www.facebook.com/groups/378945439249736/')">TYA
       Global Awakening</a> group on Facebook.</span>  <a href="#david" @click="myLink('https://thestreamofdavid.mykajabi.com/registration-page')">Click here for FREE access to The Stream Of David's master class.</a></p>
+    <q-img id="linda" src="images/Linda.jpg" alt="Linda Armstrong" class="myImage"></q-img>
+    <p>Linda Armstrong - <span class="bluetext">is an energy coach, certified Theta Healer, GATE 
+      Method Facilitator, and Master Law of Attraction Transformation Coach. Her mission is to help
+      thousands of people to awaken to their true power to heal their lives and live from Love! 
+      Linda joins Walt and Rita on Fridays at 4 PM New York time. You can contact Linda at
+      <a href="#linda" @click="myLink('https://www.lovemylife.coach/company-contact-info/')">lovemylife.coach</a></span></p>
   </q-page>
 </template>
 
