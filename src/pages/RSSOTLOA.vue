@@ -3452,7 +3452,7 @@ Wen      workshops, and her private practice.</p>
       started not long afterward.</p>
       
     <p>Meanwhile, the changes in diet Ms. Levett suggested in her book and on her website, 
-      <a @click="myLink('https://www.endo-resolved.com/')">www.endo-resolved.com,</a></em> 
+      <a @click="myLink('https://www.endo-resolved.com/')">www.endo-resolved.com,</a>
       helped me quite a bit with pain management. A Reiki news magazine mentioned Louise 
       Hay, whom I had not heard of before. I bought her book, <em>You Can Heal Your Life,</em>
       and watched her movie of the same title. I enjoyed the movie, but none of the authors 
