@@ -7,7 +7,7 @@
     <p><strong>Tuesday,</strong> 4pm - 5pm (with Dean McMurray  &amp; Walt Thiessen)</p>
     <p><strong>Wednesday,</strong> 4pm - 5pm (with Monique Scott &amp; Walt Thiessen)</p>
     <p><strong>Thursday,</strong> 4pm - 5pm (with Alyx King, Dan Mangena, &amp; Walt Thiessen)</p>
-    <p><strong>Friday,</strong> 4pm - 5pm (with Linda Armstrong &amp; Walt Thiessen)</p>
+    <p><strong>Friday,</strong> 4pm - 5pm (with Debbie Garcia &amp; Walt Thiessen)</p>
     <p>&nbsp;</p>
     <p class="center"><a href="#" @click="myLink('https://www.youtube.com/c/loatodaypodcastvideos/live')">Click here to connect to the Livestream</a></p>
     <p>&nbsp;</p>

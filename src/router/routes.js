@@ -21,6 +21,7 @@ const routes = [
       { path: "/highvibeliving", component: () => import("pages/HighVibeLiving.vue") },
       { path: "/rssotloa", component: () => import("pages/RSSOTLOA.vue") },
       { path: "/rssotloa2", component: () => import("pages/RSSOTLOA2.vue") },
+      { path: "/rssotloa3", component: () => import("pages/RSSOTLOA3.vue") },
       { path: "/streammeditation", component: () => import("pages/StreamMeditation.vue") }
     ]
   }

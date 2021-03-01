@@ -55,16 +55,16 @@
     <p id="43" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'a-steinway-piano'}">A Steinway Piano</q-btn><br />by Anne-Marie Cannata McEwen</p>
     <p id="44" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'ill-have-an-owl-please'}">I’ll Have an Owl Please</q-btn><br />by Cindie Chavez</p>
     <p id="45" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'fins-up'}">Fins Up</q-btn><br />by Leslie Shew</p>
-    <p id="46" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'hurriance-floyd'}">Hurricane Floyd</q-btn><br />by Walt Thiessen</p>
-    <p id="47" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'altering-the-weather'}">Altering the Weather</q-btn><br />by Louise Thiessen</p>
-    <p id="48" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'the-microburst'}">The Microburst</q-btn><br />by Walt Thiessen</p>
-    <p id="49" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'blue-skies-please'}">Blue Skies, Please</q-btn><br />by Walt Thiessen</p>
-    <p id="50" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'no-more-snow'}">No More Snow</q-btn><br />by Walt Thiessen</p>
-    <p id="51" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'the-journey-achievement-writing-contests'}">The Junior Achievement Writing Contests</q-btn><br />by Barbara Pinti</p>
-    <p id="52" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'the-peoples-choice-awards'}">The People’s Choice Awards</q-btn><br />by Patricia Framo</p>
-    <p id="53" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'did-i-see-you-in-a-commercial'}">Did I See You In A Commercial?</q-btn><br />By Rhonda Burns</p>
-    <p id="54" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'accident-i-think-not'}">Accident, I think not!</q-btn><br />By Wendy Dillard</p>
-    <p id="55" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa2', hash: 'homes-cats-and-cars'}">Homes, Cats, and Cars</q-btn><br />by Louise and Walt Thiessen</p>
+    <p id="46" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'hurricane-floyd'}">Hurricane Floyd</q-btn><br />by Walt Thiessen</p>
+    <p id="47" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'altering-the-weather'}">Altering the Weather</q-btn><br />by Louise Thiessen</p>
+    <p id="48" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'the-microburst'}">The Microburst</q-btn><br />by Walt Thiessen</p>
+    <p id="49" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'blue-skies-please'}">Blue Skies, Please</q-btn><br />by Walt Thiessen</p>
+    <p id="50" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'no-more-snow'}">No More Snow</q-btn><br />by Walt Thiessen</p>
+    <p id="51" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'the-journey-achievement-writing-contests'}">The Junior Achievement Writing Contests</q-btn><br />by Barbara Pinti</p>
+    <p id="52" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'the-peoples-choice-awards'}">The People’s Choice Awards</q-btn><br />by Patricia Framo</p>
+    <p id="53" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'did-i-see-you-in-a-commercial'}">Did I See You In A Commercial?</q-btn><br />By Rhonda Burns</p>
+    <p id="54" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'accident-i-think-not'}">Accident, I think not!</q-btn><br />By Wendy Dillard</p>
+    <p id="55" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'homes-cats-and-cars'}">Homes, Cats, and Cars</q-btn><br />by Louise and Walt Thiessen</p>
 
     <p>&nbsp;</p>
      <p class="centerNoIndent"><a href="#i">Back To Top</a></p>
@@ -693,10 +693,10 @@
     <img src="images/BarbaraPinti.jpg" style="margin-bottom: 30px;" />
 
     <p class="signature">Barbara A. Pinti, MA, MA, ABD, LMFT, LPC is a psychotherapist in private practice in 
-      West Hartford, Connecticut.  She has taught the Law of Attraction in many groups, 
-      workshops, and her private practice.</p>
+Wen      workshops, and her private practice.</p>
     <p class="signature">Email: <a href="mailto:barbarapinti@comcast.net">barbarapinti@comcast.net</a></p>
     
+    <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p class="centerNoIndent"><a href="#1">Back To Top</a></p>
     <p>&nbsp;</p>
@@ -3177,22 +3177,22 @@
       interested in how holocaust survivors used creativity and play to survive psychologically 
       during extreme trauma. My mom told me a story about how she made a slide out of an old 
       storm door when there was no food in the ghetto, and I wondered what similar stories 
-      others had.  </p>
+      others had.</p>
 
     <p>I started reading survivor’s accounts and heard that a new Holocaust museum had opened 
       in Washington, D.C., so I made plans to visit for the day.  They had video testimonials 
-      with survivor’s stories, and I spent the day watching them.  </p>
+      with survivor’s stories, and I spent the day watching them.</p>
 
     <p>During a break, I went up to the librarian, Mishlee, and mentioned that my grandfather 
       was originally from Chotin in Bessarabia and had been killed during the Holocaust.  
       I asked whether she had any photographs of him or the town.  She came back with one 
       Hebrew book, and at first I did not understand the names, nor did I know what he 
       looked like.  She helped me look for the name Avraham Wolkove, and by some miracle, 
-      there he was.  </p>
+      there he was.</p>
 
     <p>In those days, people took few photographs, but my grandfather had been a known speaker 
       in the town and was sitting at a meeting with several other people in the photograph.  
-      She gave me a photocopy of that black and white photo in the book. </p>
+      She gave me a photocopy of that black and white photo in the book.</p>
 
     <p>This was the first time that my sister and I saw our grandfather.  My mom also did not 
       know what he looked like because she had been two years old at the time of his death.  
@@ -3211,7 +3211,7 @@
     <p>At the time I was dating, hoping to meet find a husband while working as a therapist and 
       wishing I would publish my first book before I married.  I took notes on what I learned 
       in my own dating process and subsequently developed a manual for a dating class I 
-      facilitated for single clients.  </p>
+      facilitated for single clients.</p>
 
     <p>I went into a Barnes and Noble to look through a <em>Writers Market</em> book and jotted 
     down the contact information of four publishers on an envelope.  Then I sent in my dating 
@@ -3220,13 +3220,13 @@
 
   <p>One editor submitted it to the editorial board review, but they passed on it.  The other 
     editor was Cynthia Black, who was also the publisher of <em>Beyond Words,</em> which formed 
-    an imprint called Atria Books with Simon and Schuster.  </p>
+    an imprint called Atria Books with Simon and Schuster.</p>
 
   <p>I did not know that at the time, nor did I know that she was in the process of publishing 
     the book, The Secret, and was looking for other books on the Law of Attraction. My dating 
     book was about the Law of Attraction, but that term was not in the subtitle until she added 
     it, and it was not mentioned in the book.  She suggested that we go back and forth with 
-    rewrites, and if she was satisfied with the final book then she’d offer me a contract. </p>
+    rewrites, and if she was satisfied with the final book then she’d offer me a contract.</p>
 
   <p>I signed the publishing contract right before I got married.  What were the chances of 
     getting my first deal with Simon and Schuster without an agent and with little writing 
@@ -3234,7 +3234,7 @@
     It was not something I could have planned consciously.</p>
 
   <p>After the book got published, I married, and we later had two kids.  I had little time for 
-    writing then and had to focus on more practical things.  </p>
+    writing then and had to focus on more practical things.</p>
 
   <p>At age 41, I was diagnosed with breast cancer.  I walked on the beach and prayed and asked 
     whether I was going to die.  I heard that I would not and that I had a legacy of at least 
@@ -3249,13 +3249,13 @@
     energy or budget for marketing at the time and had not yet worked on much of a social media 
     platform.  My goal was to get my messages of love out there and to put my books in hope 
     chests for my kids as a legacy, which I did.  I trusted it would all work out, even if I 
-    didn’t know how.  </p>
+    didn’t know how.</p>
 
   <p>I happened upon a blog by Gordon Burgett who writes about self-publishing where he said that 
     he made more money by getting a foreign agent and translating his self-published books into 
     a few languages than he did with a traditional American publishing deal.  I didn’t know 
     anything about this, so I searched the term foreign literary agent in Linked In, and a woman 
-    named Marleen Seegers came up.  </p>
+    named Marleen Seegers came up.</p>
 
   <p>She looked beautiful and smart, and her agency looked new.  This was the first and only 
     foreign agent that I wrote at that time. She liked my book, When Mars Women Date: <em>How 
@@ -3272,7 +3272,7 @@
     silence in the morning to align my thoughts and feelings with my intention and goals.  
     I’d relax, pray, meditate, and receive guidance. In this way I got many creative ideas 
     for my books, and they flowed out of me. I published them one after another (literally) 
-    on Amazon and soon had 20 published books just five years after my diagnosis. </p>
+    on Amazon and soon had 20 published books just five years after my diagnosis.</p>
 
   <p> I was doing well emotionally, physically, and spiritually and felt that this morning 
     bathing ritual could be helpful to others. So I wrote a small book about it.  I had 
@@ -3322,7 +3322,7 @@
       at the right time.</p>
 
     <p>This time, I did it differently. I decided to stop trying to micromanage the hands 
-      and just leave it to the Universe to provide the ideal results in its own way and time. </p>
+      and just leave it to the Universe to provide the ideal results in its own way and time.</p>
 
     <p>So instead of trying to attract winning hands, I visualized doubling my chips and/or 
       reaching new and higher chip levels.</p>
@@ -3340,21 +3340,21 @@
       playing the hands. A few hands later, I reached that goal as well.</p>
 
     <p>As the tournament went on, I kept asking for a higher chip count than what I had 
-      already achieved. I got myself into a really great feeling place each time. </p>
+      already achieved. I got myself into a really great feeling place each time.</p>
 
     <p>I didn't worry about my fortunes from one hand to the next. Sometimes I won, and 
-      sometimes I lost. </p>
+      sometimes I lost.</p>
 
     <p>Overall, out of 125 hands played, I won about one out of every five hands I played, 
       while managing to avoid having any big losses.  It didn't matter to me what the results 
       were. As long as I was still in the tournament and successfully focusing on my goal, 
-      without getting attached to any particular hand, I was happy. </p>
+      without getting attached to any particular hand, I was happy.</p>
 
     <p>Nor did I worry about how it would happen. I only focused on the goal. I didn't care 
       which particular hand got me there, regardless of what cards I had, good or bad.</p>
 
     <p>At one point, my goal was to get 20,000 chips. I had about 9,000 at the time. I got a 
-      really big hand, but only won about 3,000 chips with it. </p>
+      really big hand, but only won about 3,000 chips with it.</p>
 
     <p>I thought, <em>Oh well.</em></p>
 
@@ -3363,7 +3363,7 @@
       reward was – you guessed it – 20,000 chips!</p>
 
     <p>This kept going and going. Over time I got to 30,000 – then 50,000 – then 80,000 – 
-      then 100,000  - then 150,000 - then 200,000 chips. </p>
+      then 100,000  - then 150,000 - then 200,000 chips.</p>
 
     <p>Each step of the way, I visualized my goal, got really excited about it, and held 
       it in my mind as I played each hand, not allowing myself to become attached to the 
@@ -3371,7 +3371,7 @@
 
     <p>When I reached 500,000 chips, I was the leader in the tournament. I also got greedy. 
       I tried to micromanage, scaring players into folding with big bets and "captaining" 
-      the table as it's called. </p>
+      the table as it's called.</p>
 
     <p>The result? I lost more than half my chips!</p>
 
@@ -3379,32 +3379,32 @@
       trying to make it happen.</em></p>
 
     <p>I went right back to focusing on my next chip goal and getting really excited about 
-      how I would feel when I got there. </p>
+      how I would feel when I got there.</p>
 
     <p>Much faster than I expected, I got back to 500,000 chips after about 10 more hands.</p>
 
     <p>When I got to 600,000, there were just two players left, me and the guy I'd been 
-      butting heads with for some time. </p>
+      butting heads with for some time.</p>
 
-    <p>I got a King – Nine pocket, off-suit. </p>
+    <p>I got a King – Nine pocket, off-suit.</p>
 
-    <p>I didn't know it, but he had a Queen – Seven pocket, off-suit. </p>
+    <p>I didn't know it, but he had a Queen – Seven pocket, off-suit.</p>
 
     <p>A “pocket” is the two cards each player gets dealt face down in the No Limit Texas 
-      Holdem style of poker. </p>
+      Holdem style of poker.</p>
 
     <p>“Off-suit” means that the two cards are from different suits.</p>
 
-    <p>Neither hand was a strong hand, but both were worth betting. </p>
+    <p>Neither hand was a strong hand, but both were worth betting.</p>
 
     <p>I raised, he called, and then the first three cards flopped: King – King – Seven. 
       I had three of a kind … three Kings! That's a very rare kind of flop, and I got it 
-      at the best time. </p>
+      at the best time.</p>
 
     <p>My opponent had two Sevens, and since the odds are about 4:1 against matching 
       anything in your hand on any given play, and since he saw two Kings on the board 
       (which made it even less likely in his mind that I would have a King), he figured 
-      the odds favored him. </p>
+      the odds favored him.</p>
 
     <p>So he went <em>all in</em> with his remaining chips. I called, and I won the pot, 
     all his chips, and thereby won the tournament!</p>
@@ -3439,13 +3439,13 @@
       that one day on my 70 minute morning walk, I could not make it back home. I had to lie 
       down on a concrete bench because I did not have enough strength to move my body. I 
       rested for a good bit of time before I could gather enough strength to slowly get back 
-      home. </p>
+      home.</p>
 
     <p>I became desperate and sought help on the web. I found a lady named Carolyn Levett 
       and got her book, <em>Reclaim Your Life – Your Guide to Aid Healing of Endometriosis.</em> 
       Along with dietary and lifestyle changes, Ms. Levett suggested Reiki as helpful for 
       those suffering from endometriosis. Reiki piqued my interest, even though I had never 
-      heard of it before. </p>
+      heard of it before.</p>
 
     <p>I found a Reiki instructor named Karen Harrison from Kansas City, who came into the 
       Dallas area a few times a year to teach. I quickly signed up for her class, which 
@@ -3456,11 +3456,11 @@
       helped me quite a bit with pain management. A Reiki news magazine mentioned Louise 
       Hay, whom I had not heard of before. I bought her book, <em>You Can Heal Your Life,</em>
       and watched her movie of the same title. I enjoyed the movie, but none of the authors 
-      and teachers interviewed stood out to me.  </p>
+      and teachers interviewed stood out to me.</p>
 
     <p>About a month later, I watched the movie again with my friend, Elizabeth. She pointed 
       out to me her favorite speaker interviewed at the end of the movie, which turned out 
-      to be Abraham, a collective consciousness received by Esther Hicks. </p>
+      to be Abraham, a collective consciousness received by Esther Hicks.</p>
 
     <p>I went back to watch that particular interview again after my friend left and took 
       note of the book mentioned in the interview, <em>Ask and It Is Given.</em> After I 
@@ -3469,7 +3469,7 @@
       and traveled the world on several Abraham cruises. Coincidentally, those Abraham 
       cruises helped me realize one of my fondest dreams, which is to travel and see this 
       beautiful world of ours. As an artist, I must say those experiences in themselves 
-      are priceless! </p>
+      are priceless!</p>
 
     <p>A beautiful young man I met on an Abraham cruise in the Mediterranean showed me a 
       book he’d been reading that fascinated him. It was <em>Seth Speaks: The Eternal 
@@ -3485,7 +3485,7 @@
         I received, ever improving health, all of the synchronicity that guided me to even 
         more fun and stuff that I have asked for through the living of life. Needless to say, 
         I am so much happier than I have ever been, so much so that others who have known 
-        me have remarked upon my transformation. </p>
+        me have remarked upon my transformation.</p>
 
       <p>One transformation that is clearly visible to those around me is that my skin that 
         use to give me trouble has cleared up, and friends and family often tell me how 
@@ -3526,15 +3526,15 @@
       having made the transition into living a normal life, but the shadows crept 
       and crawled around, as shadows do. Something big needed to happen. We needed 
       help seeing through these shadows to a better life, a better connection, and 
-      certainly a better understanding. </p>
+      certainly a better understanding.</p>
 
     <p><em>The Shadow Process is a catalyst for our healing as we embrace our darkest 
       side,</em> the pdf read. I checked the dates for the next event: Miami, end of 
       June. My mothers birthday is June 24, Miami is warm, and there's a beach. She 
-      loves the beach, as do I. </p>
+      loves the beach, as do I.</p>
 
     <p>I booked the flights and bought the tickets as a birthday present. A vacation 
-      in June seemed a perfect way to celebrate her one-year mark of sobriety.  </p>
+      in June seemed a perfect way to celebrate her one-year mark of sobriety.</p>
 
     <p>My childhood was spent in limbo between two parents stuck in their own shadows. 
       I survived the harsh realities of divorce, drug, and alcohol addiction. Years of 
@@ -3545,37 +3545,37 @@
     <p>We landed in Miami and checked into the hotel, feeling relieved of our daily 
       responsibilities and hopeful to create a newly meaningful relationship between
        mother and daughter. The Shadow event started the next day, so we sat by the 
-       pool sipping cool (non-alcoholic) fruity drinks. </p>
+       pool sipping cool (non-alcoholic) fruity drinks.</p>
 
     <p>I felt very good about providing my mom this opportunity to get away, to dig 
-      deeper. </p>
+      deeper.</p>
 
-    <p><em>This will be good for her,</em> I told myself. </p>
+    <p><em>This will be good for her,</em> I told myself.</p>
 
     <p>I forgave her long ago. Had to. The grief I felt from mourning my motherless 
       childhood was too much to bear, and forgiveness was freedom from my pain, even 
       when the sadness became a security blanket as I hid behind a confident smile 
-      and warm laughter. Her growth would mean my growth. More growth, more forgiveness.  </p>
+      and warm laughter. Her growth would mean my growth. More growth, more forgiveness.</p>
 
     <p>The next morning, my mother and I showed up excited and ready to take on the 
       program. Armed with our venti lattes and chatting like school girls, we had NO 
-      CLUE what we were getting ourselves into. </p>
+      CLUE what we were getting ourselves into.</p>
 
     <p>Within minutes, the facilitator began giving us her “expectations'” for the next 
       72 hours. She was attractive and well dressed. She knew things, and you could tell. 
-      Her story had scars, and she shared them fearlessly. </p>
+      Her story had scars, and she shared them fearlessly.</p>
 
     <p>She laid out the rules.</p>
 
-    <p>Rule number one: Noble silence except for group exercises. </p>
+    <p>Rule number one: Noble silence except for group exercises.</p>
 
     <p>She went on: No meat, no sugar, and … <em>no caffeine!</em> She set aside her 
       notes and looked silently at the group. The coaches in the back row sat tall, also 
       knowing something we didn't. Each of them looked like wounded soldiers who hadn't 
-      lost the spirit of the fight. From the first moment, I trusted them. </p>
+      lost the spirit of the fight. From the first moment, I trusted them.</p>
 
     <p>We each took a long delicious gulp from our over-priced mochas and stared at each 
-      other, in shock and awe. </p>
+      other, in shock and awe.</p>
 
     <p><em>This was not a vacation,</em> we both realized. <em>This was a battlefield, 
       and we had just been informed we would be on the front lines to fight for our healing.</em></p>
@@ -3587,27 +3587,27 @@
     <p>In the first session, we listened to story after story of fearlessly facing the 
       shadows from our coaches. I trusted them even more. Stories of loss, pain, grief, 
       and shame poured out from their hearts. We cried, we laughed, but we didn't talk. 
-      We listened. </p>
+      We listened.</p>
 
     <p>Over the next three days, we both experienced something deeply profound. We slowly 
       began to understand the nobility piece of the silence. After the first awkward meal 
       with the other noble souls, we started to see the benefits of not blabbing our guts 
-      out to everyone and each other. </p>
+      out to everyone and each other.</p>
 
     <p>We kept our vow for the retreat (minus the initial mouthing and failed attempts to 
       make hand motions to signal what we desperately wanted to say out loud) as we learned 
-      then and there that words have power. </p>
+      then and there that words have power.</p>
 
-    <p>And no words? Even more power internally. </p>
+    <p>And no words? Even more power internally.</p>
 
     <p>In my own personal silence, it became a wave of relief not having to explain or 
       excuse myself or listen to others’ explanations or excuses. It was peaceful to not 
       feel the heavy obligation to make meaningless small talk about ignorant things with 
-      people we barely knew. </p>
+      people we barely knew.</p>
 
     <p>Most of all, it quickly brought a depth to this experience that nothing else would 
       because when you can't speak, you <em><strong>must listen.</strong></em> You must be 
-      open to receive. </p>
+      open to receive.</p>
 
     <p>As a southern girl from Tennessee, I had always heard the saying, “The good Lord 
       gave you two ears and one mouth for a reason,” but I just thought that was some 
@@ -3616,28 +3616,28 @@
 
     <p>Our coaches led us through a shadow-laden process to reveal deeply held judgments 
       and beliefs about ourselves and others. When we weren't listening to our program 
-      leaders, we had to listen to our own thoughts. Scary stuff there. </p>
+      leaders, we had to listen to our own thoughts. Scary stuff there.</p>
 
     <p>But without this experience, I would not have the awareness I <em>even had</em> 
       scary thoughts, much less listened to their meaning or intention.</p>
 
     <p>On the last day of the retreat, we participated in several group exercises in which 
       we journaled things about ourselves we did not want to hear or believe. Some were 
-      things we'd tell ourselves and some were things said to us with hurtful intention. </p>
+      things we'd tell ourselves and some were things said to us with hurtful intention.</p>
 
     <p>In short sentences we were expected to speak what we had written, and the group 
-      repeated back our words to us. The instructions were simple. Execution was brutal. </p>
+      repeated back our words to us. The instructions were simple. Execution was brutal.</p>
 
-    <p>My mom’s list included: "I was a horrible mother." </p>
+    <p>My mom’s list included: "I was a horrible mother."</p>
 
     <p>She choked out the words over and over. As I wanted to run and silence her, it 
       became clear that I didn't want her to admit this because then it WAS true. With 
       each time she repeated it, I was reminded how terrible it had been and how deeply 
-      wounded I was. </p>
+      wounded I was.</p>
 
     <p>Our group drove in the knives as we repeated, "You were a horrible mother." The 
       knife of her words hit me over and over. Repeating the words in confirmation of 
-      this fact stung like a thousand needles. </p>
+      this fact stung like a thousand needles.</p>
 
     <p>Then in an instant, I realized – where I felt a knife, she felt a sword. Where 
       I felt needles, she felt razors. My compassion arose as hot tears fell down both 
@@ -3645,7 +3645,7 @@
 
     <p>Working our way through our breakout tribe of shadow warriors, we continued. When 
       my turn came, tears began to flow. Where to begin? Which shadow that had been hidden 
-      in my wounds could I choose. </p>
+      in my wounds could I choose.</p>
 
     <p>I took a long breath and tried to gather myself. My mother's eyes welled as her 
       own shadow wounds lay open, bleeding for all to see, and she knew the pain I felt 
@@ -3657,13 +3657,13 @@
     <p>My group spoke it back to me, and their words pierced my soul. I continued saying 
       it over and over until something loosened inside. I wept as I looked at my mother 
       and said what I had always felt. We connected and again her fierce look of love 
-      gave me the push to go on until I heard these words as only sounds. </p>
+      gave me the push to go on until I heard these words as only sounds.</p>
 
     <p>The power of my words had not been in the sounds but in the meaning and truth I 
       granted them.</p>
 
     <p>We were strictly limited to the script we had written, and no one got out of the 
-      hot seat until they were crying their damn eyes out and shaking all over. </p>
+      hot seat until they were crying their damn eyes out and shaking all over.</p>
 
     <p>Believe me, noble silence came easily that day as no one wanted to say a word 
       during the break. We were all so shaken up, it was as though there had been some 
@@ -3672,51 +3672,51 @@
     <p>The final program exercise was to set up in the same groups. This time, we had 
       the chance to say what we wanted to say. What we really needed to say to ourselves, 
       out loud, to set a new intention for our lives where the raw hole had been hallowed 
-      out before. </p>
+      out before.</p>
 
     <p>After a weekend of cultivation and awareness of words (or lack there of) we were 
       more than ready to express our truest selves aloud. Statements filled with love 
-      and compassion. Words of hope and intention. </p>
+      and compassion. Words of hope and intention.</p>
 
     <p>Again my brave mother took her seat opposite us. She took a breath and stated 
-      timidly, "I am a wonderful grandmother." </p>
+      timidly, "I am a wonderful grandmother."</p>
 
     <p>We confirmed her words with ours, "You ARE a wonderful grandmother." Loudly 
       enunciating each word for her as we were given the chance to repeat her bold 
       statement. "YOU are a wonderful grandmother." Again, "You are a wonderful 
-      GRANDMOTHER." </p>
+      GRANDMOTHER."</p>
 
     <p>She began to smile as we saw a visceral acceptance of pride grow in her eyes, 
       melting my heart with her truth. She is a wonderful grandmother. My children have 
-      had the very best of her, which meant I had also received that precious gift. </p>
+      had the very best of her, which meant I had also received that precious gift.</p>
 
     <p>She went on to admit another truth. "I am safe," she proclaimed. I realized I 
       had never considered my mother to be fearful of ANYTHING. Yet here she was telling 
-      us she desperately wanted to feel safe. </p>
+      us she desperately wanted to feel safe.</p>
 
     <p>We confirmed her statement. "You ARE safe." Our embrace when she completed her 
-      turn was all we had both wanted and needed. </p>
+      turn was all we had both wanted and needed.</p>
 
     <p>Once again, it was my turn to speak truth. I sat with an excitement for the 
-      next words I would speak. </p>
+      next words I would speak.</p>
 
     <p>"I am a good mother." I said firmly. I locked eyes with her first as she repeated 
-      the fact back to me the way only a mother can do. </p>
+      the fact back to me the way only a mother can do.</p>
 
     <p>Each time I said it, her heart healed more and mine leaped for joy. Our eyes 
-      locked deeper and we both knew in that moment the reason we had come here. </p>
+      locked deeper and we both knew in that moment the reason we had come here.</p>
 
     <p>The healing that took place in these brutal and honest statements sealed off 
-      the wounds we had carried for one another. </p>
+      the wounds we had carried for one another.</p>
 
     <p>I looked down at my next statement, but as I opened my mouth those words didn't 
       come out. Instead, as though a voice from my soul spoke into my heart I blurted 
-      out instead, "I am a spiritual guide." </p>
+      out instead, "I am a spiritual guide."</p>
 
     <p>Electricity shot through every cell in my body, as I looked shocked at my mother 
       who leaned forward and confirmed it loudly with her fellow team of repeaters, "YOU 
       ARE A SPIRITUAL GUIDE." I said it again and again until the words were very much 
-      my own: "I am a spiritual guide." </p>
+      my own: "I am a spiritual guide."</p>
 
     <p>I had found purpose for the pain that feeling unlovable for so long had gifted me.</p>
 
@@ -3724,7 +3724,7 @@
       a huge steak dinner that night. We spent the entire evening recapping the incredible 
       gift we had received, a powerful tool that separated fact from fiction in our 
       awareness. We now understood the power of our words, spoken or not, and how they 
-      created the life we called our own. </p>
+      created the life we called our own.</p>
 
     <p>Our words attract our outcomes, and we were both amazed at how something as simple 
       as “noble silence” could be the catalyst to speaking with intention.</p>
@@ -3732,22 +3732,22 @@
     <p>My words, "I am a spiritual guide," connected me to the universal power of attraction. 
       Today, I am a spiritual guide, a certified yoga instructor, and a certified holistic 
       leadership coach. I now do the work to guide others spiritually back to their own 
-      truth. I travel, speak, and train others to be guides. </p>
+      truth. I travel, speak, and train others to be guides.</p>
 
     <p>Almost five years later, my mom continues to feel safe in her sobriety, and she 
-      supports my family by being a WONDERFUL grandmother. </p>
+      supports my family by being a WONDERFUL grandmother.</p>
 
     <p>Quite literally, our life is the words we speak both inside our head and out to 
       the rest of the world.  We are living proof that your words most definitely have 
-      the power to create your reality and to redeem your past. </p>
+      the power to create your reality and to redeem your past.</p>
       
     <hr />
 
     <img src="images/MistiJacksonDerringer.jpg" alt="">
 
     <p class="signature">Misti Jackson-Derringer is a poet, speaker, author, Certified 
-      Holistic Coach, Intuitive Energy Worker and Yoga Teacher. </p>
-    <p class="signature">She is a teacher and leader in her local community and worldwide who helps others design a life they legitimately love. </p>
+      Holistic Coach, Intuitive Energy Worker and Yoga Teacher.</p>
+    <p class="signature">She is a teacher and leader in her local community and worldwide who helps others design a life they legitimately love.</p>
     <p class="signature">Website: <a @click="myLink('https://meetmisti.com/')">meetmisti.com</a></p>
 
     <p>&nbsp;</p>
@@ -3758,12 +3758,12 @@
     <h5>Nizhoni</h5>
     <h6>by Ellen Bakker</h6>
 
-    <p>Help came when I was almost 24 years old. </p>
+    <p>Help came when I was almost 24 years old.</p>
 
     <p>When I was 7, I was diagnosed with Type 1 Diabetes. By the time I was 21, 
       I started having problems with my eyesight. It didn’t come as a surprise. At 
       age 12 the doctors had already told me and my parents that I had symptoms that 
-      would lead to future eye problems. </p>
+      would lead to future eye problems.</p>
 
     <p>I was diagnosed with retinopathy, a diabetes-related eye disease. In the years 
       that followed, I was treated with laser therapy many times. The results were not 
@@ -3782,16 +3782,16 @@
     <p>Help came a couple of months later. My aunt knew a homeopath whom she thought 
       could help me. So I went. My parents went with me the first time, very reluctantly 
       though. They had always been non-believers when it came to alternative practitioners. 
-      Spirituality was not in their book and definitely shouldn’t be in mine either! </p>
+      Spirituality was not in their book and definitely shouldn’t be in mine either!</p>
 
     <p>My parents were very dominant, especially my father whom I had always been afraid of. 
       Even though I was 24 years old and not living at home anymore, they still believed 
       they could forbid me things. After that first visit to see the homeopath, I decided 
-      to go again alone and didn’t tell them about it. </p>
+      to go again alone and didn’t tell them about it.</p>
 
     <p>On one of my visits, I told one of the employees working for the homeopath that 
       the doctors had said that the problems with my sight were irreversible. I could tell 
-      she wanted to tell me something but felt hesitant. I encouraged her to tell me. </p>
+      she wanted to tell me something but felt hesitant. I encouraged her to tell me.</p>
 
     <p>She said she knew someone who could probably help me but that the woman was very 
       unconventional. I said that I didn’t care about “unconventional” and convinced her 
@@ -3802,11 +3802,11 @@
       right place and person. I simply thought, “Okay, this is good.”</p>
 
     <p>As I learned about her methods, I became really interested in spiritual matters. 
-      I also started to attend the courses she gave. </p>
+      I also started to attend the courses she gave.</p>
 
     <p>The courses took place at her house, which is how I got to know her family as well. 
       With her husband Peet, she had two children a little younger than myself, Yosi and 
-      Richard. </p>
+      Richard.</p>
 
     <p>The first time Marian told me about her son Richard, whom she was clearly very proud 
       of, I immediately felt a connection to him. I didn’t know why or how this was possible. 
@@ -3814,11 +3814,11 @@
       the time. And obviously I had much bigger issues!</p>
 
     <p>One evening, just before the start of one of the evening classes, I had the following 
-      conversation with Yosi. </p>
+      conversation with Yosi.</p>
 
     <p>“I have been going to the library many times, looking for books on spiritual subjects. 
       As usual I really didn’t know what book to pick, so this time I decided to choose a 
-      book in a different way. I made sure no one watched me. </p>
+      book in a different way. I made sure no one watched me.</p>
 
     <p>“I closed my eyes and touched the spines of the books with my fingertips. There were 
       approximately a hundred books to choose from, so it took some time, but at one point 
@@ -3829,7 +3829,7 @@
     <p>“I couldn’t even finish the first page, simply because I just couldn’t stop crying. 
       It was a story of a young girl having spiritual experiences. For her, they were as 
       normal as breathing. Somehow it felt like it was my story. And my God! ... the 
-      description of the landscape she grew up in! </p>
+      description of the landscape she grew up in!</p>
 
     <p>“That touched me even deeper. Apart from that I am intrigued by the way the regression 
       therapy is done at that institution the author talks about. So I read and cried and 
@@ -3851,7 +3851,7 @@
       in the United States.”</p>
 
     <p>Now it was my turn to be completely blown away. Yosi didn’t know that I so much 
-      wanted to meet him. I couldn’t wrap my head around this so-called coincidence! </p>
+      wanted to meet him. I couldn’t wrap my head around this so-called coincidence!</p>
 
     <p>Of all the dozens of books I could pick, I unknowingly chose the one that made me 
       decide to go to that awesome place in the U.S. not knowing that the one person I so 
@@ -3862,7 +3862,7 @@
 
     <p>So here I was in September 1993, 26 years old, still studying, no job, no money, 
       determined to go to the Nizhoni School for Global Consciousness. Studying there 
-      was not an option, but I learned they organized summer camps as well. </p>
+      was not an option, but I learned they organized summer camps as well.</p>
 
     <p>The regression sessions described in the book and that I so much wanted to experience 
       were part of the program. I was not and am not a very patient person, so I decided 
@@ -3870,11 +3870,11 @@
 
     <p>Of course I knew I needed a lot of money that I didn’t have. The regression sessions 
       were pretty expensive, and I knew I had to save at least $6,000. I had no clue how to 
-      do that. I just knew I wanted to. </p>
+      do that. I just knew I wanted to.</p>
 
     <p>The next week a professor from Leiden University where I was studying Child Education 
       and Development asked me if I was interested in working for him for 16 hours per week.
-      He was looking for someone who could help him with the book he was writing. </p>
+      He was looking for someone who could help him with the book he was writing.</p>
 
     <p>The book was about a French pedagogue, and since I already had a master’s degree in 
       French he figured I would be the right choice. I started in October and thus made some 
@@ -3890,56 +3890,56 @@
       have a chance of meeting him unless I visited on an evening with no classes. Marian 
       had a lot of spiritual books. I asked her if it was okay for me to come over one 
       evening to take a look at her books to see if she had some that I might want to read. 
-      Luckily, she agreed! </p>
+      Luckily, she agreed!</p>
 
     <p>It was typical Dutch winter weather, cold and rainy, so I put on something nice, 
       warm, and comfortable . I always wore glasses, but for this occasion I put in my 
       contacts. I felt prepared and ready to go. Still, I had no idea if he would actually 
-      be at his parents’ home. </p>
+      be at his parents’ home.</p>
 
     <p>As I came in, Marian immediately noticed I wasn’t wearing my glasses. I had a perfect 
       excuse: “Well, it’s dark and raining, and I suffer from night-blindness (which she knew 
-      was true). I don’t see well with raindrops on my glasses.” She bought it. </p>
+      was true). I don’t see well with raindrops on my glasses.” She bought it.</p>
 
     <p>My preexisting feeling of connection was confirmed.  I fell in love with him. Actually, 
       that wasn’t accurate. A better word would be soulmate, someone I once knew.</p>
 
     <p>That same year, Chris Griscom came to the Netherlands to speak at a Congress organized 
-      in Amsterdam. Of course I went with Yosi’s family. Richard was there too. </p>
+      in Amsterdam. Of course I went with Yosi’s family. Richard was there too.</p>
 
     <p>That was the last time I saw him in the Netherlands. The next time would be at the 
       Nizhoni summer camp in 1997.</p>
 
     <p>I somehow had been able to save up $8,000 in nine months time! I still remember the 
-      look on the face of the bank employee. I booked the camp and flight. </p>
+      look on the face of the bank employee. I booked the camp and flight.</p>
 
-    <p>She said, “Well, now you will have to pay $6,000.” </p>
+    <p>She said, “Well, now you will have to pay $6,000.”</p>
 
     <p>Since I had saved the money all in cash, I simply took the $6,000 out of my pocket 
       and gave it to her. I remember wearing a red pair of trousers with huge pockets and 
       a long white sweater covering them. I figured no one would be able to see or least 
-      of all expect me to have so much money on me. </p>
+      of all expect me to have so much money on me.</p>
 
     <p>I didn’t know her thoughts, but I could tell she was surprised to say the least! 
       Now that I am older, I understand, but at the time I thought there was nothing 
-      unusual or odd about it. </p>
+      unusual or odd about it.</p>
 
     <p>So that is how I overcame the money hurdle, but there was yet another hurdle to clear 
       as well: my family. I had to tell them I was going to the U.S. alone to a 
-      spiritually-oriented camp. </p>
+      spiritually-oriented camp.</p>
 
     <p>They reacted the way I expected: upset, angry, scared, and dead set against my plans. 
       My father simply forbade me to go, even though I was 27 years old. He told me that if 
-      anything went wrong I couldn’t count on the help of my family. </p>
+      anything went wrong I couldn’t count on the help of my family.</p>
 
-    <p>My sister refused to talk to me all together. </p>
+    <p>My sister refused to talk to me all together.</p>
 
     <p>My brother didn’t understand why I had to go and what the hell I was going to do there.</p>
 
-    <p>My mom agreed with my dad. </p>
+    <p>My mom agreed with my dad.</p>
 
     <p>I felt terrible. A week before my scheduled flight I took a long look in the mirror 
-      and seriously imagined for about 30 seconds not going. </p>
+      and seriously imagined for about 30 seconds not going.</p>
 
     <p>I felt my energy drop drastically. The things around me and in the mirror lost their 
       colour. At that moment, I knew I wouldn’t be able to live with myself if I didn’t go.</p>
@@ -3948,19 +3948,19 @@
 
     <p>I only have a few regrets in my life. One of the biggest, or probably THE biggest, 
       is that I didn’t get up when Richard showed up with a friend at the tent I stayed in 
-      at Nizhoni Camp close to Santa Fe in New Mexico. </p>
+      at Nizhoni Camp close to Santa Fe in New Mexico.</p>
 
     <p>I was lying on my stomach on the floor. I was still so ashamed of my body that I 
       didn’t dare to get up and walk over to him. I felt awful! I didn’t know what to do, 
-      so I did nothing. </p>
+      so I did nothing.</p>
 
     <p>Maybe that didn’t matter to him, but I felt and still feel deeply ashamed of not 
-      getting up. I just said, “Hey, hi.” </p>
+      getting up. I just said, “Hey, hi.”</p>
 
     <p>Even though he wasn’t the reason I went to the US, I really wanted to see him there. 
       He showed up, unannounced, and what did I do.…?</p>
 
-    <p>“I told you there would be a Dutch girl here.” </p>
+    <p>“I told you there would be a Dutch girl here.”</p>
 
     <p>Those were the last words I ever heard him say and the last time I saw him.</p>
 
@@ -4019,7 +4019,7 @@
     <p>I intensely studied the mind-body connection, my emotions, the power of positive 
       thinking, the perils of negative thinking, and the Universe at large. I believed 
       that our bodies and lives are the result of our thoughts and set about understanding 
-      my route to constant physical pain. </p>
+      my route to constant physical pain.</p>
 
     <p>In 2007, things clicked for me in a big way. I had heard of the Law of Attraction 
       and had studied books on creative visualization, but only after I watched The Secret 
@@ -4030,7 +4030,7 @@
 
     <p>There is a point in the documentary when one of the teachers speaks of how he decided 
       to set a big goal for himself, one so big that if he achieved it, he would know it was 
-      only because of what he had learned. I decided to do the same. </p>
+      only because of what he had learned. I decided to do the same.</p>
 
     <p>However, I never concentrated on walking. What set my heart on fire was the idea of 
       going to live in Italy. For a long time I felt guilty about not concentrating on my 
@@ -4059,7 +4059,7 @@
 
     <p>Months passed, months of watching, writing, believing, and standing guard over my 
       thoughts. I would be lying to you if I said I had perfect faith. I just gave it the 
-      best attempt I could. </p>
+      best attempt I could.</p>
 
     <p>I started watching <em>The Secret</em> in August, and by the time December came 
     around I had reached the height of my frustration. You could hear a pin drop in the
@@ -4074,10 +4074,10 @@
 
     <p>Being desperate to get to Italy, this small move in the right direction to me was a 
       great relief. The money for the airfare quickly manifested when my aunt, who had 
-      promised to purchase me a plane ticket years prior, made good on her promise. </p>
+      promised to purchase me a plane ticket years prior, made good on her promise.</p>
 
     <p>It was not until sometime towards the end of January of the following year that 
-      something spooky started to take place. </p>
+      something spooky started to take place.</p>
 
     <p>It was late in the afternoon, and I was going to have a bath. I decided to take my 
       phone with me into the bathroom, and I turned it on to listen to my messages. The 
@@ -4114,7 +4114,7 @@
     <p>The fateful day arrived when Nadia and her boss came to meet me at my hotel room. 
       What an honour to meet face to face with such a great mind! Professor Montagnier 
       and Nadia sat down with my mother and I to explain the medication, reminding us 
-      that it might or might not help, suggesting that it would be worth a try. </p>
+      that it might or might not help, suggesting that it would be worth a try.</p>
 
     <p>It was the second-to-last day of my stay in Italy. At one point in our conversations, 
       Nadia turned to me, and with her excitable French accent said, “But Tarryn, you know 
@@ -4132,7 +4132,7 @@
     <p>As cliché as it may sound, time stood still. I do not remember breathing very much 
       as each and every hair stood up on my arms. Listening with such intensity to what he 
       said, all my senses became heightened as competing thoughts were drowned out. It felt 
-      like I was in the eye of a storm in my mind. </p>
+      like I was in the eye of a storm in my mind.</p>
 
     <p><em>This is it!</em> I thought. <strong><em>This is it.</em></strong></p>
 
@@ -4146,7 +4146,7 @@
       people say stuff and do not follow through.”</p>
 
     <p>I did not allow that type of thinking to sink in. During the days that followed, 
-      I argued against it, telling myself that I will not entertain negative thinking. </p>
+      I argued against it, telling myself that I will not entertain negative thinking.</p>
 
     <p>My arrival back in South Africa was filled with wonder, gratitude, and excitement. 
       Instead of visualizing and affirming, I trusted that everything would work out 
@@ -4169,11 +4169,11 @@
       huge clearing appeared ahead where I saw for the first time the magnificent estate 
       I would call home for what I thought would be a month. It took my breath away, and 
       as time slowed while the hairs rose on my arms, it dawned upon me that my
-      manifestation far exceeded my dream. </p>
+      manifestation far exceeded my dream.</p>
 
     <p>My first week there I made headline news in a national newspaper and was treated 
       like a celebrity. Professor Montagnier and my friend stayed with me the first week, 
-      when he learned he had won the Nobel Prize for Medicine for his discovery of HIV. </p>
+      when he learned he had won the Nobel Prize for Medicine for his discovery of HIV.</p>
 
     <p>The treatment was best suited for people at the onset of arthritis, and too many 
       of my joints had been destroyed according to the doctors. They told me there was 
@@ -4181,7 +4181,7 @@
 
     <p>I kept calm. A little while later, Mogol came to me with a proposal. He knew of a 
       good surgeon who could operate on me. I could stay on the estate, and he would 
-      support me. </p>
+      support me.</p>
 
     <p>The occurrences that followed are too numerous to mention. I traveled around Italy, 
       had amazing experiences, met fascinating people, and underwent two operations.</p>
@@ -4215,35 +4215,35 @@
     <p>With my husband’s death grip on the steering wheel, our minivan careened down 
       I-540 keeping pace with the ambulance ahead of us. What began as concern that one 
       of our children was dehydrated after a night of vomiting became one of the most 
-      harrowing experiences of our lives. </p>
+      harrowing experiences of our lives.</p>
 
     <p>Barely 15 hours earlier, our sweet family of five: mama, papa, daughter Laura, 
       just shy of 15, and our two sons, Eamon, aged 13, and Liam, almost 10, had just 
       completed our final Saturday night community theater performance of Oliver! We 
       looked forward to the final Sunday matinee performance the following day, and the 
       next chapter in our lives promised an overseas adventure for which we had been 
-      preparing for eight long months. </p>
+      preparing for eight long months.</p>
 
     <p>Laura, a member of an elite all-girl’s choir, had labored over knit goods she 
       sold in the community. She developed a loyal following of people who appreciated 
       her artistry and talent and were happy to pay for it. Together, the kids and I 
       began a small house-cleaning service to help further secure the funds necessary 
       for Laura to travel with her choir to Salzburg to perform in the Mozart Festival 
-      that summer. </p>
+      that summer.</p>
 
     <p>Ours was a single-income, unschooling family. Funds may have been scarce, but 
       love and generosity were abundant. Even in our more cash-strapped times, through 
       the love and generosity of others, we managed to get what we needed and even much 
       of what we desired. Dennis, Laura, and I intended that Laura would travel to 
       Salzburg with her choir, and we were open and willing to do whatever was in our 
-      power to get her there. </p>
+      power to get her there.</p>
 
     <p>Just when we’d nearly secured Laura’s travel fare, my mother decided to give Eamon 
       and me the gift of joining Laura on this once-in-a-lifetime adventure. We spent 
       several months studying German,  planning and preparing for our European excursion. 
       With Saturday’s performance “in the can,” we had just one more matinee until we 
       could begin the countdown and fully devote our energy to our upcoming trip to 
-      Austria! </p>
+      Austria!</p>
 
     <p>Following that Saturday night performance, after changing out of her costume, 
       Laura complained of nausea and headache. A viral infection had been plaguing much 
@@ -4252,44 +4252,44 @@
       What we wouldn’t know until days later is that she collapsed backstage during the 
       curtain call, requiring her scrambling cast mates to help her to her feet. Like a 
       consummate theater professional, she mustered the strength to walk out on stage and 
-      take her bow. </p>
+      take her bow.</p>
 
     <p>Once home from the theater, I did a web search of her symptoms: she was severely 
       nauseated without fever, and had headache radiating down the sides of her neck. 
       My little visit to “fearmongers dot com” did little to assuage our concerns, but 
       Dennis and I put her to bed, giving her some Boswellia extract to relieve her pain, 
       and then tag-teamed staying with her throughout the night. By morning, we were 
-      finally convinced there was something seriously wrong with our beautiful daughter. </p>
+      finally convinced there was something seriously wrong with our beautiful daughter.</p>
 
     <p>On Sunday morning, Dennis gingerly placed Laura into the van, and we drove to our 
       local emergency room where a CT scan revealed she suffered a potentially fatal brain 
-      hemorrhage. </p>
+      hemorrhage.</p>
 
-    <p>In an instant, a life full of hope, joy, and promise was turned on its head. </p>
+    <p>In an instant, a life full of hope, joy, and promise was turned on its head.</p>
 
     <p>We had no idea what lay ahead of us, but we knew that, though our lives were about 
       to be altered irrevocably, allowing ourselves to be beaten down by unforeseen 
-      circumstances was not an option. </p>
+      circumstances was not an option.</p>
 
     <p>Dennis and I had weathered many storms over the course of our 25-year relationship. 
       Whether it was due to the power of prayer, gratitude, affirmations, or the deep, 
       abiding belief that “all is well,” every time we pulled through and overcame whatever 
-      hardship threatened to destroy the life we’d built together. </p>
+      hardship threatened to destroy the life we’d built together.</p>
 
-    <p>We were determined this time would be no different. </p>
+    <p>We were determined this time would be no different.</p>
 
     <p>Matching the ambulance mile for mile, Dennis and I endured a fairly silent 30 
       minute drive from our local emergency room in Raleigh, NC, to the Duke University 
       Medical Center E.R. in Durham. We may not have spoken many words, but our hearts 
-      and minds hummed in harmony: <em>All is well. All is well. All is well…</em> </p>
+      and minds hummed in harmony: <em>All is well. All is well. All is well…</em></p>
 
     <p>Scans revealed that a mass in the fourth ventricle of Laura’s brain was the 
       cause of the hemorrhage; she would require emergency surgery to remove the mass 
-      and repair the bleeding. </p>
+      and repair the bleeding.</p>
 
     <p>Facing such a terrifying and unexpected event, I immediately began looking for 
       what was going <strong><em>right</em></strong> that day and found many things 
-      worthy of gratitude. </p>
+      worthy of gratitude.</p>
 
     <p>Despite this emergency occurring on the Sunday of Memorial Day weekend, an 
       internationally respected pediatric neurosurgeon was on call, and Laura was in 
@@ -4314,7 +4314,7 @@
         for this untenable situation.</p>
 
       <p>Our daughter sailed through the surgery, which took less time than 
-        anticipated. The surgeon was confident he removed 100% of the mass. </p>
+        anticipated. The surgeon was confident he removed 100% of the mass.</p>
 
       <p>My husband and I brought great comfort and support to each other, and our 
         different perspectives helped balance and strengthen our decision-making process.</p>
@@ -4326,12 +4326,12 @@
 
       <p>Laura enjoyed a robust recovery following the trauma of surgery. But though 
         we held out hope the mass was a benign tumor, the results were not in our 
-        favor. Diagnosis: medulloblastoma, an aggressive childhood brain cancer. </p>
+        favor. Diagnosis: medulloblastoma, an aggressive childhood brain cancer.</p>
 
       <p>It’s easy for hope, faith, and the enduring trust that, “the Universe has 
         your back” to quaver in the face of immense challenges. Holding on to the trust 
         that all is well when all physical evidence points to the contrary is itself 
-        a major feat of manifesting. </p>
+        a major feat of manifesting.</p>
 
       <p>My husband has always been the more optimistic person between the two of us. 
         It comes naturally to him to see his glass as perpetually overflowing. I, on 
@@ -4342,44 +4342,44 @@
         have to wait while Laura endured additional tests and procedures, including 
         painful and risky spinal taps and the collection of stem cells through pheresis. 
         Treatment included six weeks of head and spine irradiation, and four consecutive 
-        rounds of inpatient, high-dose chemotherapy and stem cell transplants. </p>
+        rounds of inpatient, high-dose chemotherapy and stem cell transplants.</p>
 
       <p>We agreed that this challenge would be met head on, frequently irreverently, 
-        often with humor, and always with unrelenting optimism. </p>
+        often with humor, and always with unrelenting optimism.</p>
 
       <p>We treated every milestone of Laura’s protocol as a cause for celebration, 
         whether it was throwing a party at the salon, complete with guests, to mark the 
         occasion of Laura having her hip-length hair bobbed into a pixie cut prior to 
         radiation treatments, or celebrating the end of radiation with fireworks in our 
         cul-de-sac, or popping open a bottle of something sparkling to mark the end of 
-        a round of treatment. </p>
+        a round of treatment.</p>
 
       <p>Our family found things to celebrate and mark with gratitude throughout the 
-        entire year. </p>
+        entire year.</p>
 
       <p>We also chose to incorporate holistic, natural healing strategies with the 
         mandatory cut, burn, and poison allopathy. Careful research and investigation, 
         followed by meticulous implementation helped all of us feel empowered and 
-        actively part of the process. </p>
+        actively part of the process.</p>
 
       <p>The gifts from that year have been abundant and are still revealing themselves
-        to us. Laura continues to be 100% cancer-free since her surgery on May 30, 2006. </p>
+        to us. Laura continues to be 100% cancer-free since her surgery on May 30, 2006.</p>
 
       <p>The integrative practices we utilized during and after her oncology treatment 
         protected her from the aggressively toxic protocol; with the exception of some 
         mild cognitive challenges and very, very thin hair (thanks to the radiation 
         treatments) she emerged from the experience relatively unscathed and even has 
         her fertility intact. She graduated from college and is employed in her chosen 
-        field. </p>
+        field.</p>
 
       <p>Our “cancer year” inspired me to author a book, <em>Walking on the Ceiling: 
         Reflections on Life Turned Upside Down by Pediatric Cancer</em> and to become 
         a certified holistic coach. I now help others experiencing cancer develop and 
-        implement their own anticancer lifestyle. </p>
+        implement their own anticancer lifestyle.</p>
 
       <p>And Europe? It was still there a year later, but this time, thanks to the 
         generosity of the Make A Wish Foundation, our entire family enjoyed an enchanting, 
-        life-affirming visit to Italy. </p>
+        life-affirming visit to Italy.</p>
 
       <p>All is well!</p>
       

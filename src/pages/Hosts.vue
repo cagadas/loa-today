@@ -67,6 +67,15 @@
       order to manifest your desires. She is filling in on Wednesdays until the Spring Equinox for Cindie
       Chavez while Cindie is on sabbatical. Monique can be reached on her
       <a href="#monique" @click="myLink('https://www.facebook.com/americasfavoritecoach/')">Facebook</a> page.</span></p>
+    <q-img id="debbie" src="images/DebbieGarcia-wide.jpg" alt="Debbie Garcia" class="myImage"></q-img>
+    <p>Debbie Garcia - <span class="bluetext">Take a woman who suffered through abusive 
+      relationships, add in a hefty dose of codependence, mix in some serious drug and alcohol 
+      abuse, add 5 cups of victimhood mentality, and the result is a homeless woman with kids 
+      and a car living on a beach in California with nowhere to go. Now take that same woman 
+      and mix in some serious attitude of gratitude, a ton of mindfulness, and an extraordinary 
+      series of bumps along the road. That's Debbie G., and she is truly inspiring. Debbie can 
+      be reached on her website:
+      <a href="#monique" @click="myLink('https://www.spiritualitygonewild.com/')">spiritualitygonewild.com</a></span></p>
   </q-page>
 </template>
 
