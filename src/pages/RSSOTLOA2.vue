@@ -59,7 +59,7 @@
     <p id="55" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'homes-cats-and-cars'}">Homes, Cats, and Cars</q-btn><br />by Louise and Walt Thiessen</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#25">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '25'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-boyfriend"/>
     <p>&nbsp;</p>
@@ -174,7 +174,7 @@
     <p class="signature">Phone: <a href="tel:+012147626989">214-762-6989</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#26">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '26'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="fire-alarms-to-wedding-bells"/>
     <p>&nbsp;</p>
@@ -410,7 +410,7 @@
       many transitions in her own life and feels blessed to empower others.</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#27">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '27'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="welcoming-a-new-child"/>
     <p>&nbsp;</p>
@@ -532,7 +532,7 @@
     <p class="signature">Website: <a @click="myLink('https://radiantcoachesacademy.com/dez-stephens-acc/')">dezstephens.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#28">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '28'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="man-of-my-dreams"/>
     <p>&nbsp;</p>
@@ -769,7 +769,7 @@
       rediscovering it when she read <em>The Secret</em> in her mid-twenties.</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#29">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '29'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="markus"/>
     <p>&nbsp;</p>
@@ -1014,7 +1014,7 @@
     <p class="signature">Website: <a @click="myLink('https://www.joelelston.com/')">joelelston.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#30">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '30'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="being-found"/>
     <p>&nbsp;</p>
@@ -1302,7 +1302,7 @@
     <p class="signature">Website: <a @click="myLink('https://www.loatoday.net/')">www.loatoday.net</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#31">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '31'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="friends-delivered-to-me-by-the-law-of-attraction"/>
     <p>&nbsp;</p>
@@ -1474,7 +1474,7 @@
       Website: <a @click="myLink('https://www.wendydillard.com')">www.wendydillard.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#32">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '32'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="overcoming-five-devastating-losses"/>
     <p>&nbsp;</p>
@@ -1645,7 +1645,7 @@
     <p class="signature">Website: <a @click="myLink('http://www.debraoakland.com/')">DebraOakland.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#33">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '33'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-bath-that-keeps-on-gifting"/>
     <p>&nbsp;</p>
@@ -1837,7 +1837,7 @@
     <p class="signature">Website: <a @click="myLink('https://keishaclark.live/l')">keishaclark.live</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#34">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '34'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-third-degree"/>
     <p>&nbsp;</p>
@@ -1932,7 +1932,7 @@
     <p class="signature">Website: <a @click="myLink('https://www.lovemylife.coach/')">lovemylife.coach</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#35">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '35'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="hide-and-seek"/>
     <p>&nbsp;</p>
@@ -1980,7 +1980,7 @@
       two black cats, Harmony and Joy, in Simsbury, CT</p>
     
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#36">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '36'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="out-of-the-darkness"/>
     <p>&nbsp;</p>
@@ -2089,7 +2089,7 @@
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#37">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '37'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="anybody-but-me"/>
     <p>&nbsp;</p>
@@ -2230,7 +2230,7 @@
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#38">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '38'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-only-choice"/>
     <p>&nbsp;</p>
@@ -2277,7 +2277,7 @@
       two black cats, Harmony and Joy, in Simsbury, CT</p>
     
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#39">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '39'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="my-boat-was-taking-on-water"/>
     <p>&nbsp;</p>
@@ -2507,7 +2507,7 @@
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#40">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '40'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="vienna-station"/>
     <p>&nbsp;</p>
@@ -2627,7 +2627,7 @@
       Simsbury, Connecticut.</p>
     <p class="signature">Website: <a @click="myLink('https://www.loatoday.net/')">www.loatoday.net</a></p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#41">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '41'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="a-steinway-piano"/>
     <p>&nbsp;</p>
@@ -2838,7 +2838,7 @@
     <p class="signature">Website: <a @click="myLink('https://www.buttonwood.org/')">buttonwood.org</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#42">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '42'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="ill-have-an-owl-please"/>
     <p>&nbsp;</p>
@@ -2938,7 +2938,7 @@
     <p class="signature">Website: <a @click="myLink('https://www.cindiechavez.com/')">cindiechavez.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#43">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '43'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="fins-up"/>
     <p>&nbsp;</p>
@@ -3138,7 +3138,7 @@
     <p class="signature">Website: <a @click="myLink('https://www.drlesliewellness.com/')">DrLeslieWellness.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#44">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '44'}">Back To Top</q-btn></p>
   </q-page>
 </template>
 <script>

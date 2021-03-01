@@ -67,7 +67,7 @@
     <p id="55" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'homes-cats-and-cars'}">Homes, Cats, and Cars</q-btn><br />by Louise and Walt Thiessen</p>
 
     <p>&nbsp;</p>
-     <p class="centerNoIndent"><a href="#i">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'top'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="introduction"/>
     <p>&nbsp;</p>
@@ -269,7 +269,7 @@
     <p>Thank you, dear reader, for picking up this book. Now, get ready for a really fun ride!</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#i">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'top'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="home-sweet-home"/>
     <p>&nbsp;</p>
@@ -604,7 +604,7 @@
       Website: <a @click="myLink('https://www.wendydillard.com')">www.wendydillard.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#i">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'top'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-lot"/>
     <p>&nbsp;</p>
@@ -698,7 +698,7 @@ Wen      workshops, and her private practice.</p>
     
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#1">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '1'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="manifesting-an-apartment-on-central-park-west"/>
     <p>&nbsp;</p>
@@ -768,7 +768,7 @@ Wen      workshops, and her private practice.</p>
     Facebook: <a @click="myLink('https://www.lifecoachdavid.com/')">@lifecoachdavid</a></p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#2">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '2'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="our-dream-house-in-northern-california"/>
     <p>&nbsp;</p>
@@ -933,7 +933,7 @@ Wen      workshops, and her private practice.</p>
       California.</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#3">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '3'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="divorced-broke-and-homeless"/>
     <p>&nbsp;</p>
@@ -1035,7 +1035,7 @@ Wen      workshops, and her private practice.</p>
     Cell <a href="tel:+012035150818">203-515-0818</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#4">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '4'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="wouldnt-it-be-cool-to-live-here"/>
     <p>&nbsp;</p>
@@ -1157,7 +1157,7 @@ Wen      workshops, and her private practice.</p>
     Website: <a @click="myLink('http://www.path2wealth.ca')">www.path2wealth.ca</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#5">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '5'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="arizona-dreaming"/>
     <p>&nbsp;</p>
@@ -1311,7 +1311,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Email: <a href="mailto:barbarapinti@comcast.net">barbarapinti@comcast.net</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#6">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '6'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="a-new-healing-center"/>
     <p>&nbsp;</p>
@@ -1429,7 +1429,7 @@ Wen      workshops, and her private practice.</p>
     to guide me to do what's best for my clients.</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#7">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '7'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="trapped"/>
     <p>&nbsp;</p>
@@ -1634,7 +1634,8 @@ Wen      workshops, and her private practice.</p>
       or found on major social media platforms <a @click="myLink('https://www.facebook.com/EBBNFLOWCOACH/')">@ebbnflowcoach</a>.</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#8">Back To Top</a></p>
+    
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '8'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="our-dream-home"/>
     <p>&nbsp;</p>
@@ -1807,7 +1808,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Website: <a @click="myLink('https://www.lovemylife.coach/')">lovemylife.coach</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#9">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '9'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="treasures-from-tikashi"/>
     <p>&nbsp;</p>
@@ -1938,7 +1939,7 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#10">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '10'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="beginning-again"/>
     <p>&nbsp;</p>
@@ -2153,7 +2154,7 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#11">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '11'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="signs-from-the-universe"/>
     <p>&nbsp;</p>
@@ -2244,7 +2245,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Website: <a @click="myLink('https://howtoallow.net/')">howtoallow.net</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#12">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '12'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-seller-who-was-the-buyers-ally"/>
     <p>&nbsp;</p>
@@ -2372,7 +2373,7 @@ Wen      workshops, and her private practice.</p>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#13">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '13'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="a-financial-surprise"/>
     <p>&nbsp;</p>
@@ -2439,7 +2440,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Email: <a href="mailto:barbarapinti@comcast.net">barbarapinti@comcast.net</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#14">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '14'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="sailing"/>
     <p>&nbsp;</p>
@@ -2717,7 +2718,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Phone: <a href="tel:+016198800714">619-880-0714</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#15">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '15'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="its-no-accident"/>
     <p>&nbsp;</p>
@@ -2876,7 +2877,7 @@ Wen      workshops, and her private practice.</p>
 
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <p class="centerNoIndent"><a href="#16">Back To Top</a></p>
+  <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '16'}">Back To Top</q-btn></p>
   <p>&nbsp;</p>
   <hr id="making-changes"/>
   <p>&nbsp;</p>
@@ -2987,7 +2988,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Facebook: <a @click="myLink('https://www.facebook.com/galinashadrova3')">@galinashadrova3</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#17">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '17'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="london-calling"/>
     <p>&nbsp;</p>
@@ -3164,7 +3165,7 @@ Wen      workshops, and her private practice.</p>
       British countryside.</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#18">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '18'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="getting-published"/>
     <p>&nbsp;</p>
@@ -3300,7 +3301,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Website: <a @click="myLink('https://drpaulettesherman.com/')">DrPauletteSherman.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#19">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '19'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-poker-tournament"/>
     <p>&nbsp;</p>
@@ -3420,7 +3421,7 @@ Wen      workshops, and her private practice.</p>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#20">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '20'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="healing-myself"/>
     <p>&nbsp;</p>
@@ -3515,7 +3516,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Website: <a @click="myLink('https://www.jeanyangwellbeing.com/')">jeanyangwellbeing.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#21">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '21'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="boot-camp"/>
     <p>&nbsp;</p>
@@ -3751,7 +3752,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Website: <a @click="myLink('https://meetmisti.com/')">meetmisti.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#22">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '22'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="nizhoni"/>
     <p>&nbsp;</p>
@@ -3995,7 +3996,7 @@ Wen      workshops, and her private practice.</p>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#23">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '23'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="coping-with-arthritis" />
     <p>&nbsp;</p>
@@ -4205,7 +4206,7 @@ Wen      workshops, and her private practice.</p>
       thoughts without blame.</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#24">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '24'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="all-is-well"/>
     <p>&nbsp;</p>
@@ -4392,7 +4393,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Reiki Master, Certified through Lisa Powers, CRMT</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#25">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '25'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
   </q-page>
 </template>

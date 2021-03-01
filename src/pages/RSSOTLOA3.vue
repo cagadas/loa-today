@@ -59,7 +59,7 @@
     <p id="55" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa3', hash: 'homes-cats-and-cars'}">Homes, Cats, and Cars</q-btn><br />by Louise and Walt Thiessen</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#44">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '44'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="hurricane-floyd"/>
     <p>&nbsp;</p>
@@ -154,7 +154,7 @@
     <p class="signature">Website: <a @click="myLink('https://www.loatoday.net/')">www.loatoday.net</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#45">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '45'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="altering-the-weather"/>
     <p>&nbsp;</p>
@@ -227,7 +227,7 @@
       two black cats, Harmony and Joy, in Simsbury, CT</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#46">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '46'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-microburst"/>
     <p>&nbsp;</p>
@@ -327,7 +327,7 @@
     <p class="signature">Website: <a @click="myLink('https://www.loatoday.net/')">www.loatoday.net</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#47">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '47'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="blue-skies-please"/>
     <p>&nbsp;</p>
@@ -401,7 +401,7 @@
     <p class="signature">Website: <a @click="myLink('https://www.loatoday.net/')">www.loatoday.net</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#48">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '48'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="no-more-snow"/>
     <p>&nbsp;</p>
@@ -497,7 +497,7 @@
     <p class="signature">Website: <a @click="myLink('https://www.loatoday.net/')">www.loatoday.net</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#49">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '49'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-journey-achievement-writing-contests"/>
     <p>&nbsp;</p>
@@ -602,7 +602,7 @@
     <p class="signature">Email: <a href="mailto:barbarapinti@comcast.net">barbarapinti@comcast.net</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#50">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '50'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-peoples-choice-awards"/>
     <p>&nbsp;</p>
@@ -783,7 +783,7 @@
     <p class="signature">Email: <a href="mailto:Pattyframo@gmail.com">Pattyframo@gmail.com </a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#51">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '51'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="did-i-see-you-in-a-commercial"/>
     <p>&nbsp;</p>
@@ -1019,7 +1019,7 @@
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#52">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '52'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="accident-i-think-not"/>
     <p>&nbsp;</p>
@@ -1304,7 +1304,7 @@
       Website: <a @click="myLink('https://www.wendydillard.com')">www.wendydillard.com</a></p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#53">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '53'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="homes-cats-and-cars"/>
     <p>&nbsp;</p>
@@ -2170,7 +2170,7 @@
     <p class="signature">They live with their two black cats, Harmony and Joy, in Simsbury, Connecticut USA.</p>
 
     <p>&nbsp;</p>
-    <p class="centerNoIndent"><a href="#top">Back To Top</a></p>
+    <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'top'}">Back To Top</q-btn></p>
   </q-page>
 </template>
 <script>
