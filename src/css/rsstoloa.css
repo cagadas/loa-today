@@ -1,0 +1,47 @@
+.bottom0 {
+  margin-bottom: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: yellow
+}
+.h5, .h6 {
+  text-align: center;
+}
+.h6 {
+  font-size: 12pt;
+  margin-bottom: 20px;
+}
+.li {
+  color: lime;
+}
+.a {
+  color: aqua;
+}
+.hr {
+  border-color: rgb(128,128,255);
+}
+.img {
+  max-width: 150px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 50px;
+
+}
+.img0 {
+  max-width: 150px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 0;
+
+}
+.myStyle {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-left: -18px;
+  margin-bottom: -10px;
+  text-decoration: underline;
+  font-family: Arial;
+}
+.signature, .centerNoIndent {
+  text-indent: 0;
+}

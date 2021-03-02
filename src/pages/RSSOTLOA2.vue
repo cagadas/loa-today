@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex-center">
-    <h5>Table of Contents</h5>
+    <h5 class="h5 bottom0">Table of Contents</h5>
     <p id="i" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'introduction'}">Introduction</q-btn><br />by Walt Thiessen</p>
     <p id="1" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'home-sweet-home'}">Home Sweet Home</q-btn><br />by Wendy Dillard</p>
     <p id="2" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'the-lot'}">The Lot</q-btn><br />by Barbara Pinti</p>
@@ -63,8 +63,8 @@
     <p>&nbsp;</p>
     <hr id="the-boyfriend"/>
     <p>&nbsp;</p>
-    <h5>The Boyfriend</h5>
-    <h6>by Ana Hernando</h6>
+    <h5 class="h5 bottom0">The Boyfriend</h5>
+    <h6 class="h6">by Ana Hernando</h6>
 
     <p>I was sitting in my office working. My 16-year-old daughter came in crying.</p>
 
@@ -166,7 +166,7 @@
 
     <hr />
 
-    <img src="images/AnaHernando.jpg" alt="">
+    <img class="img" src="images/AnaHernando.jpg" alt="">
 
     <p class="signature">Ana Hernado is a National Board Certified and Licensed 
       Occupational Therapist with more that 20 years experience who works extensively 
@@ -178,8 +178,8 @@
     <p>&nbsp;</p>
     <hr id="fire-alarms-to-wedding-bells"/>
     <p>&nbsp;</p>
-    <h5>Fire Alarms to Wedding Bells</h5>
-    <h6>By Anik Clemens</h6>
+    <h5 class="h5 bottom0">Fire Alarms to Wedding Bells</h5>
+    <h6 class="h6">By Anik Clemens</h6>
 
     <p>The paper I held in my hand started to crumble in one corner as the flame 
       took hold. I blew out the match and tossed it in the kitchen sink. As the 
@@ -402,7 +402,7 @@
     
     <hr />
 
-    <img src="images/AnikClemens.jpg" alt="">
+    <img class="img" src="images/AnikClemens.jpg" alt="">
 
     <p class="signature">Anik Clemens is a Certified Law of Attraction Life Coach, 
       doTERRA Essential Oils Mama and owner of Anik Perspectives, LLC.  Anik 
@@ -414,8 +414,8 @@
     <p>&nbsp;</p>
     <hr id="welcoming-a-new-child"/>
     <p>&nbsp;</p>
-    <h5>Welcoming a New Child</h5>
-    <h6>By Dez Stephens</h6>
+    <h5 class="h5 bottom0">Welcoming a New Child</h5>
+    <h6 class="h6">By Dez Stephens</h6>
 
     <p>My current (and second) husband, Chuck, proposed to me on my 40th birthday. 
       It was a total surprise, and one of the mental flashes I had in that moment 
@@ -523,7 +523,7 @@
       
     <hr />
 
-    <img src="images/DezStephens.jpg" alt="">
+    <img class="img" src="images/DezStephens.jpg" alt="">
 
     <p class="signature">Dez Stephens is the Founder & CEO of Radiant Coaches Academy, 
       a coaches training school for holistic life coaches, wellness coaches, and 
@@ -536,8 +536,8 @@
     <p>&nbsp;</p>
     <hr id="man-of-my-dreams"/>
     <p>&nbsp;</p>
-    <h5>Man of My Dreams</h5>
-    <h6>by Hannah Golightly</h6>
+    <h5 class="h5 bottom0">Man of My Dreams</h5>
+    <h6 class="h6">by Hannah Golightly</h6>
 
     <p>For the past five years I have been pretty much desperate for a boyfriend. 
       It's a bit embarrassing to admit, but it's true! I wasn't just desperate for 
@@ -762,7 +762,7 @@
     
     <hr />
 
-    <img src="images/HannahGolightly.jpg" alt="">
+    <img class="img" src="images/HannahGolightly.jpg" alt="">
 
     <p class="signature">Hannah Golightly is a Law of Attraction Life Coach based in the 
       United Kingdom. She discovered conscious manifesting naturally as a child before 
@@ -773,8 +773,8 @@
     <p>&nbsp;</p>
     <hr id="markus"/>
     <p>&nbsp;</p>
-    <h5>Markus</h5>
-    <h6>by Joel Elston</h6>
+    <h5 class="h5 bottom0">Markus</h5>
+    <h6 class="h6">by Joel Elston</h6>
 
     <p>A few years ago, I received a call from a foster care caseworker. She explained 
       that she had been given my phone number by a colleague who thought I could help one 
@@ -1006,7 +1006,7 @@
       
     <hr />
 
-    <img src="images/Joel.jpg" alt="">
+    <img class="img" src="images/Joel.jpg" alt="">
 
     <p class="signature">Joel Elston, CCP, CHC, Certified Life, Health, Success, 
       Addictions &amp; Recovery Coach specializing in gambling and alcohol addiction, 
@@ -1018,8 +1018,8 @@
     <p>&nbsp;</p>
     <hr id="being-found"/>
     <p>&nbsp;</p>
-    <h5>Being Found</h5>
-    <h6>by Walt Thiessen</h6>
+    <h5 class="h5 bottom0">Being Found</h5>
+    <h6 class="h6">by Walt Thiessen</h6>
 
     <p>During the first 40 years of my life, I was less than successful when it came to 
       the opposite sex.</p>
@@ -1294,7 +1294,7 @@
     
     <hr />
 
-    <img src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
+    <img class="img" src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
 
     <p class="signature">Walt Thiessen is the founder of LOA Today, where he does 
       daily podcasts on the Law of Attraction. He lives with his wife, Louise in 
@@ -1306,8 +1306,8 @@
     <p>&nbsp;</p>
     <hr id="friends-delivered-to-me-by-the-law-of-attraction"/>
     <p>&nbsp;</p>
-    <h5>Friends Delivered to Me By The Law of Attraction</h5>
-    <h6>by Wendy Dillard</h6>
+    <h5 class="h5 bottom0">Friends Delivered to Me By The Law of Attraction</h5>
+    <h6 class="h6">by Wendy Dillard</h6>
 
     <p>Having a close friend to share my thoughts and deepest desires has always been 
       important to me. When I was married, my husband was my best friend and the one 
@@ -1466,7 +1466,7 @@
     
     <hr />
 
-    <img src="images/WendyDillard.jpg" />
+    <img class="img" src="images/WendyDillard.jpg" />
 
     <p class="signature">Wendy Dillard is a Masterful Law of Attraction Teacher &amp; Coach. Her expertise is in 
       nowing how to apply the Law of Attraction to any situation. What other people call 
@@ -1478,8 +1478,8 @@
     <p>&nbsp;</p>
     <hr id="overcoming-five-devastating-losses"/>
     <p>&nbsp;</p>
-    <h5>Overcoming Five Devastating Losses</h5>
-    <h6>by Debra Oakland</h6>
+    <h5 class="h5 bottom0">Overcoming Five Devastating Losses</h5>
+    <h6 class="h6">by Debra Oakland</h6>
 
     <p>In the span of four years, I lost my 21-year-old son, my unborn baby girl in 
       my eighth month of pregnancy, both brothers, and my father to prostate cancer.</p>
@@ -1636,7 +1636,7 @@
 
     <hr />
 
-    <img src="images/DebraOakland.jpg" alt="">
+    <img class="img" src="images/DebraOakland.jpg" alt="">
 
     <p class="signature">Debra Oakland</p>
     <p class="signature">Founder of Living in Courage - A Spiritual Oasis for Overcoming 
@@ -1649,8 +1649,8 @@
     <p>&nbsp;</p>
     <hr id="the-bath-that-keeps-on-gifting"/>
     <p>&nbsp;</p>
-    <h5>The Bath That Keeps On Gifting</h5>
-    <h6>by Keisha Clark</h6>
+    <h5 class="h5 bottom0">The Bath That Keeps On Gifting</h5>
+    <h6 class="h6">by Keisha Clark</h6>
 
     <p>I have my own birthday tradition of taking the day for myself to do whatever 
       I want, creating it spontaneously with no particular plan or schedule.  And so 
@@ -1829,7 +1829,7 @@
 
     <hr />
 
-    <img src="images/KeishaClark.jpg" alt="">
+    <img class="img" src="images/KeishaClark.jpg" alt="">
 
     <p class="signature">Keisha Clark is a Spiritual Medium and Intuitive Living Coach. 
       She teaches people how to develop and incorporate their intuition as a practical 
@@ -1841,8 +1841,8 @@
     <p>&nbsp;</p>
     <hr id="the-third-degree"/>
     <p>&nbsp;</p>
-    <h5>The Third Degree</h5>
-    <h6>by Linda Armstrong</h6>
+    <h5 class="h5 bottom0">The Third Degree</h5>
+    <h6 class="h6">by Linda Armstrong</h6>
 
     <p>I was a first degree black belt in karate. It was suggested to Gavin (my husband 
       and Sensei) that I be put up for the upcoming promotion test by the USA World Chief 
@@ -1924,7 +1924,7 @@
 
     <hr />
 
-    <img src="images/LindaArmstrong.jpg" alt="">
+    <img class="img" src="images/LindaArmstrong.jpg" alt="">
 
     <p class="signature">Linda Armstrong is a Master Certified Law of Attraction Energy 
       Coach, and Energy Healer. She works with The GATE Healing Method and Theta Healing® 
@@ -1936,8 +1936,8 @@
     <p>&nbsp;</p>
     <hr id="hide-and-seek"/>
     <p>&nbsp;</p>
-    <h5>Hide and Seek</h5>
-    <h6>by Louise Thiessen</h6>
+    <h5 class="h5 bottom0">Hide and Seek</h5>
+    <h6 class="h6">by Louise Thiessen</h6>
 
     <p>Around my 10th wedding anniversary, I was working as a lead teacher in an infant 
       room in a day care center in Virginia. Halfway through one particular morning, I 
@@ -1971,7 +1971,7 @@
 
     <hr />
 
-    <img src="images/LouiseThiessen.jpg" alt="">
+    <img class="img" src="images/LouiseThiessen.jpg" alt="">
 
     <p class="signature">Louise Thiessen is a former psychotherapist and currently owns 
       a local gardening services and maintenance business, 
@@ -1984,8 +1984,8 @@
     <p>&nbsp;</p>
     <hr id="out-of-the-darkness"/>
     <p>&nbsp;</p>
-    <h5>Out Of The Darkness</h5>
-    <h6>By Michael Craig</h6>
+    <h5 class="h5 bottom0">Out Of The Darkness</h5>
+    <h6 class="h6">By Michael Craig</h6>
 
     <p>I only discovered the real Law of Attraction at a time when my life was at its 
       lowest point, a time when I realized like Janis Joplin that, “Freedom’s just another 
@@ -2019,7 +2019,7 @@
 
     <p>&nbsp;</p>
 
-    <h6>The Silent Prayer</h6>
+    <h6 class="h6">The Silent Prayer</h6>
 
     <p>It was at this point that I consider my darkest night of the soul that 
       I fell to my knees and admitted defeat.  I knew no way out and finally 
@@ -2048,7 +2048,7 @@
 
     <p>&nbsp;</p>
 
-    <h6>You can do this yourself</h6>
+    <h6 class="h6">You can do this yourself</h6>
 
     <p>Look around you.  What do you see?  Who are you with?  Well guess what:  
       these are things (and people) you have already attracted!</p>
@@ -2081,7 +2081,7 @@
       
     <hr />
 
-    <img src="images/MichaelCraig.jpg" alt="">
+    <img class="img" src="images/MichaelCraig.jpg" alt="">
 
     <p class="signature">Dr. Michael Craig is a licensed chiropractor.  
       He has published several books and works with patients 
@@ -2093,8 +2093,8 @@
     <p>&nbsp;</p>
     <hr id="anybody-but-me"/>
     <p>&nbsp;</p>
-    <h5>Anybody But Me</h5>
-    <h6>by Ruby Gangadharan</h6>
+    <h5 class="h5 bottom0">Anybody But Me</h5>
+    <h6 class="h6">by Ruby Gangadharan</h6>
 
     <p>For as long as I could remember, I wanted more than anything 
       else in the world to be someone other than me. I lived, breathed 
@@ -2222,7 +2222,7 @@
     
     <hr />
 
-    <img src="images/RubyGangadharan.jpg" alt="">
+    <img class="img" src="images/RubyGangadharan.jpg" alt="">
 
     <p class="signature">Ruby Gangadharan is a Transformational Life Coach and Yoga 
        who combines Law of Attraction with the Yoga Sutras.</p>
@@ -2234,8 +2234,8 @@
     <p>&nbsp;</p>
     <hr id="the-only-choice"/>
     <p>&nbsp;</p>
-    <h5>The Only Choice</h5>
-    <h6>by Louise Thiessen</h6>
+    <h5 class="h5 bottom0">The Only Choice</h5>
+    <h6 class="h6">by Louise Thiessen</h6>
 
     <p>After graduating from high school, I attended a local community college for 
       two years. My older sister was finishing up her college education at Boston 
@@ -2268,7 +2268,7 @@
 
     <hr />
 
-    <img src="images/LouiseThiessen.jpg" alt="">
+    <img class="img" src="images/LouiseThiessen.jpg" alt="">
 
     <p class="signature">Louise Thiessen is a former psychotherapist and currently owns 
       a local gardening services and maintenance business, 
@@ -2281,8 +2281,8 @@
     <p>&nbsp;</p>
     <hr id="my-boat-was-taking-on-water"/>
     <p>&nbsp;</p>
-    <h5>My Boat Was Taking On Water</h5>
-    <h6>by Tom Wells</h6>
+    <h5 class="h5 bottom0">My Boat Was Taking On Water</h5>
+    <h6 class="h6">by Tom Wells</h6>
 
     <p>About seven years ago, the tidy, previously ever-upright sailboat of my life 
       was overturned in one fell swoop. Within a 12-month period, my lovely wife and 
@@ -2498,7 +2498,7 @@
       
     <hr />
 
-    <img src="images/TomWells.jpg" alt="">
+    <img class="img" src="images/TomWells.jpg" alt="">
 
     <p class="signature">Tom Wells is a Certified Life Coach, but wishes 
       he were out on the open sea right now in a catamaran, tacking along 
@@ -2511,8 +2511,8 @@
     <p>&nbsp;</p>
     <hr id="vienna-station"/>
     <p>&nbsp;</p>
-    <h5>Vienna Station</h5>
-    <h6>by Walt Thiessen</h6>
+    <h5 class="h5 bottom0">Vienna Station</h5>
+    <h6 class="h6">by Walt Thiessen</h6>
 
     <p>One of the last years we lived in Virginia, my brother, Mark contacted 
       me to ask if he could bring his girlfriend's family to stay at our house 
@@ -2620,7 +2620,7 @@
 
     <hr />
 
-    <img src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
+    <img class="img" src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
 
     <p class="signature">Walt Thiessen is the founder of LOA Today, where he does 
       daily podcasts on the Law of Attraction. He lives with his wife, Louise in 
@@ -2631,8 +2631,8 @@
     <p>&nbsp;</p>
     <hr id="a-steinway-piano"/>
     <p>&nbsp;</p>
-    <h5>A Steinway Piano</h5>
-    <h6>by Anne-Marie McEwen</h6>
+    <h5 class="h5 bottom0">A Steinway Piano</h5>
+    <h6 class="h6">by Anne-Marie McEwen</h6>
 
     <p>At the north end of Main Street in Middletown, Connecticut sits The Buttonwood 
       Tree, our beloved community arts center. It was named for its birthplace, once 
@@ -2829,7 +2829,7 @@
     
     <hr />
 
-    <img src="images/Anne-Marie.jpg" alt="">
+    <img class="img" src="images/Anne-Marie.jpg" alt="">
 
     <p class="signature">Anne-Marie McEwen has been studying the Law of 
       Attraction since 2001 and is an incessant learner and teacher. She 
@@ -2842,8 +2842,8 @@
     <p>&nbsp;</p>
     <hr id="ill-have-an-owl-please"/>
     <p>&nbsp;</p>
-    <h5>I’ll Have an Owl, Please</h5>
-    <h6>by Cindie Chavez</h6>
+    <h5 class="h5 bottom0">I’ll Have an Owl, Please</h5>
+    <h6 class="h6">by Cindie Chavez</h6>
 
     <p>If you could ask for anything and have it show up in the next 48 hours what 
       would you ask for?</p>
@@ -2929,7 +2929,7 @@
     
     <hr />
 
-    <img src="images/CindieChavez.jpg" alt="">
+    <img class="img" src="images/CindieChavez.jpg" alt="">
 
     <p class="signature">Cindie Chavez, the “Love & Magic Coach,” is the creator of MOONLIGHT: 
       A Course in Manifesting Love, and is a best selling author, Certified Life and 
@@ -2942,8 +2942,8 @@
     <p>&nbsp;</p>
     <hr id="fins-up"/>
     <p>&nbsp;</p>
-    <h5>Fins Up</h5>
-    <h6>by Leslie Shew</h6>
+    <h5 class="h5 bottom0">Fins Up</h5>
+    <h6 class="h6">by Leslie Shew</h6>
 
     <p>It was our last day at the beach, and my friends were still sound asleep. The weather 
       was perfect. I wanted to get in a morning run while it was still quiet outside, but 
@@ -3130,7 +3130,7 @@
       
     <hr />
 
-    <img src="images/LeslieShew.jpg" alt="">
+    <img class="img" src="images/LeslieShew.jpg" alt="">
 
     <p class="signature">Leslie G Shew, PhD, CTN is a Certified Holistic Wellness 
       Coach, a Member of The American Nutraceutical Association, DSHEA Certified, 

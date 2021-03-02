@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex-center">
-    <h5>Table of Contents</h5>
+    <h5 class="h5 bottom0">Table of Contents</h5>
     <p id="i" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'introduction'}">Introduction</q-btn><br />by Walt Thiessen</p>
     <p id="1" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'home-sweet-home'}">Home Sweet Home</q-btn><br />by Wendy Dillard</p>
     <p id="2" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'the-lot'}">The Lot</q-btn><br />by Barbara Pinti</p>
@@ -63,8 +63,8 @@
     <p>&nbsp;</p>
     <hr id="hurricane-floyd"/>
     <p>&nbsp;</p>
-    <h5>Hurricane Floyd</h5>
-    <h6>by Walt Thiessen</h6>
+    <h5 class="h5 bottom0">Hurricane Floyd</h5>
+    <h6 class="h6">by Walt Thiessen</h6>
 
     <p>Louise and I married September 26, 1999. I asked her to marry me the previous 
       Valentine's Day. We rushed the wedding date because her father's health was poor, 
@@ -146,7 +146,7 @@
     
     <hr />
 
-    <img src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
+    <img class="img" src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
 
     <p class="signature">Walt Thiessen is the founder of LOA Today, where he does 
       daily podcasts on the Law of Attraction. He lives with his wife, Louise in 
@@ -158,8 +158,8 @@
     <p>&nbsp;</p>
     <hr id="altering-the-weather"/>
     <p>&nbsp;</p>
-    <h5>Altering the Weather</h5>
-    <h6>by Louise Thiessen</h6>
+    <h5 class="h5 bottom0">Altering the Weather</h5>
+    <h6 class="h6">by Louise Thiessen</h6>
 
     <p>During our week of “staycation” one January we had plans to go to Old 
       Town Alexandria, Virginia to visit a metaphysical bookshop, have lunch, 
@@ -218,7 +218,7 @@
 
     <hr />
 
-    <img src="images/LouiseThiessen.jpg" alt="">
+    <img class="img" src="images/LouiseThiessen.jpg" alt="">
 
     <p class="signature">Louise Thiessen is a former psychotherapist and currently owns 
       a local gardening services and maintenance business, 
@@ -231,8 +231,8 @@
     <p>&nbsp;</p>
     <hr id="the-microburst"/>
     <p>&nbsp;</p>
-    <h5>The Microburst</h5>
-    <h6>by Walt Thiessen</h6>
+    <h5 class="h5 bottom0">The Microburst</h5>
+    <h6 class="h6">by Walt Thiessen</h6>
 
     <p>I don't remember exactly which year it was, but it was one of the last couple 
       years we will lived in Virginia. That would make it 2012 or 2013.</p>
@@ -319,7 +319,7 @@
 
     <hr />
 
-    <img src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
+    <img class="img" src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
 
     <p class="signature">Walt Thiessen is the founder of LOA Today, where he does 
       daily podcasts on the Law of Attraction. He lives with his wife, Louise in 
@@ -331,8 +331,8 @@
     <p>&nbsp;</p>
     <hr id="blue-skies-please"/>
     <p>&nbsp;</p>
-    <h5>Blue Skies, Please</h5>
-    <h6>by Walt Thiessen</h6>
+    <h5 class="h5 bottom0">Blue Skies, Please</h5>
+    <h6 class="h6">by Walt Thiessen</h6>
 
     <p>I like to walk every day if I can during warm weather. There is a 
       rails-to-trails path near our home in Simsbury, Connecticut that 
@@ -393,7 +393,7 @@
     
     <hr />
 
-    <img src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
+    <img class="img" src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
 
     <p class="signature">Walt Thiessen is the founder of LOA Today, where he does 
       daily podcasts on the Law of Attraction. He lives with his wife, Louise in 
@@ -405,8 +405,8 @@
     <p>&nbsp;</p>
     <hr id="no-more-snow"/>
     <p>&nbsp;</p>
-    <h5>No More Snow</h5>
-    <h6>by Walt Thiessen</h6>
+    <h5 class="h5 bottom0">No More Snow</h5>
+    <h6 class="h6">by Walt Thiessen</h6>
 
     <p>In March 2018 as I began editing the story submissions for this book, 
       a series of snowstorms blanketed the Northeastern portion of the United 
@@ -489,7 +489,7 @@
       
     <hr />
 
-    <img src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
+    <img class="img" src="images/WaltThiessen.jpg" alt="" style="margin-bottom: 0;">
 
     <p class="signature">Walt Thiessen is the founder of LOA Today, where he does 
       daily podcasts on the Law of Attraction. He lives with his wife, Louise in 
@@ -501,8 +501,8 @@
     <p>&nbsp;</p>
     <hr id="the-journey-achievement-writing-contests"/>
     <p>&nbsp;</p>
-    <h5>The Junior Achievement Writing Contests</h5>
-    <h6>by Barbara Pinti</h6>
+    <h5 class="h5 bottom0">The Junior Achievement Writing Contests</h5>
+    <h6 class="h6">by Barbara Pinti</h6>
 
     <p>At the age of 15, when I knew nothing about the Law of Attraction, 
       I had an experience that made me wonder what exactly was going on.</p>
@@ -594,7 +594,7 @@
       
     <hr />
 
-    <img src="images/BarbaraPinti.jpg" style="margin-bottom: 30px;" />
+    <img class="img" src="images/BarbaraPinti.jpg" style="margin-bottom: 30px;" />
 
     <p class="signature">Barbara A. Pinti, MA, MA, ABD, LMFT, LPC is a psychotherapist in private practice in 
       West Hartford, Connecticut.  She has taught the Law of Attraction in many groups, 
@@ -606,8 +606,8 @@
     <p>&nbsp;</p>
     <hr id="the-peoples-choice-awards"/>
     <p>&nbsp;</p>
-    <h5>The People’s Choice Awards </h5>
-    <h6>by Patricia Framo</h6>
+    <h5 class="h5 bottom0">The People’s Choice Awards </h5>
+    <h6 class="h6">by Patricia Framo</h6>
 
     <p>Not many of us can say we were on <em>The People’s Choice Awards.</em> I didn’t 
       think I would ever be one of them either.</p>
@@ -775,7 +775,7 @@
     
     <hr />
 
-    <img src="images/PattyFramo.jpg" alt="">
+    <img class="img" src="images/PattyFramo.jpg" alt="">
 
     <p class="signature">Patty Framo is a licensed clinical social worker and 
       trained life coach who has over 10 years of experience counseling and coaching 
@@ -787,8 +787,8 @@
     <p>&nbsp;</p>
     <hr id="did-i-see-you-in-a-commercial"/>
     <p>&nbsp;</p>
-    <h5>Did I See You In A Commercial?</h5>
-    <h6>By Rhonda Burns</h6>
+    <h5 class="h5 bottom0">Did I See You In A Commercial?</h5>
+    <h6 class="h6">By Rhonda Burns</h6>
 
     <p>Even though the previous 18 months were chock full of bold new adventures, 
       radical life choices, out-of-my-comfort-zone experiences, beautiful new 
@@ -1011,7 +1011,7 @@
       
     <hr />
 
-    <img src="images/RhondaBurns.jpg" alt="">
+    <img class="img" src="images/RhondaBurns.jpg" alt="">
 
     <p class="signature">Rhonda Burns is an Intuitive Freedom Coach &amp; Pleasure 
       Advocate who helps soul-hungry men &amp; women powerfully and pleasurably create 
@@ -1023,8 +1023,8 @@
     <p>&nbsp;</p>
     <hr id="accident-i-think-not"/>
     <p>&nbsp;</p>
-    <h5>Accident, I think not!</h5>
-    <h6>By Wendy Dillard</h6>
+    <h5 class="h5 bottom0">Accident, I think not!</h5>
+    <h6 class="h6">By Wendy Dillard</h6>
 
     <p>We were driving home while engaged in casual conversation when all of a sudden ... 
       Bang &ndash; Boom &ndash; Crunch! Our lovely morning drive came to an abrupt end 
@@ -1296,7 +1296,7 @@
       
     <hr />
 
-    <img src="images/WendyDillard.jpg" />
+    <img class="img" src="images/WendyDillard.jpg" />
 
     <p class="signature">Wendy Dillard is a Masterful Law of Attraction Teacher &amp; Coach. Her expertise is in 
       nowing how to apply the Law of Attraction to any situation. What other people call 
@@ -1308,8 +1308,8 @@
     <p>&nbsp;</p>
     <hr id="homes-cats-and-cars"/>
     <p>&nbsp;</p>
-    <h5>Homes, Cats, and Cars</h5>
-    <h6>by Louise and Walt Thiessen</h6>
+    <h5 class="h5 bottom0">Homes, Cats, and Cars</h5>
+    <h6 class="h6">by Louise and Walt Thiessen</h6>
 
     <h6 class="left">WALT</h6>
     
@@ -2163,7 +2163,7 @@
     
     <hr />
 
-    <img src="images/WaltandLouise.jpg" alt="" style="margin-bottom: 0;">
+    <img class="img" src="images/WaltandLouise.jpg" alt="" style="margin-bottom: 0;">
 
     <p class="signature">Walt and Louise Thiessen are the founders of the 
       <a @click="myLink('https://www.loatoday.net/')">LOA Today</a> podcast. </p>

@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex-center">
-    <img style="max-width: 100%;" src="images/Cover-Bestseller.jpg" alt="Real Success Stories Of The Law Of Attraction" />
+    <img class="img" style="max-width: 100%;" src="images/Cover-Bestseller.jpg" alt="Real Success Stories Of The Law Of Attraction" />
     <p>&nbsp;</p>
     <p class="centerNoIndent">©2018 Walt Thiessen</p>
     <p>&nbsp;</p>
@@ -8,7 +8,7 @@
     <p>&nbsp;</p>
   
     <p id="top">&nbsp;</p>
-    <h5>Table of Contents</h5>
+    <h5 class="h5 bottom0">Table of Contents</h5>
     <p id="i" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'introduction'}">Introduction</q-btn><br />by Walt Thiessen</p>
     <p id="1" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'home-sweet-home'}">Home Sweet Home</q-btn><br />by Wendy Dillard</p>
     <p id="2" class="signature"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'the-lot'}">The Lot</q-btn><br />by Barbara Pinti</p>
@@ -71,7 +71,7 @@
     <p>&nbsp;</p>
     <hr id="introduction"/>
     <p>&nbsp;</p>
-    <h5>Introduction</h5>
+    <h5 class="h5 bottom0">Introduction</h5>
 
     <p>“Can you share your Law of Attraction manifestation story?”</p>
 
@@ -255,13 +255,13 @@
       Susan Shearer Young</p>
 
     <p>I also want to give my special thanks to program director Jesse Funk and owner Gary Null 
-      of the Progressive Radio Network (<a @click="myLink('https://prn.fm/')">prn.fm</a>) who 
+      of the Progressive Radio Network (<a class="a" @click="myLink('https://prn.fm/')">prn.fm</a>) who 
       began carrying my podcast on their network nearly four years ago . Without their support, 
       I would not have reached anywhere near as many new listeners as I have. Thank you, guys!</p>
 
     <p>Finally, I would be remiss if I didn’t take a moment to address our primary purpose. 
       If you haven’t listened to the our podcast at 
-      <a @click="myLink('https://www.loatoday.net/')">www.loatoday.net</a>, please do so. 
+      <a class="a" @click="myLink('https://www.loatoday.net/')">www.loatoday.net</a>, please do so. 
       And when you like it (and we’re confident you’ll like it), please subscribe and share.
        The instructions on how to subscribe are found on that same page, and a huge number of 
        social media links for sharing with your friends are provided there as well.</p>
@@ -273,8 +273,8 @@
     <p>&nbsp;</p>
     <hr id="home-sweet-home"/>
     <p>&nbsp;</p>
-    <h5>Home Sweet Home</h5>
-    <h6>by Wendy Dillard</h6>
+    <h5 class="h5 bottom0">Home Sweet Home</h5>
+    <h6 class="h6">by Wendy Dillard</h6>
 
     <p>After living in many rental properties, I’d had all I could stand of white-colored 
       walls and boring color palettes that rentals provided. So, it wasn’t any surprise to 
@@ -295,14 +295,14 @@
       long list of criteria, needs and wants. So, here’s an abbreviated list:</p>
 
     <ul>
-      <li>Five bedrooms (which included: a master suite, a guest room, a workroom for me to do 
+      <li class="li">Five bedrooms (which included: a master suite, a guest room, a workroom for me to do 
         my many artistic projects, my office, and a separate office for my husband so we wouldn’t 
         have to share an office anymore. I’m a highly organized neat-freak, and he loves his piles 
         and piles of stuff scattered about everywhere)</li>
-      <li>Two to three bathrooms</li>
-      <li>An open-concept floor plan</li>
-      <li>A nice yard for our dog</li>
-      <li>A long and flat driveway that could park a minimum of six cars. (My husband loved to 
+      <li class="li">Two to three bathrooms</li>
+      <li class="li">An open-concept floor plan</li>
+      <li class="li">A nice yard for our dog</li>
+      <li class="li">A long and flat driveway that could park a minimum of six cars. (My husband loved to 
         tinker with cars and always had a number of non-running vehicles that he was in the 
         process of restoring. Our current rental house gave birth to this criteria because even 
         though the driveway could hold four cars, the driveway was pitched at a 45 degree angle. 
@@ -310,9 +310,9 @@
         driveway. We ended up replacing the brakes on our cars practically every six months! So, 
         between our personal cars and the ones that my husband was working on, we knew we wanted 
         lots of space to park our cars, and it had to be on a flat surface.)</li>
-      <li>We wanted it to be at a price that we could comfortably afford, so we wouldn’t feel
+      <li class="li">We wanted it to be at a price that we could comfortably afford, so we wouldn’t feel
         that every dollar we earned went toward the mortgage.</li>
-      <li>And it had to be no-money down!</li>
+      <li class="li">And it had to be no-money down!</li>
     </ul>
 
     <p>Needless to say, the list was long. But, my life’s experience had taught me that no dream 
@@ -594,22 +594,22 @@
       role in landing our dream home. And as Dorothy from the Wizard of Oz said, “There’s no 
       place like home.”</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/WendyDillard.jpg" />
+    <img class="img" src="images/WendyDillard.jpg" />
 
     <p class="signature">Wendy Dillard is a Masterful Law of Attraction Teacher &amp; Coach. Her expertise is in 
       nowing how to apply the Law of Attraction to any situation. What other people call 
       miracles and coincidences, Wendy considers normal and the way life is intended to be. 
-      Website: <a @click="myLink('https://www.wendydillard.com')">www.wendydillard.com</a></p>
+      Website: <a class="a" @click="myLink('https://www.wendydillard.com')">www.wendydillard.com</a></p>
 
     <p>&nbsp;</p>
     <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: 'top'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-lot"/>
     <p>&nbsp;</p>
-    <h5>The Lot</h5>
-    <h6>by Barbara Pinti</h6>
+    <h5 class="h5 bottom0">The Lot</h5>
+    <h6 class="h6">by Barbara Pinti</h6>
 
     <p>In 1978 our family of six was too big for our house.</p>
 
@@ -688,9 +688,9 @@
     <p>One of the first things we asked him to do was to remove the dirt from the rock so 
       that it looked exactly like it did in the days when we picnicked on it.</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/BarbaraPinti.jpg" style="margin-bottom: 30px;" />
+    <img class="img" src="images/BarbaraPinti.jpg" style="margin-bottom: 30px;" />
 
     <p class="signature">Barbara A. Pinti, MA, MA, ABD, LMFT, LPC is a psychotherapist in private practice in 
 Wen      workshops, and her private practice.</p>
@@ -702,8 +702,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="manifesting-an-apartment-on-central-park-west"/>
     <p>&nbsp;</p>
-    <h5>Manifesting an Apartment on Central Park West</h5>
-    <h6>by David Scott Bartky</h6>
+    <h5 class="h5 bottom0">Manifesting an Apartment on Central Park West</h5>
+    <h6 class="h6">by David Scott Bartky</h6>
 
     <p>Many years ago before I became a professional life coach, I moved from Los Angeles to 
       New York. While in Los Angeles, I learned about the Law of Attraction from Michael 
@@ -758,22 +758,22 @@ Wen      workshops, and her private practice.</p>
     <p>The next day I found out that the owner accepted my offer, and I got the apartment. A 
       few weeks later I moved in. Thank you Law of Attraction. I loved living in that apartment!</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/DavidBartky.jpg" style="margin-bottom: 0;" />
+    <img class="img" src="images/DavidBartky.jpg" style="margin-bottom: 0;" />
 
     <p class="signature">David Scott Bartky<br />
     Life Coach David<br />
-    Web Site: <a @click="myLink('https://www.facebook.com/lifecoachdavid')">lifecoachdavid.com</a><br />
-    Facebook: <a @click="myLink('https://www.lifecoachdavid.com/')">@lifecoachdavid</a></p>
+    Web Site: <a class="a" @click="myLink('https://www.facebook.com/lifecoachdavid')">lifecoachdavid.com</a><br />
+    Facebook: <a class="a" @click="myLink('https://www.lifecoachdavid.com/')">@lifecoachdavid</a></p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '2'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="our-dream-house-in-northern-california"/>
     <p>&nbsp;</p>
-    <h5>Our Dream House in Northern California</h5>
-    <h6>by Janet Warnecke</h6>
+    <h5 class="h5 bottom0">Our Dream House in Northern California</h5>
+    <h6 class="h6">by Janet Warnecke</h6>
 
     <p>In 2015, My husband, Ed and I, after years of living literally in the middle of Hollywood, 
       California, started putting into action our plan of moving to Auburn, California and away 
@@ -894,29 +894,29 @@ Wen      workshops, and her private practice.</p>
     <p class="signature">Here’s the original wish list:</p>
 
     <ol>
-        <li>Fireplace In Every Room – <strong><em>Got one in the living room</em></strong></li>
-        <li>3 Bedrooms, Office Space, Guest Room – <strong><em>Got it</em></strong></li>
-        <li>At Least 1800 Sq Ft – Would Have Accepted Less – <strong><em>Got it</em></strong></li>
-        <li>Trees – Amazing Views – <strong><em>Got it</em></strong></li>
-        <li>Close To My Father-In-Law – <strong><em>Got it (three minute walk)</em></strong></li>
-        <li>Short Walk To The Lake  – <strong><em>Got it</em></strong></li>
-        <li>Porch/Deck  – <strong><em>Got it</em></strong></li>
-        <li>Backyard The Deer Can’t Get Into For The Cats To Wander – <strong><em>Got it</em></strong></li>
-        <li>Good Closet Space – <strong><em>Got GREAT closet space</em></strong></li>
-        <li>Two To Three Bathrooms – <strong><em>Got three</em></strong></li>
-        <li>Mother-In-Law Suite – Saw several in the MLS and thought it would be a great thing 
+        <li class="li">Fireplace In Every Room – <strong><em>Got one in the living room</em></strong></li>
+        <li class="li">3 Bedrooms, Office Space, Guest Room – <strong><em>Got it</em></strong></li>
+        <li class="li">At Least 1800 Sq Ft – Would Have Accepted Less – <strong><em>Got it</em></strong></li>
+        <li class="li">Trees – Amazing Views – <strong><em>Got it</em></strong></li>
+        <li class="li">Close To My Father-In-Law – <strong><em>Got it (three minute walk)</em></strong></li>
+        <li class="li">Short Walk To The Lake  – <strong><em>Got it</em></strong></li>
+        <li class="li">Porch/Deck  – <strong><em>Got it</em></strong></li>
+        <li class="li">Backyard The Deer Can’t Get Into For The Cats To Wander – <strong><em>Got it</em></strong></li>
+        <li class="li">Good Closet Space – <strong><em>Got GREAT closet space</em></strong></li>
+        <li class="li">Two To Three Bathrooms – <strong><em>Got three</em></strong></li>
+        <li class="li">Mother-In-Law Suite – Saw several in the MLS and thought it would be a great thing 
           to have. There are not that many homes here with that situation, but i still wished for 
           it – did not expect it in a million years. – <strong><em>Got three</em></strong></li>
-        <li>Deer And Bunnies And Blue Birds – <strong><em>Got them</em></strong></li>
-        <li>Super Cozy Feeling – <strong><em>Got it</em></strong></li>
-        <li>Good Size Kitchen – <strong><em>Got it, nice and bright too!</em></strong></li>
-        <li>White Kitchen – <strong><em>Got it</em></strong></li>
-        <li>Decent Size Parcel Of Land – <strong><em>Got it, one-half acre</em></strong></li>
-        <li>Double Front Door – <strong><em>Got it, couldn’t believe it</em></strong></li>
-        <li>Sliding Glass Doors/French Doors – <strong><em>Got French doors in the bedroom</em></strong></li>
-        <li>Great Back Yard – <strong><em>Got it</em></strong></li>
-        <li>Garage with space/shelves and could actually fit the car – <strong><em>Got it</em></strong></li>
-        <li>Indoor Laundry – Last one was outside – hated that – <strong><em>Got a whole laundry 
+        <li class="li">Deer And Bunnies And Blue Birds – <strong><em>Got them</em></strong></li>
+        <li class="li">Super Cozy Feeling – <strong><em>Got it</em></strong></li>
+        <li class="li">Good Size Kitchen – <strong><em>Got it, nice and bright too!</em></strong></li>
+        <li class="li">White Kitchen – <strong><em>Got it</em></strong></li>
+        <li class="li">Decent Size Parcel Of Land – <strong><em>Got it, one-half acre</em></strong></li>
+        <li class="li">Double Front Door – <strong><em>Got it, couldn’t believe it</em></strong></li>
+        <li class="li">Sliding Glass Doors/French Doors – <strong><em>Got French doors in the bedroom</em></strong></li>
+        <li class="li">Great Back Yard – <strong><em>Got it</em></strong></li>
+        <li class="li">Garage with space/shelves and could actually fit the car – <strong><em>Got it</em></strong></li>
+        <li class="li">Indoor Laundry – Last one was outside – hated that – <strong><em>Got a whole laundry 
           room with counters and sink. Amazing!</em></strong></li>
     </ol>
 
@@ -928,7 +928,7 @@ Wen      workshops, and her private practice.</p>
       in the vortex.  I like to think that while Ed was going through this time, OUR home was 
       being prepared to be put on the market.</p>
 
-    <hr />
+    <hr class="hr" />
     <p class="signature">Janet and Ed Warnecke listen to LOA Today from their beautiful new home in Auburn, 
       California.</p>
 
@@ -937,8 +937,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="divorced-broke-and-homeless"/>
     <p>&nbsp;</p>
-    <h5>Divorced, Broke and Homeless</h5>
-    <h6>by Mike McEwen</h6>
+    <h5 class="h5 bottom0">Divorced, Broke and Homeless</h5>
+    <h6 class="h6">by Mike McEwen</h6>
 
     <p>That's where I was in 2013, the result of 20 years of trying to make everyone else 
       happy but myself. I guess this is what it takes to "wake up" and be responsible for 
@@ -1026,9 +1026,9 @@ Wen      workshops, and her private practice.</p>
 
     <p>Problem solved. I still can’t believe it</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/MikeMcEwen.jpg" />
+    <img class="img" src="images/MikeMcEwen.jpg" />
     <p class="signature">Mike McEwen, LOA practitioner. Certified Tai Chi instructor for 25 years. 
       Reiki healing energy practitioner. Group or private sessions are available.<br />
     Email: <a href="mailto:mikegonow@gmail.com">mikegonow@gmail.com</a><br />
@@ -1039,8 +1039,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="wouldnt-it-be-cool-to-live-here"/>
     <p>&nbsp;</p>
-    <h5>Wouldn’t It Be Cool To Live Here?</h5>
-    <h6>by Stacey Aarssen</h6>
+    <h5 class="h5 bottom0">Wouldn’t It Be Cool To Live Here?</h5>
+    <h6 class="h6">by Stacey Aarssen</h6>
 
     <p>In 2003, I had spent the last fifteen years working with my parents in a retail 
       clothing store that had grown exponentially over the years. It wasn’t the easiest 
@@ -1144,9 +1144,9 @@ Wen      workshops, and her private practice.</p>
     <p>If someone would have said to me six months earlier, “Be careful what you wish for, 
       because dreams do come true,” I would never had believed them.</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/StaceyAarssen.jpg" />
+    <img class="img" src="images/StaceyAarssen.jpg" />
 
     <p class="signature">Stacey Aarssen<br />
     Personal Branding Specialist<br />
@@ -1154,15 +1154,15 @@ Wen      workshops, and her private practice.</p>
     Phone: <a href="tel:+015193413691">519-341-3691</a> Ext 102<br />
     Toll-Free: <a href="tel:+018444747284">844-474-7284</a><br />
     Cell: <a href="tel:+015193626644">519-362-6644</a><br />
-    Website: <a @click="myLink('http://www.path2wealth.ca')">www.path2wealth.ca</a></p>
+    Website: <a class="a" @click="myLink('http://www.path2wealth.ca')">www.path2wealth.ca</a></p>
 
     <p>&nbsp;</p>
     <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '5'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="arizona-dreaming"/>
     <p>&nbsp;</p>
-    <h5>Arizona Dreaming</h5>
-    <h6>by Barbara Pinti</h6>
+    <h5 class="h5 bottom0">Arizona Dreaming</h5>
+    <h6 class="h6">by Barbara Pinti</h6>
 
     <p>In 1995 I took a vacation right after Christmas with a friend of mine.  We spent 
       two weeks in Sedona, Arizona seeing all the sights and doing all the things that 
@@ -1301,9 +1301,9 @@ Wen      workshops, and her private practice.</p>
       vision!  It was the barn in the vision I had seen when I was in Connecticut.  It 
       never occurred to me that I would find it here in Arizona!</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/BarbaraPinti.jpg" style="margin-bottom: 0;" />
+    <img class="img" src="images/BarbaraPinti.jpg" style="margin-bottom: 0;" />
 
     <p class="signature">Barbara A. Pinti, MA, MA, ABD, LMFT, LPC is a psychotherapist in private practice in 
       West Hartford, Connecticut.  She has taught the Law of Attraction in many groups, 
@@ -1315,8 +1315,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="a-new-healing-center"/>
     <p>&nbsp;</p>
-    <h5>A New Healing Center</h5>
-    <h6>by Clarissa Barraza</h6>
+    <h5 class="h5 bottom0">A New Healing Center</h5>
+    <h6 class="h6">by Clarissa Barraza</h6>
 
     <p>In April of 2017, I felt a strong need to relocate my office space somewhere I could 
       grow my business even more.</p>
@@ -1415,16 +1415,16 @@ Wen      workshops, and her private practice.</p>
 
     <p>Needless to say, I moved in immediately.</p>
 
-    <img src="images/office.jpg" style="max-width: 500px;margin-bottom: 0;" />
+    <img class="img" src="images/office.jpg" style="max-width: 500px;margin-bottom: 0;" />
     <p class="signature" style="text-align: center;">This is the view from my office.</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/ClarissaBarraza.jpg" />
+    <img class="img" src="images/ClarissaBarraza.jpg" />
 
     <p class="signature">Clarissa J.Barraza LMT<br />
     Email: <a href="mailto:cjbarrazalmt@gmail.com">cjbarrazalmt@gmail.com</a><br />
-    Facebook: <a @click="myLink('https://www.facebook.com/ClarissaJBarraza')">@ClarissaJBarraza</a><br />
+    Facebook: <a class="a" @click="myLink('https://www.facebook.com/ClarissaJBarraza')">@ClarissaJBarraza</a><br />
     For 25 years in the Dallas area I have practiced LOA in my sessions, allowing Source 
     to guide me to do what's best for my clients.</p>
 
@@ -1433,8 +1433,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="trapped"/>
     <p>&nbsp;</p>
-    <h5>Trapped</h5>
-    <h6>by Esther Bailey-Bass</h6>
+    <h5 class="h5 bottom0">Trapped</h5>
+    <h6 class="h6">by Esther Bailey-Bass</h6>
 
     <p>It was a beautiful sunny day in May, with a breeze and a slight chill in the air. 
       I remember it was Monday, May 1, 2017, typical as any other Monday before.</p>
@@ -1622,16 +1622,16 @@ Wen      workshops, and her private practice.</p>
     <p>Seven months later, I did in fact resign from my employer after nearly 18 years 
       of service. Life on the other side is already proving sweeter.</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/EstherBailey-Bass.jpg" alt="">
+    <img class="img" src="images/EstherBailey-Bass.jpg" alt="">
 
     <p class="signature">Esther Bailey-Bass is a Certified Professional Coach helping 
       women in mid-career who are ready to embrace the role of leader and champion.</p>
     
     <p class="signature">Esther can be reached by email at 
       <a href="mailto:engage@ebbnflowcoaching.com">engage@ebbnflowcoaching.com</a> 
-      or found on major social media platforms <a @click="myLink('https://www.facebook.com/EBBNFLOWCOACH/')">@ebbnflowcoach</a>.</p>
+      or found on major social media platforms <a class="a" @click="myLink('https://www.facebook.com/EBBNFLOWCOACH/')">@ebbnflowcoach</a>.</p>
 
     <p>&nbsp;</p>
     
@@ -1639,8 +1639,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="our-dream-home"/>
     <p>&nbsp;</p>
-    <h5>Our Dream Home</h5>
-    <h6>by Linda Armstrong</h6>
+    <h5 class="h5 bottom0">Our Dream Home</h5>
+    <h6 class="h6">by Linda Armstrong</h6>
 
     <p>The funny thing about how we manifested our dream home is that I was really FINALLY 
       happy in the home we were living in. I did not plan to move. We lived in a very small 
@@ -1798,22 +1798,22 @@ Wen      workshops, and her private practice.</p>
     <p>I swam in the energy of living in that home so much that the owners decided to sell it 
       to us and our buyers were able to complete their purchase of our old home. WOW!</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/LindaArmstrong.jpg" alt="">
+    <img class="img" src="images/LindaArmstrong.jpg" alt="">
 
     <p class="signature">Linda Armstrong is a Master Certified Law of Attraction Energy Coach, 
       and Energy Healer. She works with The GATE Healing Method and Theta Healing® Technique. 
       She is also a Reiki Master Teacher, and Light Body Meditation Practitioner.</p>
-    <p class="signature">Website: <a @click="myLink('https://www.lovemylife.coach/')">lovemylife.coach</a></p>
+    <p class="signature">Website: <a class="a" @click="myLink('https://www.lovemylife.coach/')">lovemylife.coach</a></p>
 
     <p>&nbsp;</p>
     <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '9'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="treasures-from-tikashi"/>
     <p>&nbsp;</p>
-    <h5>Treasures From Tikashi</h5>
-    <h6>by Renate Donnovan</h6>
+    <h5 class="h5 bottom0">Treasures From Tikashi</h5>
+    <h6 class="h6">by Renate Donnovan</h6>
 
     <p>I lived in a shared accommodation. It was a cute, rented duplex with plush 
       off-white rugs and rustic wood trim on the doors and ceilings. I shared this 
@@ -1883,7 +1883,7 @@ Wen      workshops, and her private practice.</p>
       carefully (to ensure I didn’t rip it) lifted the card and turned it over. The face 
       of the card read:</p>
 
-    <hr />
+    <hr class="hr" />
 
     <h5 style="color: lime;">ABUNDANCE</h5>
 
@@ -1898,7 +1898,7 @@ Wen      workshops, and her private practice.</p>
     <p class="signature" style="text-align:center; color: lime;">Participate in life’s joy and you shall 
       receive the rewards of your efforts.</p>
 
-    <hr />
+    <hr class="hr" />
 
     <p>The rain changed from drizzle to downpour as I stood there blinking, awe struck, for 
       a full five minutes as the synchronicity of the situation sunk in. Then, with a squeal, 
@@ -1930,9 +1930,9 @@ Wen      workshops, and her private practice.</p>
 
     <p>The response to my note was simple. The email contained one line, “Congratulations 
       on discovering you are one of the special people.  &mdash;<em>Brian Tracy</em>”.</p>
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/RenateDonnovan.jpg" alt="" style="margin-bottom: 0;">
+    <img class="img" src="images/RenateDonnovan.jpg" alt="" style="margin-bottom: 0;">
 
     <p class="signature">Renate Donnovan MAL, CEC, Cht, MNLPP, PhD Candidate</p>
 
@@ -1943,8 +1943,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="beginning-again"/>
     <p>&nbsp;</p>
-    <h5>Beginning Again</h5>
-    <h6>by Sherry Trentini</h6>
+    <h5 class="h5 bottom0">Beginning Again</h5>
+    <h6 class="h6">by Sherry Trentini</h6>
 
     <p>Grief sucks. I know this to be true. I became a widow at age 40. My daughters, ages 8 and 10, 
       lost their daddy.  Then five months later my own father died.</p>
@@ -1985,12 +1985,12 @@ Wen      workshops, and her private practice.</p>
       traditional fare, and did so without having things like...</p>
 
     <ul>
-      <li>a double oven</li>
-      <li>a double sink</li>
-      <li>a dishwasher</li>
-      <li>a formal dining room table</li>
-      <li>an 8’ x 4’ counter for the buffet</li>
-      <li>various kitchen gadgets and accouterments, etc…</li>
+      <li class="li">a double oven</li>
+      <li class="li">a double sink</li>
+      <li class="li">a dishwasher</li>
+      <li class="li">a formal dining room table</li>
+      <li class="li">an 8’ x 4’ counter for the buffet</li>
+      <li class="li">various kitchen gadgets and accouterments, etc…</li>
     </ul>
 
     <p>Everyone ate, drank and enjoyed the celebration.</p>
@@ -2028,32 +2028,32 @@ Wen      workshops, and her private practice.</p>
       It wasn't just a property. It was:</p>
 
     <ul>
-      <li>the house my husband and I built,</li>
-      <li>on the land that he and I loved, </li>
-      <li>in the community that we helped to create, </li>
-      <li>in association with the business he had dreamed of starting and owning for years,</li>
-      <li>for friends, family, Thanksgivings, Christmases, birthdays, and celebrations of all things,</li>
-      <li>in our family home that our girls were to grow up in, move out of, and come back to.</li>
+      <li class="li">the house my husband and I built,</li>
+      <li class="li">on the land that he and I loved, </li>
+      <li class="li">in the community that we helped to create, </li>
+      <li class="li">in association with the business he had dreamed of starting and owning for years,</li>
+      <li class="li">for friends, family, Thanksgivings, Christmases, birthdays, and celebrations of all things,</li>
+      <li class="li">in our family home that our girls were to grow up in, move out of, and come back to.</li>
     </ul>
 
     <p>I am keenly aware of and attuned to listening to my "gut" as my intuitive guide.  
       Three main things came up for me:</p>
 
     <ol>
-      <li>Whenever I thought of the house, I felt a clenching in my chest … not good.</li>
-      <li>I felt that as much as I wanted to sell it I was clutching it to my chest ... 
+      <li class="li">Whenever I thought of the house, I felt a clenching in my chest … not good.</li>
+      <li class="li">I felt that as much as I wanted to sell it I was clutching it to my chest ... 
         not conducive to manifesting a buyer.</li>
-      <li>Whenever the girls and I talked about the house, it sounded like we were talking 
+      <li class="li">Whenever the girls and I talked about the house, it sounded like we were talking 
         about their dad, not the building … tricky.</li>
     </ol>
 
     <p>So I asked myself two questions:</p>
 
     <ol>
-      <li>If we weren't in Europe right now would I be selling the house?<br />
+      <li class="li">If we weren't in Europe right now would I be selling the house?<br />
         <blockquote>Answer: Yes</blockquote>
       </li>
-      <li>If we were to repatriate to Canada tomorrow, next month, or next year, would we move back into the house?<br />
+      <li class="li">If we were to repatriate to Canada tomorrow, next month, or next year, would we move back into the house?<br />
         <blockquote>Answer: No</blockquote>
       </li>
     </ol>
@@ -2143,13 +2143,13 @@ Wen      workshops, and her private practice.</p>
 
     <p>And, yes I did a little jig!</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/SherryTrentini.jpg" alt="">
+    <img class="img" src="images/SherryTrentini.jpg" alt="">
 
     <p class="signature">Sherry Trentini</p>
     <p class="signature">Life Coach and Grief Recovery Specialist</p>
-    <p class="signature">Website: <a @click="myLink('http://www.sherrytrentini.com/')">www.sherrytrentini.com</a></p>
+    <p class="signature">Website: <a class="a" @click="myLink('http://www.sherrytrentini.com/')">www.sherrytrentini.com</a></p>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -2158,8 +2158,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="signs-from-the-universe"/>
     <p>&nbsp;</p>
-    <h5>Signs from the Universe</h5>
-    <h6>by Susan Shearer Young</h6>
+    <h5 class="h5 bottom0">Signs from the Universe</h5>
+    <h6 class="h6">by Susan Shearer Young</h6>
 
     <p>I lived in Washington, D.C. in a beautiful neighborhood near the National Cathedral. 
       I loved everything about it. Our house was a 100-year-old Victorian with a large front 
@@ -2234,23 +2234,23 @@ Wen      workshops, and her private practice.</p>
       series of gentle nudges that light up the path of least resistance.  Very ordinary 
       nudges can lead to extraordinary results.</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/SusanYoung.jpg" alt="">
+    <img class="img" src="images/SusanYoung.jpg" alt="">
 
     <p class="signature">Susan Shearer Young is an award-winning Law of Attraction coach 
       who helps her clients live the abundant lives they desire. She is also the author 
       of <em>How to Allow, chosen as Best of Books on Law of Attraction</em> in 2012 and 
       nominated in 2015.</p>
-    <p class="signature">Website: <a @click="myLink('https://howtoallow.net/')">howtoallow.net</a></p>
+    <p class="signature">Website: <a class="a" @click="myLink('https://howtoallow.net/')">howtoallow.net</a></p>
 
     <p>&nbsp;</p>
     <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '12'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-seller-who-was-the-buyers-ally"/>
     <p>&nbsp;</p>
-    <h5>The Seller Who Was The Buyer’s Ally</h5>
-    <h6>by David Scott Bartky</h6>
+    <h5 class="h5 bottom0">The Seller Who Was The Buyer’s Ally</h5>
+    <h6 class="h6">by David Scott Bartky</h6>
 
     <p>Several years ago, I decided I wanted to move after visiting a home with 
       gorgeous views on a very quiet street.</p>
@@ -2362,14 +2362,14 @@ Wen      workshops, and her private practice.</p>
     <p>A few months later we moved in, and it has been a wonderful, quiet home with great views 
       out of every window and with only two stair steps. Thank you Law of Attraction!</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/DavidBartky.jpg" alt="">
+    <img class="img" src="images/DavidBartky.jpg" alt="">
 
     <p class="signature">David Scott Bartky<br />
       Life Coach David</p>
-    <p class="signature">Website: <a @click="myLink('https://www.lifecoachdavid.com/')">lifecoachdavid.com</a></p>
-    <p class="signature">Facebook: <a @click="myLink('https://www.facebook.com/lifecoachdavid')">@lifecoachdavid</a></p>
+    <p class="signature">Website: <a class="a" @click="myLink('https://www.lifecoachdavid.com/')">lifecoachdavid.com</a></p>
+    <p class="signature">Facebook: <a class="a" @click="myLink('https://www.facebook.com/lifecoachdavid')">@lifecoachdavid</a></p>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -2377,8 +2377,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="a-financial-surprise"/>
     <p>&nbsp;</p>
-    <h5>A Financial Surprise</h5>
-    <h6>by Barbara Pinti</h6>
+    <h5 class="h5 bottom0">A Financial Surprise</h5>
+    <h6 class="h6">by Barbara Pinti</h6>
 
     <p>About a year ago, I began working with a woman who for many years had a poverty mentality.  
       Money was always short, and there was never enough to get to the things that weren’t 
@@ -2430,9 +2430,9 @@ Wen      workshops, and her private practice.</p>
 
     <p>This universal law knows not who you are or what it is you desire.  It just WORKS!</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/BarbaraPinti.jpg" style="margin-bottom: 30px;" />
+    <img class="img" src="images/BarbaraPinti.jpg" style="margin-bottom: 30px;" />
 
     <p class="signature">Barbara A. Pinti, MA, MA, ABD, LMFT, LPC is a psychotherapist in private practice in 
       West Hartford, Connecticut.  She has taught the Law of Attraction in many groups, 
@@ -2444,8 +2444,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="sailing"/>
     <p>&nbsp;</p>
-    <h5>Sailing</h5>
-    <h6>by Cambria Berger</h6>
+    <h5 class="h5 bottom0">Sailing</h5>
+    <h6 class="h6">by Cambria Berger</h6>
 
     <p>Follow your happiness. That phrase is something that I used to say often as a carefree 
       college student with her whole life ahead of her and a history of loving family and solid 
@@ -2707,14 +2707,14 @@ Wen      workshops, and her private practice.</p>
 
     <p>Follow your happiness. I am so glad that I did.</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/CambriaBerger.jpg" alt="" style="margin-bottom: 60px;">
+    <img class="img" src="images/CambriaBerger.jpg" alt="" style="margin-bottom: 60px;">
 
     <p class="signature">Cambria is a long time student of personal development. 
       She retired from oceanography in 2012 to raise her two wonderful boys with 
       her husband in San Diego, California and is now a certified Law of Attraction Coach.</p>
-    <p class="signature">Web: <a @click="myLink('https://www.cambriaberger.com/')">www.cambriaberger.com</a></p>
+    <p class="signature">Web: <a class="a" @click="myLink('https://www.cambriaberger.com/')">www.cambriaberger.com</a></p>
     <p class="signature">Phone: <a href="tel:+016198800714">619-880-0714</a></p>
 
     <p>&nbsp;</p>
@@ -2722,8 +2722,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="its-no-accident"/>
     <p>&nbsp;</p>
-    <h5>It’s No Accident</h5>
-    <h6>by Cathy Brown</h6>
+    <h5 class="h5 bottom0">It’s No Accident</h5>
+    <h6 class="h6">by Cathy Brown</h6>
 
     <p>I learned about negative manifesting the hard way.</p>
 
@@ -2867,9 +2867,9 @@ Wen      workshops, and her private practice.</p>
 
   <p>Christy looked a bit puzzled and replied, “Great, yes it does work.”</p>
 
-  <hr />
+  <hr class="hr" />
 
-  <img src="images/CathyBrown.jpg" alt="">
+  <img class="img" src="images/CathyBrown.jpg" alt="">
 
   <p class="signature">Cathy Brown holds an MBA and is a Certified Law of Attraction 
     Life Coach, Hypnotherapist, Reiki Master, Creating Money Coach, a best-selling 
@@ -2881,8 +2881,8 @@ Wen      workshops, and her private practice.</p>
   <p>&nbsp;</p>
   <hr id="making-changes"/>
   <p>&nbsp;</p>
-  <h5>Making Changes</h5>
-  <h6>by Galina Shadrova</h6>
+  <h5 class="h5 bottom0">Making Changes</h5>
+  <h6 class="h6">by Galina Shadrova</h6>
 
   <p>A man in his late sixties made an appointment in my Tarzana, California office. 
     When the man walked into my room, he nervously stated, “I don’t think you will 
@@ -2978,22 +2978,22 @@ Wen      workshops, and her private practice.</p>
   <p>Six months later she called me and said that she had met a man with whom 
     she is now very happy!</p>
     
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/GalinaShadrova.jpg" alt="">
+    <img class="img" src="images/GalinaShadrova.jpg" alt="">
 
     <p class="signature">Galina Shadrova is a hypnotherapist and a life coach who believes 
       we are never too old to make positive changes in life. She helps her clients to become 
       magnets to reach their goals in life while enjoying every step on the way.</p>
-    <p class="signature">Facebook: <a @click="myLink('https://www.facebook.com/galinashadrova3')">@galinashadrova3</a></p>
+    <p class="signature">Facebook: <a class="a" @click="myLink('https://www.facebook.com/galinashadrova3')">@galinashadrova3</a></p>
 
     <p>&nbsp;</p>
     <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '17'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="london-calling"/>
     <p>&nbsp;</p>
-    <h5>London Calling</h5>
-    <h6>by Geanina Roman</h6>
+    <h5 class="h5 bottom0">London Calling</h5>
+    <h6 class="h6">by Geanina Roman</h6>
 
     <p>The first time I visited London was during a three day trip. That was all I needed 
       to fall in love with the city. It wasn’t just the beauty of the place that drew me 
@@ -3154,9 +3154,9 @@ Wen      workshops, and her private practice.</p>
       perfectly the Universe brought together so many aspects of what I wanted and needed 
       then. It felt like a nod to carry on following my joy because I was on the right track.</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/GeaninaRoman.jpg" alt="">
+    <img class="img" src="images/GeaninaRoman.jpg" alt="">
 
     <p class="signature">Geanina Roman is a certified career and Law of Attraction coach with 
       a background in media and translation.</p>
@@ -3169,8 +3169,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="getting-published"/>
     <p>&nbsp;</p>
-    <h5>Getting Published</h5>
-    <h6>by Paulette Sherman</h6>
+    <h5 class="h5 bottom0">Getting Published</h5>
+    <h6 class="h6">by Paulette Sherman</h6>
 
     <p>While I was in graduate school getting my doctorate, we were told that our dissertation 
       could be a literature review instead of lab research, and we could choose our topic.  
@@ -3215,98 +3215,98 @@ Wen      workshops, and her private practice.</p>
       facilitated for single clients.</p>
 
     <p>I went into a Barnes and Noble to look through a <em>Writers Market</em> book and jotted 
-    down the contact information of four publishers on an envelope.  Then I sent in my dating 
-    manual via snail mail with my resume.  I got calls back from two editors, both of whom told 
-    me it was something they’d been looking for.</p>
+      down the contact information of four publishers on an envelope.  Then I sent in my dating 
+      manual via snail mail with my resume.  I got calls back from two editors, both of whom told 
+      me it was something they’d been looking for.</p>
 
-  <p>One editor submitted it to the editorial board review, but they passed on it.  The other 
-    editor was Cynthia Black, who was also the publisher of <em>Beyond Words,</em> which formed 
-    an imprint called Atria Books with Simon and Schuster.</p>
+    <p>One editor submitted it to the editorial board review, but they passed on it.  The other 
+      editor was Cynthia Black, who was also the publisher of <em>Beyond Words,</em> which formed 
+      an imprint called Atria Books with Simon and Schuster.</p>
 
-  <p>I did not know that at the time, nor did I know that she was in the process of publishing 
-    the book, The Secret, and was looking for other books on the Law of Attraction. My dating 
-    book was about the Law of Attraction, but that term was not in the subtitle until she added 
-    it, and it was not mentioned in the book.  She suggested that we go back and forth with 
-    rewrites, and if she was satisfied with the final book then she’d offer me a contract.</p>
+    <p>I did not know that at the time, nor did I know that she was in the process of publishing 
+      the book, The Secret, and was looking for other books on the Law of Attraction. My dating 
+      book was about the Law of Attraction, but that term was not in the subtitle until she added 
+      it, and it was not mentioned in the book.  She suggested that we go back and forth with 
+      rewrites, and if she was satisfied with the final book then she’d offer me a contract.</p>
 
-  <p>I signed the publishing contract right before I got married.  What were the chances of 
-    getting my first deal with Simon and Schuster without an agent and with little writing 
-    experience (except for a column), and then sending it to the person working on that topic?  
-    It was not something I could have planned consciously.</p>
+    <p>I signed the publishing contract right before I got married.  What were the chances of 
+      getting my first deal with Simon and Schuster without an agent and with little writing 
+      experience (except for a column), and then sending it to the person working on that topic?  
+      It was not something I could have planned consciously.</p>
 
-  <p>After the book got published, I married, and we later had two kids.  I had little time for 
-    writing then and had to focus on more practical things.</p>
+    <p>After the book got published, I married, and we later had two kids.  I had little time for 
+      writing then and had to focus on more practical things.</p>
 
-  <p>At age 41, I was diagnosed with breast cancer.  I walked on the beach and prayed and asked 
-    whether I was going to die.  I heard that I would not and that I had a legacy of at least 
-    22 books left to write.  I went through chemotherapy and radiation for a year and lost all 
-    my hair.  I continued working as a therapist and wrote on the subway and in the hospital. 
-    The idea of 22 books seemed crazy to my conscious mind, but my spirit accepted it as a 
-    clear command, so I just went to work, learning self-publishing.</p>
+    <p>At age 41, I was diagnosed with breast cancer.  I walked on the beach and prayed and asked 
+      whether I was going to die.  I heard that I would not and that I had a legacy of at least 
+      22 books left to write.  I went through chemotherapy and radiation for a year and lost all 
+      my hair.  I continued working as a therapist and wrote on the subway and in the hospital. 
+      The idea of 22 books seemed crazy to my conscious mind, but my spirit accepted it as a 
+      clear command, so I just went to work, learning self-publishing.</p>
 
-  <p>I was on a mission to write these books, but didn’t want to go into any debt in the process, 
-    since our kids were our practical priority.  My desire was to have those self-published 
-    books paid for even if I did not make a profit.  I did not have many book sales and had no 
-    energy or budget for marketing at the time and had not yet worked on much of a social media 
-    platform.  My goal was to get my messages of love out there and to put my books in hope 
-    chests for my kids as a legacy, which I did.  I trusted it would all work out, even if I 
-    didn’t know how.</p>
+    <p>I was on a mission to write these books, but didn’t want to go into any debt in the process, 
+      since our kids were our practical priority.  My desire was to have those self-published 
+      books paid for even if I did not make a profit.  I did not have many book sales and had no 
+      energy or budget for marketing at the time and had not yet worked on much of a social media 
+      platform.  My goal was to get my messages of love out there and to put my books in hope 
+      chests for my kids as a legacy, which I did.  I trusted it would all work out, even if I 
+      didn’t know how.</p>
 
-  <p>I happened upon a blog by Gordon Burgett who writes about self-publishing where he said that 
-    he made more money by getting a foreign agent and translating his self-published books into 
-    a few languages than he did with a traditional American publishing deal.  I didn’t know 
-    anything about this, so I searched the term foreign literary agent in Linked In, and a woman 
-    named Marleen Seegers came up.</p>
+    <p>I happened upon a blog by Gordon Burgett who writes about self-publishing where he said that 
+      he made more money by getting a foreign agent and translating his self-published books into 
+      a few languages than he did with a traditional American publishing deal.  I didn’t know 
+      anything about this, so I searched the term foreign literary agent in Linked In, and a woman 
+      named Marleen Seegers came up.</p>
 
-  <p>She looked beautiful and smart, and her agency looked new.  This was the first and only 
-    foreign agent that I wrote at that time. She liked my book, When Mars Women Date: <em>How 
-    Career Women Can Love Themselves into the Relationship of their Dreams,</em> and it 
-    subsequently got published into Chinese, Korean and Czech.  The sales more than covered 
-    my basic publishing expenses for my ongoing book legacy</p>
+    <p>She looked beautiful and smart, and her agency looked new.  This was the first and only 
+      foreign agent that I wrote at that time. She liked my book, When Mars Women Date: <em>How 
+      Career Women Can Love Themselves into the Relationship of their Dreams,</em> and it 
+      subsequently got published into Chinese, Korean and Czech.  The sales more than covered 
+      my basic publishing expenses for my ongoing book legacy</p>
 
-  <p>Later, another foreign agent from Linkedin helped me to publish two other books I wrote 
-    into Chinese.   I later read a publishing book by an expert who said that one of the main 
-    reasons to get a traditional publisher is they have a much better chance to sell your 
-    translation rights, but I hadn’t known that or adopted that limiting belief.</p>
+    <p>Later, another foreign agent from Linkedin helped me to publish two other books I wrote 
+      into Chinese.   I later read a publishing book by an expert who said that one of the main 
+      reasons to get a traditional publisher is they have a much better chance to sell your 
+      translation rights, but I hadn’t known that or adopted that limiting belief.</p>
 
-  <p>As I wrote and worked on my self-care, I started to take sacred baths where I would have 
-    silence in the morning to align my thoughts and feelings with my intention and goals.  
-    I’d relax, pray, meditate, and receive guidance. In this way I got many creative ideas 
-    for my books, and they flowed out of me. I published them one after another (literally) 
-    on Amazon and soon had 20 published books just five years after my diagnosis.</p>
+    <p>As I wrote and worked on my self-care, I started to take sacred baths where I would have 
+      silence in the morning to align my thoughts and feelings with my intention and goals.  
+      I’d relax, pray, meditate, and receive guidance. In this way I got many creative ideas 
+      for my books, and they flowed out of me. I published them one after another (literally) 
+      on Amazon and soon had 20 published books just five years after my diagnosis.</p>
 
-  <p> I was doing well emotionally, physically, and spiritually and felt that this morning 
-    bathing ritual could be helpful to others. So I wrote a small book about it.  I had 
-    given my Reiki teacher, Raven Keyes, several of my books as gifts. She had never said 
-    anything about them, but for some reason when I handed her book number 21 (which was 
-    about using different sacred bath rituals to improve your love life), Raven said that 
-    she loved the idea and encouraged me to create bath rituals in many other life areas 
-    as well.  She said she’d never done this, but she thought her editor at Llewellyn might 
-    consider the book a good fit.</p>
+    <p> I was doing well emotionally, physically, and spiritually and felt that this morning 
+      bathing ritual could be helpful to others. So I wrote a small book about it.  I had 
+      given my Reiki teacher, Raven Keyes, several of my books as gifts. She had never said 
+      anything about them, but for some reason when I handed her book number 21 (which was 
+      about using different sacred bath rituals to improve your love life), Raven said that 
+      she loved the idea and encouraged me to create bath rituals in many other life areas 
+      as well.  She said she’d never done this, but she thought her editor at Llewellyn might 
+      consider the book a good fit.</p>
 
-  <p>So, I submitted a proposal and several chapters. Llewellyn came back with a publishing 
-    contract.  This felt like a miracle to me because of the ease with which it happened.  
-    My latest book, The Book of Sacred Baths, came out last year, and now I am writing book 
-    number 22 in my legacy project.</p>
+    <p>So, I submitted a proposal and several chapters. Llewellyn came back with a publishing 
+      contract.  This felt like a miracle to me because of the ease with which it happened.  
+      My latest book, The Book of Sacred Baths, came out last year, and now I am writing book 
+      number 22 in my legacy project.</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/PauletteSherman.jpg" alt="">
+    <img class="img" src="images/PauletteSherman.jpg" alt="">
 
     <p class="signature">Dr. Sherman is a psychologist, certified life coach, author, 
       teacher and speaker.  She offers international phone coaching and specializes in 
       relationships.</p>
-    <p class="signature">Twitter: <a @click="myLink('https://twitter.com/kpaulet')">@kpaulet</a></p>
-    <p class="signature">Facebook: <a @click="myLink('https://www.facebook.com/pauletteshermangroup/')">@pauletteshermangroup</a></p>
-    <p class="signature">Website: <a @click="myLink('https://drpaulettesherman.com/')">DrPauletteSherman.com</a></p>
+    <p class="signature">Twitter: <a class="a" @click="myLink('https://twitter.com/kpaulet')">@kpaulet</a></p>
+    <p class="signature">Facebook: <a class="a" @click="myLink('https://www.facebook.com/pauletteshermangroup/')">@pauletteshermangroup</a></p>
+    <p class="signature">Website: <a class="a" @click="myLink('https://drpaulettesherman.com/')">DrPauletteSherman.com</a></p>
 
     <p>&nbsp;</p>
     <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '19'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="the-poker-tournament"/>
     <p>&nbsp;</p>
-    <h5>The Poker Tournament</h5>
-    <h6>by Walt Thiessen</h6>
+    <h5 class="h5 bottom0">The Poker Tournament</h5>
+    <h6 class="h6">by Walt Thiessen</h6>
 
     <p>Here's a very simple manifestation story that happened on March 10, 2018. I play 
       poker online … play chips, although I used to win money before the U.S. Government 
@@ -3410,14 +3410,14 @@ Wen      workshops, and her private practice.</p>
     <p>So he went <em>all in</em> with his remaining chips. I called, and I won the pot, 
     all his chips, and thereby won the tournament!</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/WaltThiessen.jpg" alt="">
+    <img class="img" src="images/WaltThiessen.jpg" alt="">
 
     <p class="signature">Walt Thiessen is the founder of LOA Today, where he does 
       daily podcasts on the Law of Attraction. He lives with his wife, Louise in 
       Simsbury, Connecticut.</p>
-    <p class="signature">Website: <a @click="myLink('https://www.loatoday.net/')">www.loatoday.net</a></p>
+    <p class="signature">Website: <a class="a" @click="myLink('https://www.loatoday.net/')">www.loatoday.net</a></p>
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -3425,8 +3425,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="healing-myself"/>
     <p>&nbsp;</p>
-    <h5>Healing Myself</h5>
-    <h6>By Jean Yang</h6>
+    <h5 class="h5 bottom0">Healing Myself</h5>
+    <h6 class="h6">By Jean Yang</h6>
 
     <p>Since I became a young woman, I dealt with severe menstrual cramps and heavy bleeding 
       during my periods. I dreaded that time of the month. Things got so bad for me that I 
@@ -3453,7 +3453,7 @@ Wen      workshops, and her private practice.</p>
       started not long afterward.</p>
       
     <p>Meanwhile, the changes in diet Ms. Levett suggested in her book and on her website, 
-      <a @click="myLink('https://www.endo-resolved.com/')">www.endo-resolved.com,</a>
+      <a class="a" @click="myLink('https://www.endo-resolved.com/')">www.endo-resolved.com,</a>
       helped me quite a bit with pain management. A Reiki news magazine mentioned Louise 
       Hay, whom I had not heard of before. I bought her book, <em>You Can Heal Your Life,</em>
       and watched her movie of the same title. I enjoyed the movie, but none of the authors 
@@ -3505,23 +3505,23 @@ Wen      workshops, and her private practice.</p>
         and more of us are ready to remember who we really are and the power we hold in 
         our own hands.</p>
 
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/JeanYang.jpg" alt="" style="margin-bottom: 60px;">
+    <img class="img" src="images/JeanYang.jpg" alt="" style="margin-bottom: 60px;">
 
     <p class="signature">Jean Yang is an intuitive adviser, a licensed massage therapist, 
       a Reiki master, and an artist.</p>
     <p class="signature">Jean can assist you in pinpointing those thought patterns or 
       beliefs that are hindering you from success, health, and happiness.</p>
-    <p class="signature">Website: <a @click="myLink('https://www.jeanyangwellbeing.com/')">jeanyangwellbeing.com</a></p>
+    <p class="signature">Website: <a class="a" @click="myLink('https://www.jeanyangwellbeing.com/')">jeanyangwellbeing.com</a></p>
 
     <p>&nbsp;</p>
     <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '21'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="boot-camp"/>
     <p>&nbsp;</p>
-    <h5>Boot Camp</h5>
-    <h6>Misti Jackson-Derringer</h6>
+    <h5 class="h5 bottom0">Boot Camp</h5>
+    <h6 class="h6">Misti Jackson-Derringer</h6>
 
     <p>Nearly one year had passed since my mom’s last drink. She seemed okay, 
       having made the transition into living a normal life, but the shadows crept 
@@ -3742,22 +3742,22 @@ Wen      workshops, and her private practice.</p>
       the rest of the world.  We are living proof that your words most definitely have 
       the power to create your reality and to redeem your past.</p>
       
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/MistiJacksonDerringer.jpg" alt="">
+    <img class="img" src="images/MistiJacksonDerringer.jpg" alt="">
 
     <p class="signature">Misti Jackson-Derringer is a poet, speaker, author, Certified 
       Holistic Coach, Intuitive Energy Worker and Yoga Teacher.</p>
     <p class="signature">She is a teacher and leader in her local community and worldwide who helps others design a life they legitimately love.</p>
-    <p class="signature">Website: <a @click="myLink('https://meetmisti.com/')">meetmisti.com</a></p>
+    <p class="signature">Website: <a class="a" @click="myLink('https://meetmisti.com/')">meetmisti.com</a></p>
 
     <p>&nbsp;</p>
     <p class="centerNoIndent"><q-btn class="myStyle" :to="{ path: 'rssotloa', hash: '22'}">Back To Top</q-btn></p>
     <p>&nbsp;</p>
     <hr id="nizhoni"/>
     <p>&nbsp;</p>
-    <h5>Nizhoni</h5>
-    <h6>by Ellen Bakker</h6>
+    <h5 class="h5 bottom0">Nizhoni</h5>
+    <h6 class="h6">by Ellen Bakker</h6>
 
     <p>Help came when I was almost 24 years old.</p>
 
@@ -3986,9 +3986,9 @@ Wen      workshops, and her private practice.</p>
     <p>PS: My eyesight improved from 5 percent to 90 percent in one eye, and from 50 
       percent to a 100 percent in the other.</p>
       
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/EllenBakker.jpg" alt="">
+    <img class="img" src="images/EllenBakker.jpg" alt="">
 
     <p class="signature">Ellen Bakker is a certified Law of Attraction Life Coach, 
       a masters degree holder in Child Psychology, and a former member and coach of the Dutch national 
@@ -4000,8 +4000,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="coping-with-arthritis" />
     <p>&nbsp;</p>
-    <h5>Coping with Arthritis</h5>
-    <h6>by Tarryn Tomlinson</h6>
+    <h5 class="h5 bottom0">Coping with Arthritis</h5>
+    <h6 class="h6">by Tarryn Tomlinson</h6>
 
     <p>The pain was unbearable, sometimes stabbing and hot, other times dull and 
       throbbing. The doctors said there was no cure for the arthritis that ravaged 
@@ -4196,9 +4196,9 @@ Wen      workshops, and her private practice.</p>
       a coach. I also started a foundation for underprivileged kids by teaching them the 
       Law of Attraction.</p>
       
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/TarrynTomlinson.jpg" alt="">
+    <img class="img" src="images/TarrynTomlinson.jpg" alt="">
 
     <p class="signature">Tarryn Tomlinson is a life coach and public speaker living in 
       Cape Town, South Africa.</p>
@@ -4210,8 +4210,8 @@ Wen      workshops, and her private practice.</p>
     <p>&nbsp;</p>
     <hr id="all-is-well"/>
     <p>&nbsp;</p>
-    <h5>All is Well</h5>
-    <h6>by Susan Murray</h6>
+    <h5 class="h5 bottom0">All is Well</h5>
+    <h6 class="h6">by Susan Murray</h6>
 
     <p>With my husband’s death grip on the steering wheel, our minivan careened down 
       I-540 keeping pace with the ambulance ahead of us. What began as concern that one 
@@ -4384,9 +4384,9 @@ Wen      workshops, and her private practice.</p>
 
       <p>All is well!</p>
       
-    <hr />
+    <hr class="hr" />
 
-    <img src="images/SusanMurray.jpg" alt="">
+    <img class="img" src="images/SusanMurray.jpg" alt="">
 
     <p class="signature">Susan Murray</p>
     <p class="signature">Certified Holistic Coach, Radiant Health Institute</p>
@@ -4399,6 +4399,7 @@ Wen      workshops, and her private practice.</p>
 </template>
 <script>
 import { openURL } from 'quasar'
+import 'src/css/rsstoloa.css'
 export default {
   methods:{
     myLink(myURL){
@@ -4408,47 +4409,5 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-  h1, h2, h3, h4, h5, h6 {
-    color: yellow
-  }
-  h5, h6 {
-    text-align: center;
-  }
-  h5 {
-    margin-bottom: 0;
-  }
-  h6 {
-    font-size: 12pt;
-    margin-bottom: 20px;
-  }
-  p {
-    color: lemon;
-  }
-  li {
-    color: lime;
-  }
-  a {
-    color: aqua;
-  }
-  hr {
-    border-color: rgb(128,128,255);
-  }
-  img {
-    max-width: 150px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 50px;
 
-  }
-  .myStyle {
-    text-transform: capitalize;
-    font-size: 18px;
-    margin-left: -18px;
-    margin-bottom: -10px;
-    text-decoration: underline;
-    font-family: Arial;
-  }
-  .signature, .centerNoIndent {text-text-decoration: underline;
-    text-indent: 0;
-  }
 </style>

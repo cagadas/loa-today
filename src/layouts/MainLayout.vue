@@ -17,7 +17,7 @@
           LOA Today
         </q-toolbar-title>
 
-        <div>Ver. 1.2.0</div>
+        <div>Ver. 1.2.1</div>
       </q-toolbar>
     </q-header>
 
@@ -100,7 +100,7 @@ export default {
           title: 'Your Daily Dose Of Happy',
           caption: 'Real Success Stories Of The Law Of Attraction E-book',
           icon: 'book',
-          link: './index.html#/rssotloa'
+          link: './index.html#/rssotloa/toc'
         },
         {
           title: 'Co-Hosts On LOA Today',
