@@ -23,6 +23,8 @@ export default async (/* { app, router, Vue ... } */) => {
   let episodeNumber = 0
   let count = 5
   for (let i = 21; i < Math.min(length,25+21); i++) {
+  //Third elements of xml is undefined when loop starts
+  if (xml.elements[0].elements[0].elements[i].elements !== undefined) {
     title = xml.elements[0].elements[0].elements[i].elements[0].elements[0].text
     episodeId = xml.elements[0].elements[0].elements[i].elements[1].elements[0].text
     if (episodeId.substring(32, 33) === '-') {
@@ -43,6 +45,7 @@ export default async (/* { app, router, Vue ... } */) => {
       mp3: mp3,
       date: date
     })
+  }
   }
   Vue.prototype.$showImage = xml.elements[0].elements[0].elements[4].elements[0].elements[0].text
   // Vue.prototype.$showTitle = xml.elements[0].elements[0].elements[4].elements[1].elements[0].text
